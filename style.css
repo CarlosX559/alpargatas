@@ -1,0 +1,979 @@
+* {
+    font-family: 'Oblik bold';
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Oblik bold';
+    src: url(font/Oblik_Bold.otf);
+}
+
+@font-face {
+    font-family: 'Oblik light';
+    src: url(font/Oblik_light.otf);
+}
+
+.container_1 {
+    width: 100%;
+    height: 100vh;
+}
+
+.logo_home img {
+    padding: 20px;
+    padding-right: 70px;
+}
+
+header {
+    width: max-content;
+}
+
+.bg_menu {
+    background-image: url(img/bg_menu.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 999;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 40px 0px;
+}
+
+.menu h2 {
+    color: #77787B;
+    font-size: 1em;
+}
+
+.menu img {
+    width: 60px;
+}
+
+.area_cima img {
+    height: 700px;
+    position: absolute;
+    top: -153px;
+    right: -712px;
+}
+
+.area_direita img {
+    height: 730px;
+    position: absolute;
+    top: 265px;
+    right: -1px;
+}
+
+.area_esquerda img {
+    height: 540px;
+    position: absolute;
+    bottom: 0px;
+    left: -540px;
+}
+
+.area_texts_total {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.area_texts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 620px;
+}
+
+.title {
+    margin-left: -130px;
+}
+
+.title h2 {
+    font-size: 8em;
+    color: #009ED9;
+    margin: 0px;
+}
+
+.subtitle h2 {
+    width: 100%;
+    max-width: 500px;
+    color: #525252;
+    font-size: 1.2em;
+    line-height: 32px;
+}
+
+.subtitle_relatorio {
+    display: flex;
+    align-items: center;
+}
+
+.subtitle_relatorio h2 {
+    width: 100%;
+    max-width: 450px;
+    font-family: 'Oblik light';
+    color: #009ED9;
+    font-size: 1.2em;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.subtitle_relatorio svg {
+    cursor: pointer;
+}
+
+.subtitle_2 h2 {
+    width: 100%;
+    max-width: 490px;
+    color: #525252;
+    font-size: 1.2em;
+    line-height: 32px;
+}
+
+.area_texts_direita {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+    max-width: 570px;
+    width: 100%;
+}
+
+.title_2 h2 {
+    color: #77787B;
+    font-size: 1.5em;
+    margin: 0px;
+    text-align: end;
+}
+
+.subtitle_relatorio_2 h2 {
+    font-size: 3.2em;
+    color: #77787B;
+    margin: 0px;
+    text-align: end;
+}
+
+.ano h2 {
+    font-size: 2.5em;
+    color: #77787B;
+    margin: 0px;
+    text-align: end;
+}
+
+.seta_sessao_home {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: -60px;
+}
+
+.seta_sessao_home img {
+    cursor: pointer;
+    width: 50px;
+}
+
+.container_2 {
+    width: 100%;
+
+}
+
+.img_topo {
+    width: 100%;
+    height: 1400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/somos_alpha/somos_alpha.png);
+}
+
+.area_total_alpha {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 45%;
+    justify-content: center;
+}
+
+.area_texts_alpha {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.title_alpha {
+    width: 100%;
+}
+
+.title_alpha h3 {
+    font-family: 'Oblik light';
+    font-size: 8em;
+    color: #fff;
+    margin: 0px;
+    margin-bottom: -44px;
+}
+
+.title_alpha h2 {
+    font-family: 'Oblik bold';
+    font-size: 10em;
+    color: #fff;
+    margin: 0px;
+    text-align: end;
+}
+
+.subtitle_alpha {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 540px;
+    padding-left: 40px;
+}
+
+.subtitle_alpha h3 {
+    font-family: 'Oblik light';
+    color: #fff;
+    font-size: 1.8em;
+    margin: 0px;
+
+}
+
+.area_total_marcas {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    margin-top: -620px;
+}
+
+.area_marcas {
+    display: flex;
+    width: 100%;
+    max-width: max-content;
+}
+
+.marca {
+    display: flex;
+    width: 100%;
+    max-width: 370px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.logo_1 {
+    max-width: 100%;
+    width: 320px;
+    margin-bottom: 18px;
+}
+
+.logo_2,
+.logo_3 {
+    max-width: 100%;
+    width: 320px;
+    margin-bottom: 30px;
+}
+
+.texts_marcas {
+    display: flex;
+    flex-direction: column;
+}
+
+.texts_int_marcas {
+    display: -webkit-box;
+    margin-bottom: 20px;
+}
+
+.texts_marcas p {
+    color: #525252;
+    font-size: 1em;
+    margin: 0px;
+    max-width: 340px;
+}
+
+.seta_sessao_alpha {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.seta_sessao_alpha img {
+    cursor: pointer;
+}
+
+.area_total_localizacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.area_int_localizacao {
+    display: flex;
+    width: 100%;
+    max-width: 1796px;
+    justify-content: flex-start;
+}
+
+.area_esquerda_alpha h2 {
+    color: #F48120;
+    font-size: 2em;
+}
+
+.area_esquerda_alpha {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    padding-right: 40px;
+    height: 100vh;
+}
+
+.area_icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.area_icons img {
+    padding-right: 20px;
+}
+
+.area_icons h2 {
+    font-size: 1em;
+    color: #525252;
+    margin: 0px;
+}
+
+.area_escritorios {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.area_escritorios p {
+    color: #525252;
+    font-size: 1em;
+    width: 62%;
+    text-align: left;
+}
+
+.area_info p {
+    color: #525252;
+    font-size: 0.8em;
+}
+
+.area_direita_alpha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.area_direita_alpha img {
+    width: 100%;
+    max-width: 980px;
+}
+
+.area_total_mapa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.area_int_mapa {
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    width: 100%;
+}
+
+.area_mapa {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.area_mapa img {
+    width: 32px;
+    padding-right: 10px;
+}
+
+.area_mapa p {
+    color: #525252;
+    font-size: 1em;
+}
+
+.legenda {
+    width: 100%;
+    margin-top: -150px;
+    z-index: -1;
+}
+
+.legenda img {
+    width: 100%;
+    max-width: max-content;
+}
+
+.seta_sessao_alpha_2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.seta_sessao_alpha_2 img {
+    cursor: pointer;
+}
+
+.container_3 {
+    width: 100%;
+    height: 100%;
+}
+
+/*para tela menor*/
+.img_topo_jornada {
+    width: 100%;
+    height: 1020px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/jornada_estrategica/jornada.png);
+}
+
+.area_texts_jornada {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -210px;
+}
+
+.area_int_jornada {
+    display: flex;
+    flex-direction: column;
+    max-width: 680px;
+    width: 100%;
+}
+
+.title_negocios h3 {
+    color: #F48120;
+    font-size: 30px;
+    margin: 0px;
+}
+
+.subtitle_negocios h2 {
+    color: #77787B;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 0px;
+    line-height: 34px;
+}
+
+.subtitle_pilares p {
+    color: #77787B;
+    font-size: 22px;
+    margin: 0px;
+}
+
+.area_pilares_total {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.area_int_pilares {
+    display: flex;
+    max-width: 1250px;
+    width: 100%;
+}
+
+.area_pilares {
+    display: flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.area_title {
+    display: -webkit-box;
+}
+
+.pilar {
+    max-width: max-content;
+}
+
+.global {
+    padding-right: 10px;
+}
+
+.title_global {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.title_global h2 {
+    color: #77787B;
+    margin: 0px;
+    font-size: 26px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.text_pilar p {
+    color: #525252;
+    font-size: 20px;
+    margin: 0px;
+}
+.saiba_mais_total {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.saiba_mais_int {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+.area_saiba_mais {
+    display: flex;
+    align-items: center;
+    max-width: 385px;
+    width: 100%;
+}
+.area_saiba_mais p {
+    color: #A3A4A8;
+    font-size: 24px;
+}
+.area_saiba_mais svg {
+    padding-right: 10px;
+}
+.seta_sessao_jornada {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 60px;
+}
+.seta_sessao_jornada img {
+    cursor: pointer;
+}
+.container_4 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.container_int_4 {
+    display: flex;
+    max-width: 884px;
+    width: 100%;
+    flex-direction: column;
+}
+.area_texts_geracao {
+    display: flex;
+    flex-direction: column;
+}
+.title_geracao {
+    width: 100%;
+    max-width: max-content;
+}
+.title_geracao h3 {
+    font-size: 60px;
+    color: #00CC57;
+    margin: 0px;
+}
+
+.title_geracao h2 {
+    font-size: 80px;
+    color: #00CC57;
+    margin: 0px;
+    text-align: end;
+}
+.area_title_geracao {
+    display: flex;
+    align-items: center;
+}
+.area_title_geracao svg {
+    padding-left: 10px;
+}
+.area_subtitle_geracao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px;
+}
+.subtitle_geracao {
+    width: 100%;
+    max-width: 600px;
+}
+.subtitle_geracao p {
+    color: #525252;
+    font-size: 22px;
+}
+.subtitle_geracao subsection {
+    color: #00993E;
+    font-size: 22px;
+}
+
+.area_esquerda_geracao img {
+    height: 530px;
+    position: absolute;
+    left: -85px;
+    z-index: -1;
+    margin-top: 172px;
+}
+.area_direita_geracao img {
+    height: 640px;
+    position: absolute;
+    right: -85px;
+    z-index: -1;
+}
+.area_direita_baixo_geracao img {
+    height: 600px;
+    position: absolute;
+    right: -248px;
+    z-index: -1;
+    margin-top: 250px;
+}
+.seta_sessao_geracao {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.seta_sessao_geracao img {
+    cursor: pointer;
+    margin-top: 200px;
+}
+#geracao_de_valor {
+    width: 100%;
+    margin-top: 100px;
+}
+/*Sessão governança*/
+.container_5 {
+    width: 100%;
+}
+.img_topo_governanca {
+    width: 100%;
+    height: 990px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(img/governanca/governanca.png);
+}
+.area_total_governanca {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.title_governanca {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 570px;
+}
+.title_governanca h2 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0px;
+}
+.area_texts_governanca {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -240px;
+}
+
+.area_int_governanca {
+    display: flex;
+    flex-direction: column;
+    max-width: 580px;
+    width: 100%;
+}
+
+.subtitle_governanca h2 {
+    color: #525252;
+    font-size: 20px;
+    margin: 0px;
+}
+.area_principal_texts {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.area_int_principal {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+.area_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1126px;
+}
+.area_titulo_principal {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    
+}
+.area_titulo_principal img {
+    width: 100px;
+    padding-right: 20px;
+}
+.area_titulo_principal h2 {
+    color: #00A551;
+    font-size: 24px;
+}
+.area_total_info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.area_info_int {
+    display: flex;
+    max-width: 1040px;
+    width: 100%;
+}
+.area_info_governanca {
+    display: flex;
+    flex-direction: column;
+   
+}
+.info_governanca {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+}
+.in3 {
+    display: flex;
+    align-items: center;
+    max-width: 310px;
+    width: 100%;
+}
+.in4 {
+    display: flex;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+}
+.info_governanca img {
+    padding-right: 20px;
+}
+.info_governanca p {
+    color: #525252;
+    font-size: 18px;
+}
+.area_principal_governanca {
+    display: flex;
+}
+
+@media(max-width: 1440px) {
+
+    /*Home*/
+    .container_1 {
+        height: auto;
+    }
+
+    .title_2 h2 {
+        font-size: 1em;
+    }
+
+    .subtitle_relatorio_2 h2 {
+        font-size: 2em;
+    }
+
+    .ano h2 {
+        font-size: 1.5em;
+    }
+
+    .area_texts_total {
+        height: auto;
+    }
+
+    .title h2 {
+        font-size: 4em;
+    }
+
+    .subtitle h2 {
+        font-size: 1em;
+    }
+
+    .subtitle_relatorio h2 {
+        font-size: 0.9em;
+    }
+
+    .subtitle_2 h2 {
+        font-size: 1em;
+    }
+
+    .title {
+        margin-left: 0px;
+    }
+
+    .area_texts {
+        max-width: 360px;
+        margin-top: 80px;
+    }
+
+    .area_texts_direita {
+        margin-top: 220px;
+        max-width: 430px;
+    }
+
+    .area_esquerda img {
+        height: 300px;
+        position: absolute;
+        bottom: -100px;
+        left: -302px;
+        z-index: -1;
+    }
+
+    .area_cima img {
+        height: 500px;
+        position: absolute;
+        top: -128px;
+        right: -503px;
+    }
+
+    .area_direita img {
+        height: 360px;
+    }
+
+    .seta_sessao_home {
+        margin-top: 0px;
+    }
+
+    .seta_sessao_home {
+        margin-bottom: 20px;
+    }
+
+    /*Fim home*/
+
+
+    /*Somos Alpha*/
+
+    .area_esquerda_alpha {
+        max-width: 322px;
+    }
+
+    .img_topo {
+        height: 788px;
+
+    }
+
+    .area_texts_alpha {
+        max-width: 820px;
+    }
+
+    .subtitle_alpha {
+        max-width: 376px;
+    }
+
+    .subtitle_alpha h3 {
+        font-size: 1em;
+    }
+
+    .title_alpha h3 {
+        font-size: 4em;
+    }
+
+    .title_alpha h2 {
+        font-size: 5em;
+    }
+
+    .title_alpha h3 {
+        margin-bottom: -20px;
+    }
+
+    .area_total_marcas {
+        margin-top: -350px;
+    }
+
+    .legenda {
+        margin-top: 0px;
+    }
+
+    .marca {
+        max-width: 250px;
+        padding: 30px;
+    }
+
+    .texts_marcas p {
+        font-size: 0.8em;
+    }
+
+    .area_int_localizacao {
+        max-width: 1140px;
+    }
+
+    .area_icons h2 {
+        font-size: 18px;
+    }
+
+    .area_mapa p {
+        font-size: 18px;
+    }
+
+    .area_escritorios p {
+        font-size: 15px;
+    }
+
+    .area_info p {
+        font-size: 14px;
+    }
+
+    .bg_menu {
+        display: none;
+    }
+
+
+    /*Jornada*/
+    .img_topo_jornada {
+        height: 588px;
+    }
+
+    .title_negocios h3 {
+        color: #F48120;
+        font-size: 26px;
+        margin: 0px;
+    }
+
+    .subtitle_negocios h2 {
+        color: #77787B;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        line-height: 28px;
+    }
+
+    .subtitle_pilares p {
+        color: #77787B;
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    .text_pilar p {
+        font-size: 18px;
+    }
+
+    /*governança*/
+    .img_topo_governanca {
+        height: 680px;
+        margin-top: -104px;
+    }
+    
+}
