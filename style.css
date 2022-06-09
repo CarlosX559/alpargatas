@@ -689,6 +689,7 @@ header {
     width: 100%;
     justify-content: center;
     margin-top: -240px;
+    margin-bottom: 20px;
 }
 
 .area_int_governanca {
@@ -706,14 +707,26 @@ header {
 .area_principal_texts {
     display: flex;
     width: 100%;
-    justify-content: center;
     flex-direction: column;
+   
+}
+.bg_texts_governanca {
+    width: 100%;
 
+}
+.bg_texts_governanca::before {
+    content: url(img/governanca/bg_governanca.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: absolute;
+    z-index: -10;
 }
 .area_int_principal {
     display: flex;
     width: 100%;
     max-width: 1200px;
+    
 }
 .area_principal {
     display: flex;
@@ -721,6 +734,7 @@ header {
     align-items: center;
     width: 100%;
     max-width: 1126px;
+    
 }
 .area_titulo_principal {
     display: flex;
@@ -746,9 +760,11 @@ header {
     display: flex;
     max-width: 1040px;
     width: 100%;
+    justify-content: center;
 }
 .area_info_governanca {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
    
 }
@@ -772,6 +788,7 @@ header {
 }
 .info_governanca img {
     padding-right: 20px;
+    width: 40px;
 }
 .info_governanca p {
     color: #525252;
@@ -779,7 +796,49 @@ header {
 }
 .area_principal_governanca {
     display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1300px;
 }
+.area_direita_governanca {
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+}
+.int_governanca {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.line.l1 {
+    margin-top: 0px;
+}
+.info_direita_governanca {
+    display: flex;
+    align-items: flex-start;
+    max-width: max-content;
+    width: 100%;
+    margin-top: 20px;
+}
+.line {
+    border-top: 1px solid #00CC57;
+    padding-top: 20px;
+}
+.info_direita_governanca  img {
+    padding-right: 20px;
+    width: 30px;
+}
+.info_direita_governanca p {
+    color: #525252;
+    font-size: 16px;
+    margin: 0px;
+}
+
+
+
+
+
+
 
 @media(max-width: 1440px) {
 
@@ -974,6 +1033,12 @@ header {
     .img_topo_governanca {
         height: 680px;
         margin-top: -104px;
+    }
+    
+
+    .img_topo_governanca {
+        height: 720px;
+        margin-top: -122px;
     }
     
 }
