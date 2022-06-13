@@ -720,7 +720,7 @@ header {
 .title_governanca {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     max-width: 570px;
 }
 .title_governanca h2 {
@@ -910,7 +910,7 @@ header {
 .title_nossas_pessoas {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
 }
 .title_nossas_pessoas h2 {
@@ -1101,7 +1101,7 @@ header {
 }
 .parceiros {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: flex-end;
     width: 60%;
 }
@@ -1269,7 +1269,8 @@ header {
 }
 .info_direita_usuarios p {
     color: var(--color-cinza-escuro);
-    font-size: 16px;
+    font-family: var(--font-light);
+    font-size: 18px;
     margin: 0px;
 }
 .seta_sessao_usuarios {
@@ -1303,11 +1304,10 @@ header {
     justify-content: center;
 }
 .title_fornecedores {
-    width: 90%;
+    width: 100%;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: flex-end;
+    align-items: baseline;
+    justify-content: center;
 }
 .title_fornecedores h2 {
     color: #fff;
@@ -1319,7 +1319,7 @@ header {
     display: flex;
     width: 76%;
     justify-content: center;
-    margin-top: -280px;
+    margin-top: -220px;
     margin-bottom: 20px;
 }
 
@@ -1364,7 +1364,7 @@ header {
 .area_principal_4 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     max-width: 1126px;
     
@@ -1377,7 +1377,7 @@ header {
     margin: 40px 0px 20px 0px;
 }
 .area_titulo_principal_4 img {
-    width: 100px;
+    width: 120px;
     padding-right: 20px;
 }
 .area_titulo_principal_4 h2 {
@@ -1397,9 +1397,7 @@ header {
 .icon_fashion {
     width: 320px;
     height: 320px;
-}
-.area_info_int_4 img {
-    padding-right: 20px;
+    padding: 0px 20px;
 }
 .area_info_fornecedores {
     display: flex;
@@ -1441,7 +1439,7 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
-    max-width: 1380px;
+    max-width: 1220px;
 }
 .area_direita_fornecedores{
     display: flex;
@@ -1473,7 +1471,8 @@ header {
 }
 .info_direita_fornecedores p {
     color: var(--color-cinza-escuro);
-    font-size: 16px;
+    font-family: var(--font-light);
+    font-size: 18px;
     margin: 0px;
 }
 .seta_sessao_fornecedores {
@@ -1482,6 +1481,618 @@ header {
     justify-content: center;
 }
 .seta_sessao_fornecedores img {
+    cursor: pointer;
+}
+/*Fim fornecedores*/
+
+/*Inicio sociedade*/
+.container_9 {
+    width: 100%;
+   
+}
+.img_topo_sociedade {
+    width: 100%;
+    height: 990px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/sociedade/sociedade.png);
+}
+.area_total_sociedade {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.title_sociedade {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.title_sociedade h2 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0px;
+}
+.area_texts_sociedade {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -280px;
+    margin-bottom: 20px;
+}
+
+.area_int_sociedade {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    width: 100%;
+}
+
+.subtitle_sociedade h2 {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.area_principal_texts_5 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.bg_texts_sociedade {
+    width: 100%;
+
+}
+.bg_texts_sociedade::before {
+    content: url(img/sociedade/bg_sociedade.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.5;
+}
+.area_int_principal_5 {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.area_principal_5 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 85%;
+    max-width: 1126px;
+    
+}
+.area_titulo_principal_5 {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    
+}
+.area_titulo_principal_5 img {
+    width: 100px;
+    padding-right: 20px;
+}
+.area_titulo_principal_5 h2 {
+    color: #006A99;
+    font-size: 24px;
+    font-family: var(--font-light);
+}
+.beneficios_sociedade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beneficios_sociedade p {
+    color: #77787B;
+    font-size: 28px;
+    margin: 0px;
+    margin-top: 30px;
+}
+.area_total_info_5 {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.area_info_int_5 {
+    display: -webkit-box;
+}
+.area_info_int_5 img {
+    padding-right: 20px;
+}
+.area_info_sociedade {
+    display: flex;
+   
+}
+.info_sociedade {
+    display: flex;
+    align-items: center;
+    max-width: 560px;
+    width: 100%;
+}
+.info_sociedade img {
+    padding-right: 20px;
+    width: 40px;
+}
+.info_sociedade h2 {
+    display: flex;
+    align-items: center;
+    color: #006A99;
+    margin: 0px;
+    font-family: var(--font-light);
+}
+.inv p {
+    font-size: 40px !important;
+}
+.info_sociedade p {
+    color: var(--color-cinza-escuro);
+    font-size: 23px;
+    font-family: var(--font-light);
+    margin: 0px;
+}
+.int_info_2 h2 {
+    font-size: 25px;
+    font-family: var(--font-light);
+
+}
+.desc {
+    font-size: 60px;
+    font-family: var(--font-light);
+    padding: 0px 5px;
+}
+.area_principal_sociedade {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1380px;
+}
+.area_direita_sociedade {
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+}
+.int_sociedade {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.line_s.l1 {
+    margin-top: 0px;
+}
+.info_direita_sociedade {
+    display: flex;
+    align-items: flex-start;
+    max-width: max-content;
+    width: 100%;
+    margin-top: 30px;
+}
+.line_s {
+    border-top: 1px solid #83AA24;
+    padding-top: 20px;
+}
+.info_direita_sociedade img {
+    padding-right: 20px;
+    width: 30px;
+}
+.info_direita_sociedade p {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 18px;
+    margin: 0px;
+}
+.seta_sessao_sociedade {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.seta_sessao_sociedade img {
+    cursor: pointer;
+}
+
+/*Inicio operção*/
+
+.container_10 {
+    width: 100%;
+   
+}
+.img_topo_operacao {
+    width: 100%;
+    height: 990px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/operacao/operacao.png);
+}
+.area_total_operacao {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.title_operacao {
+    width: 86%;
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+}
+.title_operacao h2 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0px;
+}
+.area_texts_operacao {
+    display: flex;
+    width: 61%;
+    justify-content: center;
+    margin-top: -230px;
+    margin-bottom: 20px;
+}
+
+.area_int_operacao {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    width: 100%;
+}
+
+.subtitle_operacao h2 {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.area_principal_texts_6 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.bg_texts_operacao {
+    width: 100%;
+
+}
+.bg_texts_operacao::before {
+    content: url(img/operacao/bg_operacao.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: absolute;
+    z-index: -10;
+}
+.area_int_principal_6 {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.area_principal_6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 1126px;
+    
+}
+.area_titulo_principal_6 {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    
+}
+.area_titulo_principal_6 img {
+    width: 100px;
+    padding-right: 20px;
+}
+.area_titulo_principal_6 h2 {
+    font-family: var(--font-light);
+    color: #00A551;
+    font-size: 24px;
+}
+.area_total_info_6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.area_info_int_6 {
+    display: -webkit-box;
+}
+.area_info_int_6 img {
+    padding-right: 20px;
+}
+.area_info_operacao {
+    display: flex;
+    flex-direction: column;
+   
+}
+.info_operacao {
+    display: flex;
+    align-items: center;
+    max-width: 560px;
+    width: 100%;
+}
+.info_operacao img {
+    padding-right: 20px;
+    width: 40px;
+}
+.desc_o {
+    display: inline-block;
+    font-size: 60px;
+    font-family: var(--font-light);
+    padding: 0px 5px;
+}
+.info_operacao h2 {
+    color: #00A551;
+    padding-right: 20px;
+    margin: 0px;
+}
+.info_operacao p {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.area_principal_operacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1160px;
+}
+.area_direita_operacao {
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+}
+.int_operacao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.line_o.l1 {
+    margin-top: 0px;
+}
+.info_direita_operacao {
+    display: flex;
+    align-items: flex-start;
+    max-width: max-content;
+    width: 100%;
+    margin-top: 20px;
+}
+.line_o {
+    border-top: 1px solid #0093C6;
+    padding-top: 20px;
+}
+.info_direita_operacao img {
+    padding-right: 20px;
+    width: 30px;
+}
+.info_direita_operacao p {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.seta_sessao_operacao {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.seta_sessao_operacao img {
+    cursor: pointer;
+}
+/*Inicio mercado*/
+
+.container_11 {
+    width: 100%;
+   
+}
+.img_topo_mercado {
+    width: 100%;
+    height: 990px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/mercado/mercado.png);
+}
+.area_total_mercado {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.title_mercado {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.title_mercado h2 {
+    color: #fff;
+    font-size: 80px;
+    margin: 0px;
+}
+.area_texts_mercado {
+    display: flex;
+    width: 94%;
+    justify-content: center;
+    margin-top: -270px;
+    margin-bottom: 20px;
+}
+
+.area_int_mercado {
+    display: flex;
+    flex-direction: column;
+    max-width: 670px;
+    width: 100%;
+}
+
+.subtitle_mercado h2 {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.area_principal_texts_7 {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+   
+}
+.bg_texts_mercado {
+    width: 100%;
+
+}
+.bg_texts_mercado::before {
+    content: url(img/mercado/bg_mercado.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: max-content;
+    position: absolute;
+    z-index: -10;
+}
+.area_int_principal_7 {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.lucro_mercado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 87%;
+}
+.lucro_mercado p {
+    color: #77787B;
+    font-size: 28px;
+    margin: 0px;
+}
+.area_principal_7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1126px;
+    
+}
+.area_titulo_principal_7 {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    
+}
+.area_titulo_principal_7 img {
+    width: 100px;
+    padding-right: 20px;
+}
+.area_titulo_principal_7 h2 {
+    font-family: var(--font-light);
+    color: #F48120;
+    font-size: 24px;
+}
+.area_total_info_7 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.area_info_int_7 {
+    display: flex;
+    flex-direction: column;
+}
+.int_info_3 {
+    display: flex;
+    align-items: center;
+}
+.int_info_3 h2 {
+    align-items: center;
+    display: flex;
+    padding-right: 20px;
+    color: #F48120;
+    font-family: var(--font-light);
+}
+.area_info_int_7 img {
+    padding-right: 20px;
+}
+.area_info_mercado {
+    display: flex;
+    flex-direction: column;
+   
+}
+.info_mercado {
+    display: flex;
+    align-items: center;
+    max-width: 560px;
+    width: 100%;
+}
+.desc_m {
+    display: inline-block;
+    color: #F48120;
+    font-size: 60px;
+    font-family: var(--font-light);
+    padding: 0px 5px;
+}
+.m_info p {
+    color: #77787B;
+    font-size: 26px;
+    font-family: var(--font-light);
+}
+.area_principal_mercado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1400px;
+}
+.area_direita_mercado {
+    display: flex;
+    max-width: 360px;
+    width: 100%;
+}
+.int_mercado {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.line_m.l1 {
+    margin-top: 0px;
+}
+.info_direita_mercado {
+    display: flex;
+    align-items: flex-start;
+    max-width: max-content;
+    width: 100%;
+    margin-top: 20px;
+}
+.line_m {
+    border-top: 1px solid #F48120;
+    padding-top: 20px;
+}
+.info_direita_mercado img {
+    padding-right: 20px;
+    width: 30px;
+}
+.info_direita_mercado p {
+    color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
+    font-size: 20px;
+    margin: 0px;
+}
+.seta_sessao_mercado {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.seta_sessao_mercado img {
     cursor: pointer;
 }
 
@@ -1686,6 +2297,15 @@ header {
         margin-top: -122px;
     }
     .img_topo_nossas_pessoas {
+        height: 720px;
+    }
+
+    /*Fornecedores*/
+    .img_topo_fornecedores {
+        height: 720px;
+    }
+
+    .img_topo_operacao {
         height: 720px;
     }
 }
