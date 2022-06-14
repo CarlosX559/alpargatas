@@ -2957,6 +2957,9 @@ footer img {
         font-size: 1em;
         padding: 0px 20px;
     }
+    .area_titulo_principal_6 img {
+        padding-right: 0px;
+    }
     /*Mercado*/
     .img_topo_mercado {
         height: 330px;
@@ -2978,5 +2981,8 @@ footer img {
     }
     .lucro_mercado p {
         text-align: center;
+    }
+    .area_titulo_principal_7 img {
+        padding-right: 0px;
     }
 }
