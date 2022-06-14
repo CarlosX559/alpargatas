@@ -2154,6 +2154,7 @@ footer img {
     }
 
     .area_esquerda img {
+        display: none;
         height: 300px;
         position: absolute;
         bottom: -100px;
