@@ -661,7 +661,7 @@ header {
     color: var(--color-cinza-escuro);
     font-size: 22px;
 }
-.subtitle_geracao subsection {
+.subtitle_geracao h3 {
     color: #00993E;
     font-size: 22px;
 }
@@ -1127,6 +1127,7 @@ header {
 
 .subtitle_usuarios h2 {
     color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
     font-size: 20px;
     margin: 0px;
 }
@@ -2095,6 +2096,9 @@ header {
 .seta_sessao_mercado img {
     cursor: pointer;
 }
+footer img {
+    width: 103%;
+}
 
 @media(max-width: 1440px) {
 
@@ -2307,5 +2311,672 @@ header {
 
     .img_topo_operacao {
         height: 720px;
+    }
+}
+@media(max-width: 1024px) {
+    /*Home mobile*/
+    .area_texts_total {
+        flex-direction: column;
+    }
+    .area_texts_direita {
+        margin-top: 20px;
+    }
+     h2 {
+        text-align: center !important;
+    }
+    .subtitle_relatorio {
+        width: 100%;
+        max-width: initial;
+    }
+    .area_total_marcas {
+        width: 100%;
+    }
+    .area_marcas {
+        flex-direction: column;
+    }
+    .seta_sessao_home {
+        margin-top: 40px;
+    }
+    /*Somos alpa mobile*/
+    .alpa_relatorio {
+        width: 100%;
+        text-align: center;
+    }
+    .area_int_localizacao {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .area_total_mapa {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .area_mapa {
+        justify-content: center;
+        width: 100%;
+    }
+    .legenda {
+        display: flex;
+        justify-content: center;
+    }
+    .area_icons {
+        justify-content: center;
+    }
+    .area_icons h2 {
+        width: 100%;
+    }
+    .area_info p {
+        text-align: center;
+    }
+    /*Jornada mobile*/
+    .img_topo_jornada {
+        height: 410px;
+    }
+    .subtitle_negocios h2 {
+        font-size: 22px;
+    }
+    .area_texts_jornada {
+        margin-top: 0px;
+    }
+    .title_jornada {
+        align-items: center;
+    }
+    .title_jornada h2 {
+        font-size: 40px;
+    }
+    .title_jornada h3 {
+        font-size: 60px;
+    }
+    .area_pilares {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .pilar {
+        margin-top: 30px;
+    }
+    .title_global {
+        max-width: 320px;
+    }
+    .text_pilar p {
+        text-align: center;
+    }
+    .saiba_mais_int {
+        justify-content: center;
+        max-width: max-content;
+    }
+    .area_saiba_mais {
+        max-width: max-content;
+    }
+
+    .container_int_4 {
+        align-items: center;
+    }
+    .area_direita_geracao img {
+        height: 420px;
+    }
+    .area_esquerda_geracao img {
+        height: 420px;
+    }
+    .subtitle_geracao p {
+        text-align: center;
+    }
+    .subtitle_geracao h3 {
+        text-align: center;
+    }
+    .seta_sessao_jornada {
+        margin-top: 40px;
+    }
+    /*Governança mobile*/
+    .img_topo_governanca {
+        height: 510px;
+    }
+    .title_governanca {
+        align-items: center;
+        justify-content: center;
+    }
+    .title_governanca h2 {
+        font-size: 40px;
+    }
+    .area_titulo_principal {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .area_titulo_principal h2 {
+        font-size: 22px;
+    }
+    .area_info_int {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_texts_governanca {
+        margin-top: -80px;
+    }
+    
+    .in3, .in4 {
+        max-width: 400px;
+    }
+    .area_principal_governanca {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_direita_governanca {
+        margin-top: 60px;
+        max-width: 400px;
+    }
+    .seta_sessao_governanca {
+        margin-top: 40px;
+    }
+    .bg_texts_governanca::before {
+        content: " ";
+    }
+    /*Nossas pessoas mobile*/
+    .container_6 {
+        margin-top: 0px;
+    }
+    .area_titulo_principal_2 img {
+        padding-right: 0px;
+    }
+    .img_topo_nossas_pessoas {
+        height: 510px;
+    }
+    .title_nossas_pessoas {
+        align-items: center;
+    }
+    .area_principal_2 {
+        margin: 20px 0px;
+    }
+    .title_nossas_pessoas h2 {
+        font-size: 40px;
+    }
+    .area_texts_nossas_pessoas {
+        margin-top: -80px;
+    }
+    .area_principal_nossas_pessoas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_direita_nossas_pessoas {
+        max-width: 400px;
+        margin-top: 60px;
+    }
+    .area_titulo_principal_2 {
+        flex-direction: column;
+    }
+    .area_titulo_principal_2 h2 {
+        font-size: 22px;
+    }
+    .area_info_int_2 {
+        display: inline-flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo_alu {
+        width: 255px;
+    }
+    .bg_texts_nossas_pessoas::before {
+        content: " ";
+    }
+    .seta_sessao_nossas_pessoas {
+        margin-top: 40px;
+    }
+
+    /*Usuarios e parceiros mobile*/
+    .img_topo_usuarios {
+        height:510px;
+    }
+    .parceiros {
+        align-items: center;
+    }
+    .title_usuarios h2 {
+        font-size: 40px;
+    }
+    .title_usuarios h3 {
+        font-size: 50px;
+    }
+    .area_texts_usuarios {
+        margin-top: -80px;
+    }
+    .area_principal_usuarios  {
+        align-items: center;
+        flex-direction: column;
+    }
+    .area_titulo_principal_3 {
+        flex-direction: column;
+    }
+    .area_total_info_3 {
+        margin-left: 0px;
+        justify-content: center;
+    }
+    .area_info_int_3 {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .esquerda_info {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .area_direita_usuarios {
+        max-width: 400px;
+        margin-top: 60px;
+    }
+    .seta_sessao_usuarios {
+        margin-top: 40px;
+    }
+
+    .bg_texts_usuarios::before {
+        content: "";
+    }
+    /*Fornecedores mobile*/
+    .img_topo_fornecedores {
+        height: 510px;
+    }
+    .title_fornecedores {
+        align-items: center;
+    }
+    .title_fornecedores h2 {
+        font-size: 40px;
+    }
+    .area_texts_fornecedores {
+        margin-top: -80px;
+    }
+    .area_texts_fornecedores {
+        width: 100%;
+    }
+    .area_principal_fornecedores {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_titulo_principal_4 {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0px;
+    }
+    .area_titulo_principal_4 h2 {
+        font-size: 22px;
+        margin-top: 10px;
+    }
+    .area_titulo_principal_4 img {
+        padding-right: 0px
+    }
+    .area_principal_4 {
+        align-items: center;
+    }
+    .area_info_int_4 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .info_fornecedores_int {
+        margin-top: 20px;
+    }
+    .info_fornecedores_2 {
+        max-width: 400px;
+    }
+    .area_direita_fornecedores {
+        max-width: 400px;
+    }
+    .seta_sessao_fornecedores {
+        margin-top: 40px;
+    }
+    .bg_texts_fornecedores::before {
+        content: " ";
+    }
+
+    /*Sociedade*/
+    .img_topo_sociedade {
+        height: 510px;
+    }
+
+    .area_texts_sociedade {
+        margin-top: -80px;
+    }
+    .area_principal_5 {
+        width: 100%;
+        align-items: center;
+    }
+    .area_titulo_principal_5 img {
+        padding-right: 0px;
+    }
+    .title_sociedade {
+        align-items: center;
+    }
+    .title_sociedade h2 {
+        font-size: 40px;
+    }
+    .area_titulo_principal_5 {
+        flex-direction: column;
+    }
+    .area_total_info_5 {
+        width: 100%;
+        justify-content: center;
+    }
+    .area_info_int_5 {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .area_principal_sociedade {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_info_sociedade {
+        flex-direction: column;
+    }
+    .area_direita_sociedade {
+        max-width: 400px;
+        margin-top: 60px;
+    }
+    .seta_sessao_sociedade {
+        margin-top: 40px;
+    }
+    .bg_texts_sociedade::before {
+        content: "";
+    }
+
+    /*Operação*/
+    .img_topo_operacao {
+        height: 510px;
+    }
+    .title_operacao {
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    .title_operacao h2 {
+        font-size: 40px;
+    }
+    .area_texts_operacao {
+        width: 100%;
+        margin-top: -80px;
+    }
+
+    .area_principal_operacao {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_titulo_principal_6 {
+        flex-direction: column;
+        align-items: center;
+     
+    }
+    .area_direita_operacao {
+        max-width: 400px;
+        margin-top: 60px;
+    }
+    .info_operacao p {
+        text-align: center;
+    }
+    .seta_sessao_operacao {
+        margin-top: 40px;
+    }
+    .bg_texts_operacao::before {
+        content: " ";
+    }
+
+    /*Mercado Mobile*/
+    .img_topo_mercado {
+        height: 510px;
+    }
+    .area_texts_mercado {
+        width: 100%;
+        margin-top: -80px;
+    }
+    .title_mercado {
+        align-items: center;
+    }
+    .title_mercado h2 {
+        font-size: 40px;
+    }
+    .area_titulo_principal_7 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .area_titulo_principal_7 h2 {
+        font-size: 22px;
+    }
+    .area_principal_mercado {
+        flex-direction: column;
+        align-items: center;
+    }
+    .lucro_mercado {
+        width: 100%;
+    }
+    .info_mercado {
+        width: 100%;
+        max-width: max-content;
+    }
+    .area_info_int_7 {
+        width: 100%;
+        align-items: center;
+    }
+    .area_info_int_7 img {
+        padding-right: 0px;
+    }
+    .area_info_mercado {
+        padding: 0px 20px;
+    }
+    .info_2021 {
+        width: 100%;
+        max-width: 580px;
+    }
+    .area_direita_mercado {
+        max-width: 400px;
+        margin-top: 40px;
+    }
+
+    .seta_sessao_mercado {
+        margin: 40px 0px;
+    }
+    .bg_texts_mercado::before {
+        content: " ";
+    }
+}
+@media(max-width: 425px) {
+    /*Home*/
+    .subtitle, .subtitle_2 {
+        padding: 0px 20px;
+    }
+    .area_cima img {
+        height: 320px;
+        top: -80px;
+        right: -361px;
+    }
+    .area_direita img {
+        right: -80px;
+        z-index: -1;
+    }
+
+    .subtitle_relatorio {
+        align-items: center;
+        justify-content: center;
+    }
+    .subtitle_relatorio h2 {
+        max-width: max-content;
+    }
+
+    /*Somos alpa mobile 425*/
+    .title_alpha h3 {
+        text-align: center;
+    }
+    .area_texts_alpha {
+        flex-direction: column;
+        align-items: center;
+    }
+    .subtitle_alpha h3 {
+        text-align: center;
+    }
+    .subtitle_alpha {
+        padding-left: 0px;
+    }
+    .area_total_marcas {
+        margin-top: -380px;
+    }
+    .alpa_relatorio p {
+        padding: 0px 20px;
+    }
+    .area_direita_alpha {
+        padding: 0px 20px;
+    }
+    .map_3 {
+        justify-content: space-around;
+    }
+    .area_esquerda_alpha {
+        justify-content: center;
+        padding-right: 0px;
+    }
+    /*Jornada mobile 425*/
+    .img_topo_jornada {   
+        height: 200px;
+    }
+    .title_jornada h2 {
+        font-size: 20px;
+    }
+    .title_jornada h3 {
+        font-size: 30px;
+    }
+    .title_jornada {
+        align-items: flex-end;
+        width: 82%;
+    }
+    /*Geraçao de valor*/
+    .title_geracao h3 {
+        font-size: 28px;
+    }
+    .title_geracao h2 {
+        font-size: 48px;
+    }
+    .subtitle_geracao p {
+        font-size: 18px;
+    }
+    .area_direita_geracao img {
+        display: none;
+    }
+    .area_direita_baixo_geracao img {
+        height: 420px;
+    }
+    .area_esquerda_geracao img {
+        height: 320px;
+        position: absolute;
+        left: -85px;
+        margin-top: 230px;
+    }
+    /*Governança*/
+    .img_topo_governanca {
+        height: 380px;
+    }
+    .title_governanca {
+        width: 98%;
+        justify-content: flex-end;
+    }
+    .area_texts_governanca {
+        margin-top: 20px;
+    }
+    .subtitle_governanca h2 {
+        font-size: 18px;
+    }
+
+    /*Nossas pessoas*/
+    .area_total_nossas_pessoas {
+        width: 100%;
+    }
+    .area_titulo_principal_2 h2 {
+        font-size: 1em;
+    }
+    .title_usuarios h3 {
+        display: none;
+    }
+    .area_total_usuarios {
+        justify-content: flex-end;
+    }
+    .title_usuarios {
+        display: -webkit-inline-box;
+        width: 40%;
+    }
+    .area_texts_usuarios {
+        margin-top: 20px;
+    }
+    .subtitle_usuarios h2 {
+        padding: 0px 20px;
+    }
+    .area_titulo_principal_3 h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .hava {
+        width: 100%;
+    }
+    /*OBS*/
+    /*Forncedores*/
+    .img_topo_fornecedores {
+        height: 350px;
+    }
+    .subtitle_fornecedores h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .area_titulo_principal_4 h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+
+    /*Socidade*/ 
+    .img_topo_sociedade {
+        height: 440px;
+    }
+    .title_sociedade {
+        justify-content: flex-end;
+    }
+    .subtitle_sociedade h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .area_titulo_principal_5 h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .area_texts_sociedade {
+        margin-top: 0px;
+    }
+    .beneficios_sociedade p {
+        text-align: center;
+    }
+
+    /*Operacao*/
+    .img_topo_operacao {
+        height: 330px;
+    }
+    .subtitle_operacao h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .area_titulo_principal_6 h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    /*Mercado*/
+    .img_topo_mercado {
+        height: 330px;
+    }
+    .title_mercado {
+        justify-content: flex-end;
+        width: 86%;
+    }
+    .area_texts_mercado {
+        margin-top: 20px;
+    }
+    .subtitle_mercado h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .area_titulo_principal_7 h2 {
+        font-size: 1em;
+        padding: 0px 20px;
+    }
+    .lucro_mercado p {
+        text-align: center;
     }
 }
