@@ -15,10 +15,16 @@ b {
 h2 {
     font-weight: 400;
 }
+html {
+    overflow-x: hidden !important;
+    overflow-x: clip !important;
+
+}
 body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden !important;
+    overflow-x: clip !important;
 }
 
 @font-face {
@@ -81,8 +87,8 @@ header {
     position: fixed;
     z-index: 999;
     height: 700px;
-    width: 400px;
-    top: 314px;
+    width: 360px;
+    top: 250px;
     left: -400px;
     background-size: cover;
 
@@ -103,14 +109,15 @@ header {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
+
 nav a ul li {
-    font-size: 28px;
+    font-size: 20px;
 }
 nav a ul p {
-    font-size: 22px;
+    font-size: 18px;
     font-family: var(--font-light);
     padding-left: 30px;
 }
