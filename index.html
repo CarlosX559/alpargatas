@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Alpargatas</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -21,11 +22,33 @@
                 <header>
                     <div class="menu">
                         <h2>Menu</h2>
-                        <img src="img/menu.png" alt="">
+                        <img src="img/menu.png" onclick="menu()" alt="">
                     </div>
                 </header>
             </div>
 
+            <div class="menu_int">
+                <div class="close_s" >
+                    <svg onclick="menu_close()" xmlns="http://www.w3.org/2000/svg" width="30.212" height="30.212" viewBox="0 0 30.212 30.212">
+                        <path id="Path_close" data-name="Path / close" d="M35.212,8.043,32.169,5,20.106,17.063,8.043,5,5,8.043,17.063,20.106,5,32.169l3.043,3.043L20.106,23.149,32.169,35.212l3.043-3.043L23.149,20.106Z" transform="translate(-5 -5)" fill="#fff"/>
+                    </svg>
+                  </div>
+                <div class="area_menu">
+                    <nav>
+                        <a href="#somos_alpha"><ul><li>Somos a Alpa</li></ul></a>
+                        <a href="#jornada"><ul><li>Jornada estratégica</li></ul></a>
+                        <a href="#geracao_de_valor"><ul><li>Geração de Valor</li></ul></a>
+                        <a href="#governanca"><ul><p>Governança</p></ul></a>
+                        <a href="#nossas_pessoas"><ul><p>Colaboradores</p></ul></a>
+                        <a href="#usuarios"><ul><p>Usuários e Parceiros</p></ul></a>
+                        <a href="#fornecedores"><ul><p>Fornecedores</p></ul></a>
+                        <a href="#sociedade"><ul><p>Sociedade</p></ul></a>
+                        <a href="#operacao"><ul><p>Operação</p></ul></a>
+                        <a href="#mercado"><ul><p>Mercado</p></ul></a>
+                    </nav>
+                    
+                </div>
+            </div>
 
             <div class="area_texts_total">
                 <div class="area_texts">
@@ -151,11 +174,7 @@
                                 <p>Mais de <b>260 milhões</b> de pares vendidos <b>em todo o mundo</b></p>
                             </div>
 
-
-
                         </div>
-
-
 
                     </div>
 
@@ -590,8 +609,8 @@
                             <div class="area_principal">
                                 <div class="area_titulo_principal">
                                     <img src="img/governanca/icon_governanca.png" alt="">
-                                    <h2>A gestão da temática socioambiental foi fortalecida com a criação da área de
-                                        <b>“Sustentabilidade e Reputação”</b> e da <b>“Comissão de Sustentabilidade”</b>
+                                    <h2>
+                                        A gestão socioambiental foi fortalecida com a criação da área de <b>“Sustentabilidade e Reputação”</b> e da <b>“Comissão de Sustentabilidade”</b>
                                     </h2>
                                 </div>
                             </div>
@@ -604,37 +623,16 @@
                                     <div class="info_governanca">
                                         <img src="img/governanca/seta_governanca.png" alt="">
                                         <p>
-                                            A Comissão de Sustentabilidade, conectada ao CEO, é responsável pelo
-                                            alinhamento
-                                            e direcionamento estratégico do tema dentro da companhia.
+                                            Lançamento da
+                                            <b>A Estratégia de Sustentabilidade Alpa</b> 
+                                            é composta pelos <b>pilares de Economia Circular, Operações Responsáveis e D&I e Desenvolvimento Local</b> e apresenta 12 metas até 2030
                                         </p>
                                     </div>
-                                    <div class="info_governanca">
-                                        <img src="img/governanca/seta_governanca.png" alt="">
-                                        <p>
-                                            A área de Sustentabilidade e Reputação é responsável pela governança da
-                                            Estratégia de Sustentabilidade Alpa, conectada aos pilares de crescimento
-                                            estratégico da companhia.
-                                        </p>
-                                    </div>
+                                
                                 </div>
 
                                 <div class="area_info_governanca">
-                                    <div class="info_governanca in3">
-                                        <img src="img/governanca/seta_governanca.png" alt="">
-                                        <p>
-                                            É composta por oito membros, sendo um deles independente.
-                                        </p>
-                                    </div>
-                                    <div class="info_governanca in4">
-                                        <img src="img/governanca/seta_governanca.png" alt="">
-                                        <p>
-                                            A Estratégia de Sustentabilidade Alpa (publicada em maio/22) é composta
-                                            pelos
-                                            pilares de Economia Circular, Operações Responsáveis e D&I e Desenvolvimento
-                                            Local e apresenta 12 metas até 2030.
-                                        </p>
-                                    </div>
+                                  <img src="img/governanca/logo_governanca.png" alt="">
                                 </div>
                             </div>
 
@@ -648,34 +646,30 @@
                         <div class="info_direita_governanca line l1">
                             <img src="img/governanca/seta_governanca.png" alt="">
                             <p>
-                                O controle acionário de Alpa pertence ao grupo formado por ITAÚSA S.A.,
-                                Cambuhy Alpa Holding Ltda, Alpa Fundo de Investimentos em Ações e Brasil Warrant que,
-                                juntos,
-                                detêm mais de 50% de nosso capital total.
+                                A companhia faz parte do grupo <b>Nível 1 de Governança Corporativa da B3,</b> formado por empresas com as melhores práticas de governança
                             </p>
                         </div>
                         <div class="info_direita_governanca">
                             <img src="img/governanca/seta_governanca.png" alt="">
                             <p>
-                                A companhia faz parte do grupo Nível 1 de Governança Corporativa da B3, formado por
-                                empresas com as melhores práticas de governança
+                            <b>A condução dos negócios é de responsabilidade da Diretoria, composta por:</b> 1 presidente e 10 vice-presidentes (sendo 4 estatutários)
                             </p>
                         </div>
                         <div class="info_direita_governanca">
                             <img src="img/governanca/seta_governanca.png" alt="">
                             <p>
-                                A condução dos negócios é de responsabilidade da Diretoria, composta por: 1 presidente e
-                                10 vice-presidentes (sendo 4 estatutários)
+                            <b>O Conselho de Administração é composto por:</b> 8 membros (5 eleitos ao bloco de controle, 1 representa os acionistas minoritários e 2 independentes).  <br><br>
+
+                            <b>Conta com o apoio de quatro Comitês:</b>
+                                Auditoria, Gente, Estratégia e Finanças. 
                             </p>
                         </div>
                         <div class="info_direita_governanca line">
                             <img src="img/governanca/seta_governanca.png" alt="">
                             <p>
-                                O Conselho de Administração é composto por: 8 membros (5 vinculados ao bloco de
-                                controle, 1 representa os acionistas minoritários e 2 independentes).
-
-                                Conta com o apoio de quatro Comitês:
-                                Auditoria, Gente, Estratégia e Finanças.
+                                A Comissão de Sustentabilidade, conectada ao CEO, é 
+                            <b>responsável pelo alinhamento e direcionamento estratégico do tema dentro da companhia.</b> É composta por <b>oito membros,</b>
+                                sendo um deles independente e com atuação internacional
                             </p>
                         </div>
                     </div>
@@ -728,11 +722,13 @@
                             <div class="area_principal_2">
                                 <div class="area_titulo_principal_2">
                                     <img src="img/nossas_pessoas/icon_alu.png" alt="">
-                                    <h2>A ALU (Alpa Learning University) é a universidade corporativa da Alpargatas.
-                                        Criada em 2020, expandiu as ações de treinamento para a Rede de Franqueados
-                                        Havaianas em 2021. Foram realizadas 32.072 horas de treinamentos para
-                                        colaboradores
-                                    </h2>
+                                    <div class="area_texts_int_pessoas">
+                                        <h2>
+                                            Em 2021 os colaboradores Alpa realizaram
+                                        </h2>
+                                        <h3><div class="desc_pes">32.072 <div class="desc_pes_int">horas de treinamento</div></div> via ALU <b>(Alpa Learning University),</b> que tambémn expandiu suas ações para a rede de Franqueados Havaianas</h3>
+                                    </div>
+                                   
                                 </div>
                             </div>
 
@@ -746,17 +742,14 @@
                                     <div class="info_nossas_pessoas">
                                         <img src="img/nossas_pessoas/seta_1_pessoas.png" alt="">
                                         <p>
-                                            Lançamento da ALUFlix, plataforma de streaming de conteúdo, com treinamentos
-                                            em formato digital
+                                           <b>Lançamento da ALUFlix,</b> plataforma de streaming de conteúdo, com treinamentos em formato digital
                                         </p>
                                     </div>
-                                    <div class="info_governanca">
+                                    <div class="info_nossas_pessoas">
                                         <img src="img/nossas_pessoas/seta_1_pessoas.png" alt="">
                                         <p>
-                                            Criação da Academia da Sustentabilidade, que promoveu diversas iniciativas,
-                                            uma dela a websérie voltada à aceleração do tema, contando com 13 episódios
-                                            totalmente customizados para a companhia, que obtiveram mais de 2 mil
-                                            visualizações em 6 meses
+                                            Criação da Academia da Sustentabilidade, 
+                                            que estreou com uma websérie dedicada ao tema, com 13 episódios que já obtiveram <b>mais de 2mil visualizações</b> em apenas 6 meses
                                         </p>
                                     </div>
                                 </div>
@@ -772,29 +765,25 @@
                         <div class="info_direita_nossas_pessoas line_n l1">
                             <img src="img/nossas_pessoas/seta_2_pessoas.png" alt="">
                             <p>
-                                Integração ao índice GPTW como uma das melhores empresas para se trabalhar
+                                Fomos reconhecidos como uma das <b>melhores empresas para se trabalhar pelo IGPTW</b>
                             </p>
                         </div>
-                        <div class="info_direita_governanca">
+                        <div class="info_direita_nossas_pessoas">
                             <img src="img/nossas_pessoas/seta_2_pessoas.png" alt="">
                             <p>
-                                Resultado da pesquisa de clima aponta que 82% dos nossos
-                                15.663 colaboradores sentem orgulho em trabalhar na Alpa. E mais de 80% recomendariam a
-                                companhia para amigos e familiares como um bom lugar para trabalhar
+                                O resultado da pesquisa de clima apontou que 62% dos nossos colaboradores sentem orgulho de trabalhar na Alpa!
                             </p>
                         </div>
-                        <div class="info_direita_governanca">
+                        <div class="info_direita_nossas_pessoas line_n">
                             <img src="img/nossas_pessoas/seta_2_pessoas.png" alt="">
                             <p>
-                                Publicação da Política Corporativa de Respeito à Diversidade, em paralelo a diversas
-                                conversas, treinamentos e wokshops voltados ao tema
+                                Publicação da <b>Política Corporativa de Respeito à Diversidade,</b> em paralelo a diversas conversas, treinamentos e wokshops voltados ao tema
                             </p>
                         </div>
-                        <div class="info_direita_governanca line_n">
+                        <div class="info_direita_nossas_pessoas line_n">
                             <img src="img/nossas_pessoas/seta_2_pessoas.png" alt="">
                             <p>
-                                Digitalização da área de People, com adoção de tecnologias como people analytics e
-                                inteligência artificial, resultando em ganhos em agilidade nos processos
+                                Digilitação da área de People via tecnologicas de people analytics, inteligencia artificial e mindset ágil
                             </p>
                         </div>
                     </div>
@@ -854,7 +843,7 @@
                                 <div class="area_titulo_principal_3">
                                     <img src="img/usuarios/icon_parceiros.png" alt="">
                                     <h2>
-                                        A linha Havaianas Pride de chinelos, vestuários e acessórios
+                                        A linha <b>Havaianas Pride</b> de chinelos, vestuários e acessórios
                                         destina 7% do valor líquido das vendas para projetos globais de combate ao
                                         preconceito e apoio à comunidade LGBTQIA+
                                     </h2>
@@ -871,7 +860,7 @@
                                     <div class="info_usuarios">
                                         <img src="img/usuarios/seta_1_parceiros.png" alt="">
                                         <h2>
-                                            <div class="small">+ de R$ 2,4</div>
+                                           <div class="small">+ de R$</div> <div class="tyne">2,4</div>
                                             MILHÕES
                                         </h2>
                                         <p>
@@ -896,10 +885,10 @@
                             <div class="info_esquerda_usuarios line_u">
                                 <img src="img/usuarios/seta_2_parceiros.png" alt="">
                                 <p>
-                                    Impulsionadas iniciativas para diminuir a pegada ambiental de Alpa, como o Projeto
-                                    Aquarius, que substitui
-                                    cartuchos de embalagens de Havaianas por envelopes, o que reduziu 2,7 mil toneladas
-                                    de papel e otimizou também transporte e armazenamento
+                                    Impulsionadas iniciativas para diminuir a pegada ambiental de Alpa, como o <b>Projeto
+                                    Aquarius,</b> que substitui
+                                    cartuchos de embalagens de Havaianas por envelopes, o que <b>reduziu 2,7 mil toneladas
+                                    de papel e otimizou também transporte e armazenamento</b>
                                 </p>
                             </div>
                         </div>
@@ -912,43 +901,28 @@
                         <div class="info_direita_usuarios line_u l1">
                             <img src="img/usuarios/seta_2_parceiros.png" alt="">
                             <p>
-                                Lançamento do TNS Havaianas, sneaker com 60% de sola e 50% do cabedal feitos de
-                                materiais renováveis e reciclados
+                                Lançamento do <b>TNS Havaianas,</b> sneaker com 60% de sola e 50% do cabedal feitos de materiais renováveis e reciclados
                             </p>
                         </div>
                         <div class="info_direita_usuarios line_u">
                             <img src="img/usuarios/seta_2_parceiros.png" alt="">
                             <p>
-                                Lançamento de uma flip flop para usuários do jogo Fortnite e a criação de uma ilha de
-                                Havaianas no ambiente virtual
+                                Criação da <b>Havaianas Time Brasil,</b> coleção com estampa exclusiva e destinação de 7% do total arrecadado com as vendas para apoiar os atletas olímpicos e paraolímpicos
+                            </p>
+                           
+                        </div>
+                        <img class="reciclo" src="img/usuarios/havainas_reciclo.png" alt="">
+                        <div class="info_direita_usuarios line_u">
+                            <img src="img/usuarios/seta_2_parceiros.png" alt="">
+                            <p>
+                                Inauguração do atendimento em <b>libras no e-commerce</b>
                             </p>
                         </div>
                         <div class="info_direita_usuarios line_u">
                             <img src="img/usuarios/seta_2_parceiros.png" alt="">
                             <p>
-                                Firmadas parcerias com a marca japonesa BAPE e biscoito Oreo para lançamento de flip
-                                flops especiais
-                            </p>
-                        </div>
-                        <div class="info_direita_usuarios line_u">
-                            <img src="img/usuarios/seta_2_parceiros.png" alt="">
-                            <p>
-                                Criação da Havaianas Time Brasil, coleção com estampa exclusiva e destinação de 7% do
-                                total arrecadado com as vendas para apoiar os atletas olímpicos e paraolímpicos
-                            </p>
-                        </div>
-                        <div class="info_direita_usuarios line_u">
-                            <img src="img/usuarios/seta_2_parceiros.png" alt="">
-                            <p>
-                                Inauguração do atendimento em libras no e-commerce
-                            </p>
-                        </div>
-                        <div class="info_direita_usuarios line_u">
-                            <img src="img/usuarios/seta_2_parceiros.png" alt="">
-                            <p>
-                                O ReCiclo, programa de logística reversa que recolhe e dá um destino adequado
-                                às sandálias pós-uso descartadas pelos usuários, ganhou 162 pontos de coleta ao redor do
-                                mundo e coletou 10.372 kg de sandálias
+                                O <b>ReCiclo,</b> programa de logística reversa que recolhe e 
+                                dá um destino adequado às sandálias pós-uso descartadas pelos usuários, <b>ganhou 162 pontos de coleta ao redor do mundo e coletou 10.372 kg de pares sandálias</b>
                             </p>
                         </div>
                     </div>
@@ -1061,14 +1035,14 @@
                         <div class="info_direita_fornecedores line_f">
                             <img src="img/fornecedores/seta_2_fornecedores.png" alt="">
                             <p>
-                                Cerca de 226 novos fornecedores contratados no ano
+                                Cerca de <b>226 novos fornecedores</b> contratados no ano
                             </p>
                         </div>
                         <div class="info_direita_fornecedores line_f">
                             <img src="img/fornecedores/seta_2_fornecedores.png" alt="">
                             <p>
-                                Monitoramento e gestão dos fornecedores realizados periodicamente por meio de processos
-                                de homologação e re-homologação, via análise documental e auditorias
+                                Monitoramento e gestão dos fornecedores realizados periodicamente por meio de <b>processos
+                                de homologação e re-homologação,</b> via análise documental e auditorias
                             </p>
                         </div>
 
@@ -1132,7 +1106,7 @@
 
                         </div>
                         <div class="beneficios_sociedade">
-                            <p>Beneficiados pelo Instituto em 2021</p>
+                            <p>O lucro líquido da companhia saltou:</p>
                         </div>
                         <div class="area_total_info_5">
                             <div class="area_info_int_5">

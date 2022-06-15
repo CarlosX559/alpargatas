@@ -1,14 +1,19 @@
 :root {
-    --font-light: 'Oblik light';
+    --font-light: 'Oblik regular';
     --color-cinza: #77787B;
     --color-cinza-escuro: #525252;
 
 }
+
 * {
     font-family: 'Oblik bold';
 }
+
 b {
     font-family: 'Oblik Bold';
+}
+h2 {
+    font-weight: 400;
 }
 body {
     margin: 0px;
@@ -22,8 +27,8 @@ body {
 }
 
 @font-face {
-    font-family: 'Oblik light';
-    src: url(font/Oblik_light.otf);
+    font-family: 'Oblik regular';
+    src: url(font/Oblik_Regular.ttf);
 }
 
 .container_1 {
@@ -49,7 +54,72 @@ header {
     left: 0px;
     background-size: cover;
 }
+@keyframes menu {
+    0% {
+        left: -400px;
+        
+    }
+    100% {
+        left: 0px;
+    }
 
+}
+@keyframes menu_close {
+    100% {
+        left: -400px;
+    }
+    0% {
+        left: 0px;
+    }
+
+}
+
+.menu_int {
+    background-image: url(img/bg_menu_2.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    z-index: 999;
+    height: 700px;
+    width: 400px;
+    top: 314px;
+    left: -400px;
+    background-size: cover;
+
+}
+.close_s {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    width: 99%;
+    margin-top: 2px;
+    transition: all ease 1s;
+}
+.close svg {
+    width: 25px;
+}
+.area_menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+nav a ul li {
+    font-size: 28px;
+}
+nav a ul p {
+    font-size: 22px;
+    font-family: var(--font-light);
+    padding-left: 30px;
+}
+nav ul {
+    color: #77787B;
+    list-style: none;
+    padding: 0px;
+}
+nav a {
+    text-decoration: none;
+}
 .menu {
     display: flex;
     flex-direction: column;
@@ -161,7 +231,7 @@ header {
     font-size: 1.5em;
     margin: 0px;
     text-align: end;
-} 
+}
 
 .subtitle_relatorio_2 h2 {
     font-size: 3.2em;
@@ -183,7 +253,9 @@ header {
     width: 100%;
     margin-top: -60px;
 }
-
+.seta_sessao_home a::before {
+    transition: all ease 1s;
+}
 .seta_sessao_home img {
     cursor: pointer;
     width: 50px;
@@ -261,16 +333,19 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .alpa_relatorio {
     width: 76%;
     text-align: left;
 }
+
 .alpa_relatorio p {
     color: #707070;
     margin: 0px;
     font-size: 14px;
     font-family: var(--font-light);
 }
+
 .area_marcas {
     display: flex;
     width: 100%;
@@ -310,7 +385,8 @@ header {
 
 .texts_marcas p {
     color: var(--color-cinza-escuro);
-    font-family:  var(--font-light);;
+    font-family: var(--font-light);
+    ;
     font-size: 1em;
     margin: 0px;
     max-width: 340px;
@@ -352,7 +428,7 @@ header {
     width: 100%;
     max-width: 400px;
     padding-right: 40px;
-   
+
 }
 
 .area_icons {
@@ -373,6 +449,7 @@ header {
     margin: 0px;
     font-family: var(--font-light);
 }
+
 .area_info p {
     color: var(--color-cinza-escuro);
     font-size: 0.8em;
@@ -403,14 +480,17 @@ header {
     width: 100%;
     flex-direction: column;
 }
+
 .map_3_int {
     display: flex;
 }
+
 .map_3 {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .area_mapa {
     display: flex;
     align-items: center;
@@ -421,14 +501,17 @@ header {
     width: 32px;
     padding-right: 10px;
 }
+
 .title_rothys h2 {
     color: #F48120;
     margin: 0px;
 }
+
 .title_ioasys h2 {
     color: #F48120;
     margin: 0px;
 }
+
 .area_mapa p {
     color: var(--color-cinza-escuro);
     font-size: 1em;
@@ -469,6 +552,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/jornada_estrategica/jornada.png);
 }
+
 .area_total_jornada {
     display: flex;
     width: 100%;
@@ -477,6 +561,7 @@ header {
     justify-content: center;
 
 }
+
 .title_jornada {
     width: 100%;
     display: flex;
@@ -484,6 +569,7 @@ header {
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .title_jornada h2 {
     color: #fff;
     font-size: 80px;
@@ -491,18 +577,21 @@ header {
     font-family: var(--font-light);
 
 }
+
 .title_jornada h3 {
     color: #fff;
     font-size: 90px;
     margin: 0px;
 
 }
+
 .jornada {
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 50%;
 }
+
 .area_texts_jornada {
     display: flex;
     width: 100%;
@@ -516,6 +605,7 @@ header {
     max-width: 680px;
     width: 100%;
 }
+
 .subtitle_negocios h2 {
     color: var(--color-cinza);
     font-size: 32px;
@@ -524,6 +614,7 @@ header {
     line-height: 34px;
     text-align: center;
 }
+
 .area_pilares_total {
     display: flex;
     justify-content: center;
@@ -576,57 +667,69 @@ header {
     margin: 0px;
     font-family: var(--font-light);
 }
+
 .saiba_mais_total {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .saiba_mais_int {
     display: flex;
     width: 100%;
     max-width: 1200px;
 }
+
 .area_saiba_mais {
     display: flex;
     align-items: center;
     max-width: 385px;
     width: 100%;
 }
+
 .area_saiba_mais p {
     color: #A3A4A8;
     font-size: 24px;
 }
+
 .area_saiba_mais svg {
     padding-right: 10px;
 }
+
 .seta_sessao_jornada {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-bottom: 60px;
 }
+
 .seta_sessao_jornada img {
     cursor: pointer;
 }
+
 .container_4 {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .container_int_4 {
     display: flex;
     max-width: 884px;
     width: 100%;
     flex-direction: column;
 }
+
 .area_texts_geracao {
     display: flex;
     flex-direction: column;
 }
+
 .title_geracao {
     width: 100%;
     max-width: max-content;
 }
+
 .title_geracao h3 {
     font-size: 60px;
     color: #00CC57;
@@ -639,28 +742,34 @@ header {
     margin: 0px;
     text-align: end;
 }
+
 .area_title_geracao {
     display: flex;
     align-items: center;
 }
+
 .area_title_geracao svg {
     padding-left: 10px;
 }
+
 .area_subtitle_geracao {
     display: flex;
     width: 100%;
     justify-content: center;
     margin-top: 60px;
 }
+
 .subtitle_geracao {
     width: 100%;
     max-width: 600px;
 }
+
 .subtitle_geracao p {
     font-family: var(--font-light);
     color: var(--color-cinza-escuro);
     font-size: 22px;
 }
+
 .subtitle_geracao h3 {
     color: #00993E;
     font-size: 22px;
@@ -673,12 +782,14 @@ header {
     z-index: -1;
     margin-top: 172px;
 }
+
 .area_direita_geracao img {
     height: 640px;
     position: absolute;
     right: -85px;
     z-index: -1;
 }
+
 .area_direita_baixo_geracao img {
     height: 600px;
     position: absolute;
@@ -686,23 +797,28 @@ header {
     z-index: -1;
     margin-top: 250px;
 }
+
 .seta_sessao_geracao {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .seta_sessao_geracao img {
     cursor: pointer;
     margin-top: 200px;
 }
+
 #geracao_de_valor {
     width: 100%;
     margin-top: 100px;
 }
+
 /*Sessão governança*/
 .container_5 {
     width: 100%;
 }
+
 .img_topo_governanca {
     width: 100%;
     height: 990px;
@@ -710,6 +826,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/governanca/governanca.png);
 }
+
 .area_total_governanca {
     display: flex;
     width: 100%;
@@ -717,17 +834,20 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_governanca {
     width: 100%;
     display: flex;
     align-items: baseline;
     max-width: 570px;
 }
+
 .title_governanca h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_governanca {
     display: flex;
     width: 100%;
@@ -744,21 +864,24 @@ header {
 }
 
 .subtitle_governanca h2 {
+    font-family: var(--font-light);
+    margin: 0px;
     color: var(--color-cinza-escuro);
     font-size: 20px;
-    margin: 0px;
-    font-family: var(--font-light);
 }
+
 .area_principal_texts {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_governanca {
     width: 100%;
 
 }
+
 .bg_texts_governanca::before {
     content: url(img/governanca/bg_governanca.png);
     background-size: cover;
@@ -766,99 +889,106 @@ header {
     height: max-content;
     position: absolute;
     z-index: -10;
+    opacity: 0.5;
 }
+
 .area_int_principal {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal {
     display: flex;
     align-items: center;
     max-width: 600px;
     width: 100%;
-    
+
 }
+
 .area_titulo_principal img {
     width: 100px;
     padding-right: 20px;
 }
+
 .area_titulo_principal h2 {
     color: #00A551;
     font-family: var(--font-light);
     font-size: 24px;
 }
+
 .area_total_info {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .area_info_int {
     display: flex;
     max-width: 1040px;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
+
 .area_info_governanca {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-   
+
 }
+
 .info_governanca {
     display: flex;
     align-items: center;
     max-width: 400px;
     width: 100%;
 }
-.in3 {
-    display: flex;
-    align-items: center;
-    max-width: 310px;
-    width: 100%;
-}
-.in4 {
-    display: flex;
-    align-items: center;
-    max-width: 380px;
-    width: 100%;
-}
+
 .info_governanca img {
     padding-right: 20px;
     width: 40px;
 }
+
 .info_governanca p {
+    font-family: var(--font-light);
     color: var(--color-cinza-escuro);
-    font-size: 18px;
+    font-size: 22px;
 }
+
 .area_principal_governanca {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1300px;
 }
+
 .area_direita_governanca {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_governanca {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .line.l1 {
     margin-top: 0px;
 }
+
 .info_direita_governanca {
     display: flex;
     align-items: flex-start;
@@ -866,33 +996,41 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line {
     border-top: 1px solid #00CC57;
     padding-top: 20px;
 }
-.info_direita_governanca  img {
+
+.info_direita_governanca img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_governanca p {
     color: var(--color-cinza-escuro);
-    font-size: 16px;
+    font-family: var(--font-light);
+    font-size: 18px;
     margin: 0px;
 }
+
 .seta_sessao_governanca {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_governanca img {
     cursor: pointer;
 }
+
 /*Fim governança*/
 /*Inicio Nossas pessoas*/
 .container_6 {
     width: 100%;
     margin-top: 120px;
 }
+
 .img_topo_nossas_pessoas {
     width: 100%;
     height: 990px;
@@ -900,6 +1038,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/nossas_pessoas/nossas_pessoas.png);
 }
+
 .area_total_nossas_pessoas {
     display: flex;
     width: 75%;
@@ -907,17 +1046,24 @@ header {
     height: 100%;
     justify-content: center;
 }
+
+.subtitle_nossas_pessoas h2 {
+    font-family: var(--font-light);
+}
+
 .title_nossas_pessoas {
     width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
+
 .title_nossas_pessoas h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_nossas_pessoas {
     display: flex;
     width: 100%;
@@ -938,16 +1084,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_2 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_nossas_pessoas {
     width: 100%;
 
 }
+
 .bg_texts_nossas_pessoas::before {
     content: url(img/nossas_pessoas/bg_nossas_pessoas.png);
     background-size: cover;
@@ -955,86 +1104,133 @@ header {
     height: max-content;
     position: absolute;
     z-index: -10;
+    opacity: 0.5;
 }
+
 .area_int_principal_2 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal_2 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_2 {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     max-width: 600px;
     width: 100%;
-    
+    margin-top: 40px;
 }
+
 .area_titulo_principal_2 img {
     width: 100px;
     padding-right: 20px;
 }
+.area_texts_int_pessoas {
+    display: flex;
+    flex-direction: column;
+}
+.desc_pes {
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: var(--font-light);
+
+}
+.desc_pes_int {
+    display: inline-flex;
+    max-width: 160px;
+    font-size: 30px;
+    padding-left: 20px;
+    font-family: var(--font-light);
+}
 .area_titulo_principal_2 h2 {
-    color: #4271B5;
+    color: #00AEEA;
     font-size: 24px;
+    font-weight: 400;
+    font-family: var(--font-light);
+    margin: 0px;
+}
+.area_titulo_principal_2 h3 {
+    color: #00AEEA;
+    font-size: 26px;
+    font-family: var(--font-light);
+    font-weight: 400;
+    margin: 0px;
 }
 .area_total_info_2 {
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 40px;
 }
+
 .area_info_int_2 {
-    display: -webkit-box;
+   display: flex;
+   align-items: center;
 }
+
 .area_info_int_2 img {
     padding-right: 20px;
 }
-.area_info_nossas_pessoas{
+
+.area_info_nossas_pessoas {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-   
+
 }
+
 .info_nossas_pessoas {
     display: flex;
     align-items: center;
     max-width: 400px;
     width: 100%;
 }
+
 .info_nossas_pessoas img {
     padding-right: 20px;
     width: 40px;
 }
+
 .info_nossas_pessoas p {
     color: var(--color-cinza-escuro);
+    font-family: var(--font-light);
     font-size: 18px;
 }
+
 .area_principal_nossas_pessoas {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1180px;
 }
+
 .area_direita_nossas_pessoas {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_nossas_pessoas {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .line_n.l1 {
     margin-top: 0px;
 }
+
 .info_direita_nossas_pessoas {
     display: flex;
     align-items: flex-start;
@@ -1042,27 +1238,36 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line_n {
     border-top: 1px solid #43C1E8;
     padding-top: 20px;
 }
-.info_direita_nossas_pessoas  img {
+
+.info_direita_nossas_pessoas img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_nossas_pessoas p {
     color: var(--color-cinza-escuro);
-    font-size: 16px;
+    font-family: var(--font-light);
+    font-size: 18px;
     margin: 0px;
+}
+.info_direita_nossas_pessoas p b {
+    color: var(--color-cinza);
 }
 .seta_sessao_nossas_pessoas {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_nossas_pessoas img {
     cursor: pointer;
 }
+
 /*Fim nossas pessoas*/
 
 
@@ -1070,8 +1275,9 @@ header {
 /******************* Inicio usuarios *******************/
 .container_7 {
     width: 100%;
-   
+
 }
+
 .img_topo_usuarios {
     width: 100%;
     height: 990px;
@@ -1079,6 +1285,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/usuarios/usuarios.png);
 }
+
 .area_total_usuarios {
     display: flex;
     width: 100%;
@@ -1086,6 +1293,7 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_usuarios {
     width: 90%;
     display: flex;
@@ -1093,23 +1301,27 @@ header {
     flex-direction: column;
     justify-content: flex-end;
 }
+
 .title_usuarios h3 {
     color: #fff;
     font-size: 90px;
     margin: 0px;
 
 }
+
 .parceiros {
     display: flex;
     align-items: baseline;
     justify-content: flex-end;
     width: 60%;
 }
+
 .title_usuarios h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_usuarios {
     display: flex;
     width: 100%;
@@ -1131,16 +1343,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_3 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_usuarios {
     width: 100%;
 
 }
+
 .bg_texts_usuarios::before {
     content: url(img/usuarios/bg_usuarios.png);
     background-size: cover;
@@ -1150,108 +1365,141 @@ header {
     z-index: -10;
     opacity: 0.5;
 }
+
 .area_int_principal_3 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal_3 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_3 {
     display: flex;
     align-items: center;
     max-width: 600px;
     width: 100%;
-    
+
 }
+
 .area_titulo_principal_3 img {
     width: 100px;
     padding-right: 20px;
 }
+
 .area_titulo_principal_3 h2 {
     color: #83AA24;
-    font-size: 24px;
+    font-size: 22px;
+    font-family: var(--font-light);
 }
+
 .area_total_info_3 {
     display: flex;
     margin-left: -110px;
     width: 100%;
 }
+
 .area_info_int_3 {
     display: -webkit-box;
 }
+
 .area_info_int_3 img {
     padding-right: 20px;
 }
+
 .area_info_usuarios {
     display: flex;
     flex-direction: column;
-   
+
 }
+
 .info_usuarios {
     display: flex;
     align-items: center;
     max-width: 560px;
     width: 100%;
 }
+
 .info_usuarios img {
     padding-right: 20px;
     width: 40px;
 }
+
 .info_usuarios h2 {
     display: inline-block;
     color: #EA5F00;
     padding-right: 20px;
 }
 .small {
-    font-size: 18px;
+    font-size: 16px;
+    display: inline;
 }
+.tyne {
+    font-size: 50px;
+    display: inline;
+}
+
 .info_usuarios p {
+    font-family: var(--font-light);
     color: var(--color-cinza-escuro);
     font-size: 18px;
 }
-.area_principal_usuarios{
+
+.area_principal_usuarios {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1380px;
 }
+
 .area_direita_usuarios {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_usuarios {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .esquerda_info {
     display: flex;
     width: 95%;
     justify-content: flex-end;
     margin-top: -42px;
 }
+
 .info_esquerda_usuarios {
     display: flex;
     align-items: flex-start;
     max-width: 570px;
     width: 100%;
 }
+
 .info_esquerda_usuarios p {
     color: var(--color-cinza);
+    font-family: var(--font-light);
     font-size: 16px;
     margin: 0px;
 }
+
 .line_u.l1 {
     margin-top: 0px;
+}
+.reciclo {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 40px;
 }
 .info_direita_usuarios {
     display: flex;
@@ -1260,36 +1508,44 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line_u {
     border-top: 1px solid #FCB813;
     padding-top: 20px;
 }
+
 .info_direita_usuarios img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_usuarios p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
     font-size: 18px;
     margin: 0px;
 }
+.info_direita_usuarios p b {
+    color: var(--color-cinza);
+}
 .seta_sessao_usuarios {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_usuarios img {
     cursor: pointer;
 }
 
 /*Fim usuarios*/
 
-/******************* Inicio usuarios *******************/
+/* Inicio usuarios */
 .container_8 {
     width: 100%;
-   
+
 }
+
 .img_topo_fornecedores {
     width: 100%;
     height: 990px;
@@ -1297,6 +1553,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/fornecedores/fornecedores.png);
 }
+
 .area_total_fornecedores {
     display: flex;
     width: 100%;
@@ -1304,18 +1561,21 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_fornecedores {
     width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
+
 .title_fornecedores h2 {
     color: #fff;
     font-size: 90px;
     margin: 0px;
 
 }
+
 .area_texts_fornecedores {
     display: flex;
     width: 76%;
@@ -1337,16 +1597,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_4 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_fornecedores {
     width: 100%;
 
 }
+
 .bg_texts_fornecedores::before {
     content: url(img/fornecedores/bg_fornecedores.png);
     background-size: cover;
@@ -1354,22 +1617,25 @@ header {
     height: max-content;
     position: absolute;
     z-index: -10;
-    
+
 }
+
 .area_int_principal_4 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal_4 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_4 {
     display: flex;
     align-items: flex-start;
@@ -1377,52 +1643,63 @@ header {
     width: 100%;
     margin: 40px 0px 20px 0px;
 }
+
 .area_titulo_principal_4 img {
     width: 120px;
     padding-right: 20px;
 }
+
 .area_titulo_principal_4 h2 {
     color: #F48120;
     font-size: 24px;
     margin: 0px;
     font-family: var(--font-light);
 }
+
 .area_total_info_4 {
     display: flex;
     width: 100%;
 }
+
 .area_info_int_4 {
     display: flex;
     align-items: center;
 }
+
 .icon_fashion {
     width: 320px;
     height: 320px;
     padding: 0px 20px;
 }
+
 .area_info_fornecedores {
     display: flex;
     flex-direction: column;
-   
+
 }
+
 .info_fornecedores {
     display: flex;
     align-items: center;
     max-width: 560px;
     width: 100%;
 }
+
 .info_fornecedores_int {
     display: flex;
     flex-direction: column;
 }
+
 .info_fornecedores_2 {
     display: flex;
     align-items: center;
 }
+
 .info_fornecedores img {
     padding-right: 20px;
     width: 40px;
 }
+
 .info_fornecedores h2 {
     display: inline-block;
     color: #EA5F00;
@@ -1431,30 +1708,36 @@ header {
     font-size: 80px;
     margin: 0px;
 }
+
 .info_fornecedores p {
     color: var(--color-cinza-escuro);
     font-size: 22px;
     font-family: var(--font-light);
 }
+
 .area_principal_fornecedores {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1220px;
 }
-.area_direita_fornecedores{
+
+.area_direita_fornecedores {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_fornecedores {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .line_f.l1 {
     margin-top: 0px;
 }
+
 .info_direita_fornecedores {
     display: flex;
     align-items: flex-start;
@@ -1462,35 +1745,44 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line_f {
     border-top: 1px solid #F48120;
     padding-top: 20px;
 }
+
 .info_direita_fornecedores img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_fornecedores p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
     font-size: 18px;
     margin: 0px;
 }
+.info_direita_fornecedores p b {
+    color: var(--color-cinza);
+}
 .seta_sessao_fornecedores {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_fornecedores img {
     cursor: pointer;
 }
+
 /*Fim fornecedores*/
 
 /*Inicio sociedade*/
 .container_9 {
     width: 100%;
-   
+
 }
+
 .img_topo_sociedade {
     width: 100%;
     height: 990px;
@@ -1498,6 +1790,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/sociedade/sociedade.png);
 }
+
 .area_total_sociedade {
     display: flex;
     width: 100%;
@@ -1505,17 +1798,20 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_sociedade {
     width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
+
 .title_sociedade h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_sociedade {
     display: flex;
     width: 100%;
@@ -1537,16 +1833,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_5 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_sociedade {
     width: 100%;
 
 }
+
 .bg_texts_sociedade::before {
     content: url(img/sociedade/bg_sociedade.png);
     background-size: cover;
@@ -1556,72 +1855,86 @@ header {
     z-index: -10;
     opacity: 0.5;
 }
+
 .area_int_principal_5 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal_5 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     width: 85%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_5 {
     display: flex;
     align-items: center;
     max-width: 600px;
     width: 100%;
-    
+
 }
+
 .area_titulo_principal_5 img {
     width: 100px;
     padding-right: 20px;
 }
+
 .area_titulo_principal_5 h2 {
     color: #006A99;
     font-size: 24px;
     font-family: var(--font-light);
 }
+
 .beneficios_sociedade {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .beneficios_sociedade p {
     color: #77787B;
     font-size: 28px;
     margin: 0px;
     margin-top: 30px;
 }
+
 .area_total_info_5 {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
+
 .area_info_int_5 {
     display: -webkit-box;
 }
+
 .area_info_int_5 img {
     padding-right: 20px;
 }
+
 .area_info_sociedade {
     display: flex;
-   
+
 }
+
 .info_sociedade {
     display: flex;
     align-items: center;
     max-width: 560px;
     width: 100%;
 }
+
 .info_sociedade img {
     padding-right: 20px;
     width: 40px;
 }
+
 .info_sociedade h2 {
     display: flex;
     align-items: center;
@@ -1629,36 +1942,43 @@ header {
     margin: 0px;
     font-family: var(--font-light);
 }
+
 .inv p {
     font-size: 40px !important;
 }
+
 .info_sociedade p {
     color: var(--color-cinza-escuro);
     font-size: 23px;
     font-family: var(--font-light);
     margin: 0px;
 }
+
 .int_info_2 h2 {
     font-size: 25px;
     font-family: var(--font-light);
 
 }
+
 .desc {
     font-size: 60px;
     font-family: var(--font-light);
     padding: 0px 5px;
 }
+
 .area_principal_sociedade {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1380px;
 }
+
 .area_direita_sociedade {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_sociedade {
     display: flex;
     flex-direction: column;
@@ -1668,6 +1988,7 @@ header {
 .line_s.l1 {
     margin-top: 0px;
 }
+
 .info_direita_sociedade {
     display: flex;
     align-items: flex-start;
@@ -1675,25 +1996,32 @@ header {
     width: 100%;
     margin-top: 30px;
 }
+
 .line_s {
     border-top: 1px solid #83AA24;
     padding-top: 20px;
 }
+
 .info_direita_sociedade img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_sociedade p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
     font-size: 18px;
     margin: 0px;
 }
+.info_direita_sociedade p b {
+    color: var(--color-cinza);
+}
 .seta_sessao_sociedade {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_sociedade img {
     cursor: pointer;
 }
@@ -1702,8 +2030,9 @@ header {
 
 .container_10 {
     width: 100%;
-   
+
 }
+
 .img_topo_operacao {
     width: 100%;
     height: 990px;
@@ -1711,6 +2040,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/operacao/operacao.png);
 }
+
 .area_total_operacao {
     display: flex;
     width: 100%;
@@ -1718,17 +2048,20 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_operacao {
     width: 86%;
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
 }
+
 .title_operacao h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_operacao {
     display: flex;
     width: 61%;
@@ -1750,16 +2083,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_6 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_operacao {
     width: 100%;
 
 }
+
 .bg_texts_operacao::before {
     content: url(img/operacao/bg_operacao.png);
     background-size: cover;
@@ -1768,12 +2104,14 @@ header {
     position: absolute;
     z-index: -10;
 }
+
 .area_int_principal_6 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .area_principal_6 {
     display: flex;
     flex-direction: column;
@@ -1781,87 +2119,104 @@ header {
     padding-top: 20px;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_6 {
     display: flex;
     align-items: center;
     max-width: 600px;
     width: 100%;
-    
+
 }
+
 .area_titulo_principal_6 img {
     width: 100px;
     padding-right: 20px;
 }
+
 .area_titulo_principal_6 h2 {
     font-family: var(--font-light);
     color: #00A551;
     font-size: 24px;
 }
+
 .area_total_info_6 {
     display: flex;
     justify-content: center;
     width: 100%;
     margin-top: 30px;
 }
+
 .area_info_int_6 {
     display: -webkit-box;
 }
+
 .area_info_int_6 img {
     padding-right: 20px;
 }
+
 .area_info_operacao {
     display: flex;
     flex-direction: column;
-   
+
 }
+
 .info_operacao {
     display: flex;
     align-items: center;
     max-width: 560px;
     width: 100%;
 }
+
 .info_operacao img {
     padding-right: 20px;
     width: 40px;
 }
+
 .desc_o {
     display: inline-block;
     font-size: 60px;
     font-family: var(--font-light);
     padding: 0px 5px;
 }
+
 .info_operacao h2 {
     color: #00A551;
     padding-right: 20px;
     margin: 0px;
 }
+
 .info_operacao p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_operacao {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1160px;
 }
+
 .area_direita_operacao {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_operacao {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .line_o.l1 {
     margin-top: 0px;
 }
+
 .info_direita_operacao {
     display: flex;
     align-items: flex-start;
@@ -1869,34 +2224,43 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line_o {
     border-top: 1px solid #0093C6;
     padding-top: 20px;
 }
+
 .info_direita_operacao img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_operacao p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
+}
+.info_direita_operacao p b {
+    color: var(--color-cinza);
 }
 .seta_sessao_operacao {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_operacao img {
     cursor: pointer;
 }
+
 /*Inicio mercado*/
 
 .container_11 {
     width: 100%;
-   
+
 }
+
 .img_topo_mercado {
     width: 100%;
     height: 990px;
@@ -1904,6 +2268,7 @@ header {
     background-repeat: no-repeat;
     background-image: url(img/mercado/mercado.png);
 }
+
 .area_total_mercado {
     display: flex;
     width: 100%;
@@ -1911,17 +2276,20 @@ header {
     height: 100%;
     justify-content: center;
 }
+
 .title_mercado {
     width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
 }
+
 .title_mercado h2 {
     color: #fff;
     font-size: 80px;
     margin: 0px;
 }
+
 .area_texts_mercado {
     display: flex;
     width: 94%;
@@ -1943,16 +2311,19 @@ header {
     font-size: 20px;
     margin: 0px;
 }
+
 .area_principal_texts_7 {
     display: flex;
     width: 100%;
     flex-direction: column;
-   
+
 }
+
 .bg_texts_mercado {
     width: 100%;
 
 }
+
 .bg_texts_mercado::before {
     content: url(img/mercado/bg_mercado.png);
     background-size: cover;
@@ -1961,60 +2332,71 @@ header {
     position: absolute;
     z-index: -10;
 }
+
 .area_int_principal_7 {
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
+
 }
+
 .lucro_mercado {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 87%;
 }
+
 .lucro_mercado p {
     color: #77787B;
     font-size: 28px;
     margin: 0px;
 }
+
 .area_principal_7 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
     max-width: 1126px;
-    
+
 }
+
 .area_titulo_principal_7 {
     display: flex;
     align-items: center;
     max-width: 600px;
     width: 100%;
-    
+
 }
+
 .area_titulo_principal_7 img {
     width: 100px;
     padding-right: 20px;
 }
+
 .area_titulo_principal_7 h2 {
     font-family: var(--font-light);
     color: #F48120;
     font-size: 24px;
 }
+
 .area_total_info_7 {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
 .area_info_int_7 {
     display: flex;
     flex-direction: column;
 }
+
 .int_info_3 {
     display: flex;
     align-items: center;
 }
+
 .int_info_3 h2 {
     align-items: center;
     display: flex;
@@ -2022,20 +2404,24 @@ header {
     color: #F48120;
     font-family: var(--font-light);
 }
+
 .area_info_int_7 img {
     padding-right: 20px;
 }
+
 .area_info_mercado {
     display: flex;
     flex-direction: column;
-   
+
 }
+
 .info_mercado {
     display: flex;
     align-items: center;
     max-width: 560px;
     width: 100%;
 }
+
 .desc_m {
     display: inline-block;
     color: #F48120;
@@ -2043,30 +2429,36 @@ header {
     font-family: var(--font-light);
     padding: 0px 5px;
 }
+
 .m_info p {
     color: #77787B;
     font-size: 26px;
     font-family: var(--font-light);
 }
+
 .area_principal_mercado {
     display: flex;
     width: 100%;
     justify-content: center;
     max-width: 1400px;
 }
+
 .area_direita_mercado {
     display: flex;
     max-width: 360px;
     width: 100%;
 }
+
 .int_mercado {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
+
 .line_m.l1 {
     margin-top: 0px;
 }
+
 .info_direita_mercado {
     display: flex;
     align-items: flex-start;
@@ -2074,30 +2466,150 @@ header {
     width: 100%;
     margin-top: 20px;
 }
+
 .line_m {
     border-top: 1px solid #F48120;
     padding-top: 20px;
 }
+
 .info_direita_mercado img {
     padding-right: 20px;
     width: 30px;
 }
+
 .info_direita_mercado p {
     color: var(--color-cinza-escuro);
     font-family: var(--font-light);
-    font-size: 20px;
+    font-size: 18px;
     margin: 0px;
+}
+.info_direita_mercado p b {
+    color: var(--color-cinza);
 }
 .seta_sessao_mercado {
     display: flex;
     width: 100%;
     justify-content: center;
 }
+
 .seta_sessao_mercado img {
     cursor: pointer;
 }
+
 footer img {
     width: 103%;
+}
+
+@media(max-width: 1496px) {
+    .area_texts {
+        max-width: 495px;
+    }
+
+    .title {
+        margin-left: 0px;
+    }
+
+    .title h2 {
+        font-size: 6em;
+    }
+
+    .subtitle_relatorio_2 h2 {
+        font-size: 2.5em;
+    }
+
+    .area_cima img {
+        z-index: -1;
+    }
+
+    .area_esquerda img {
+        height: 300px;
+        position: absolute;
+        bottom: -60px;
+        left: -300px;
+        z-index: -1;
+    }
+
+    .area_direita img {
+        height: 450px;
+        position: absolute;
+        top: 420px;
+        right: -16px;
+        z-index: -1;
+    }
+
+    /*Somos alpada */
+    .img_topo {
+        height: 816px;
+    }
+
+    .area_total_marcas {
+        margin-top: -180px;
+    }
+
+    .area_texts_alpha {
+        max-width: 1120px;
+    }
+
+    .title_alpha h3 {
+        font-size: 4em;
+    }
+
+    .title_alpha h2 {
+        font-size: 6em;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .subtitle_alpha h3 {
+        font-size: 1.5em;
+    }
+
+    .area_int_localizacao {
+        max-width: max-content;
+    }
+
+    /*Jornada*/
+    .img_topo_jornada {
+        height: 610px;
+    }
+
+    /*Governança*/
+    .title_governanca {
+        justify-content: center;
+        max-width: max-content;
+    }
+
+    .seta_sessao_geracao img {
+        margin-top: 0px;
+    }
+
+    /*Nossas pessoas*/
+    .img_topo_nossas_pessoas {
+        height: 730px;
+    }
+    .area_texts_nossas_pessoas {
+        width: 80%;
+    }
+
+    /*Fornecedores*/
+    .img_topo_fornecedores {
+        height: 740px;
+    }
+
+    /*Sociedade*/
+
+    .img_topo_sociedade {
+        height: 740px;
+    }
+
+    .area_texts_sociedade {
+        margin-top: -200px;
+    }
+
+    /*Operação*/
+    .img_topo_operacao {
+        height: 740px;
+    }
 }
 
 @media(max-width: 1440px) {
@@ -2256,9 +2768,6 @@ footer img {
         font-size: 14px;
     }
 
-   
-
-
     /*Jornada*/
     .img_topo_jornada {
         height: 588px;
@@ -2288,17 +2797,22 @@ footer img {
         font-size: 18px;
     }
 
+    /*Geração de valor*/
+    .container_int_4 {
+        margin-bottom: 200px;
+    }
+
     /*governança*/
     .img_topo_governanca {
         height: 680px;
         margin-top: -104px;
     }
-    
 
     .img_topo_governanca {
         height: 720px;
         margin-top: -122px;
     }
+
     .img_topo_nossas_pessoas {
         height: 720px;
     }
@@ -2312,98 +2826,126 @@ footer img {
         height: 720px;
     }
 }
+
 @media(max-width: 1024px) {
+
     /*Home mobile*/
     .area_texts_total {
         flex-direction: column;
     }
+
     .area_texts_direita {
         margin-top: 20px;
     }
-     h2 {
+
+    h2 {
         text-align: center !important;
     }
+
     .subtitle_relatorio {
         width: 100%;
         max-width: initial;
     }
+
     .area_total_marcas {
         width: 100%;
     }
+
     .area_marcas {
         flex-direction: column;
     }
+
     .seta_sessao_home {
         margin-top: 40px;
     }
+
     /*Somos alpa mobile*/
     .alpa_relatorio {
         width: 100%;
         text-align: center;
     }
+
     .area_int_localizacao {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
     }
+
     .area_total_mapa {
         align-items: center;
         margin-top: 20px;
     }
+
     .area_mapa {
         justify-content: center;
         width: 100%;
     }
+
     .legenda {
         display: flex;
         justify-content: center;
     }
+
     .area_icons {
         justify-content: center;
     }
+
     .area_icons h2 {
         width: 100%;
     }
+
     .area_info p {
         text-align: center;
     }
+
     /*Jornada mobile*/
     .img_topo_jornada {
         height: 410px;
     }
+
     .subtitle_negocios h2 {
         font-size: 22px;
     }
+
     .area_texts_jornada {
         margin-top: 0px;
     }
+
     .title_jornada {
         align-items: center;
     }
+
     .title_jornada h2 {
         font-size: 40px;
     }
+
     .title_jornada h3 {
         font-size: 60px;
     }
+
     .area_pilares {
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
     }
+
     .pilar {
         margin-top: 30px;
     }
+
     .title_global {
         max-width: 320px;
     }
+
     .text_pilar p {
         text-align: center;
     }
+
     .saiba_mais_int {
         justify-content: center;
         max-width: max-content;
     }
+
     .area_saiba_mais {
         max-width: max-content;
     }
@@ -2411,157 +2953,208 @@ footer img {
     .container_int_4 {
         align-items: center;
     }
+
     .area_direita_geracao img {
         height: 420px;
     }
+
     .area_esquerda_geracao img {
         height: 420px;
     }
+
     .subtitle_geracao p {
         text-align: center;
     }
+
     .subtitle_geracao h3 {
         text-align: center;
     }
+
     .seta_sessao_jornada {
         margin-top: 40px;
     }
+
     /*Governança mobile*/
     .img_topo_governanca {
         height: 510px;
     }
+
     .title_governanca {
         align-items: center;
         justify-content: center;
     }
+
     .title_governanca h2 {
         font-size: 40px;
     }
+
     .area_titulo_principal {
         flex-direction: column;
         margin-top: 20px;
     }
+
     .area_titulo_principal h2 {
         font-size: 22px;
     }
+
     .area_info_int {
         flex-direction: column;
         align-items: center;
     }
+
     .area_texts_governanca {
         margin-top: -80px;
     }
-    
-    .in3, .in4 {
-        max-width: 400px;
-    }
+
     .area_principal_governanca {
         flex-direction: column;
         align-items: center;
     }
+
     .area_direita_governanca {
         margin-top: 60px;
         max-width: 400px;
     }
+
     .seta_sessao_governanca {
         margin-top: 40px;
     }
+
     .bg_texts_governanca::before {
         content: " ";
     }
+
     /*Nossas pessoas mobile*/
     .container_6 {
         margin-top: 0px;
     }
+
     .area_titulo_principal_2 img {
         padding-right: 0px;
     }
+
     .img_topo_nossas_pessoas {
         height: 510px;
     }
+
     .title_nossas_pessoas {
         align-items: center;
+    }
+    .area_texts_int_pessoas {
+        margin-top: 20px;
     }
     .area_principal_2 {
         margin: 20px 0px;
     }
+    .area_titulo_principal_2 h3 {
+        text-align: center;
+    }
     .title_nossas_pessoas h2 {
         font-size: 40px;
     }
+
     .area_texts_nossas_pessoas {
         margin-top: -80px;
     }
+
     .area_principal_nossas_pessoas {
         flex-direction: column;
         align-items: center;
     }
+
     .area_direita_nossas_pessoas {
         max-width: 400px;
         margin-top: 60px;
     }
+
     .area_titulo_principal_2 {
         flex-direction: column;
+        align-items: center;
+    }
+    .desc_pes {
+        width: 100%;
+        justify-content: center;
+    
     }
     .area_titulo_principal_2 h2 {
         font-size: 22px;
     }
+
     .area_info_int_2 {
         display: inline-flex;
         align-items: center;
         flex-direction: column;
     }
+
     .logo_alu {
         width: 255px;
     }
+
     .bg_texts_nossas_pessoas::before {
         content: " ";
     }
+
     .seta_sessao_nossas_pessoas {
         margin-top: 40px;
     }
 
     /*Usuarios e parceiros mobile*/
     .img_topo_usuarios {
-        height:510px;
+        height: 510px;
     }
+
     .parceiros {
         align-items: center;
     }
+
     .title_usuarios h2 {
         font-size: 40px;
     }
+
     .title_usuarios h3 {
         font-size: 50px;
     }
+
     .area_texts_usuarios {
         margin-top: -80px;
     }
-    .area_principal_usuarios  {
+
+    .area_principal_usuarios {
         align-items: center;
         flex-direction: column;
     }
+    .area_principal_3 {
+        align-items: center;
+    }
     .area_titulo_principal_3 {
         flex-direction: column;
+    }
+    .area_titulo_principal_3 img {
+        padding-right: 0px;
     }
     .area_total_info_3 {
         margin-left: 0px;
         justify-content: center;
     }
+
     .area_info_int_3 {
         display: grid;
         align-items: center;
         justify-content: center;
     }
+
     .esquerda_info {
         display: flex;
         width: 100%;
         justify-content: center;
         margin-top: 0px;
     }
+
     .area_direita_usuarios {
         max-width: 400px;
         margin-top: 60px;
     }
+
     .seta_sessao_usuarios {
         margin-top: 40px;
     }
@@ -2569,57 +3162,73 @@ footer img {
     .bg_texts_usuarios::before {
         content: "";
     }
+
     /*Fornecedores mobile*/
     .img_topo_fornecedores {
         height: 510px;
     }
+
     .title_fornecedores {
         align-items: center;
     }
+
     .title_fornecedores h2 {
         font-size: 40px;
     }
+
     .area_texts_fornecedores {
         margin-top: -80px;
     }
+
     .area_texts_fornecedores {
         width: 100%;
     }
+
     .area_principal_fornecedores {
         flex-direction: column;
         align-items: center;
     }
+
     .area_titulo_principal_4 {
         flex-direction: column;
         align-items: center;
         margin: 20px 0px;
     }
+
     .area_titulo_principal_4 h2 {
         font-size: 22px;
         margin-top: 10px;
     }
+
     .area_titulo_principal_4 img {
         padding-right: 0px
     }
+
     .area_principal_4 {
         align-items: center;
     }
+
     .area_info_int_4 {
         flex-direction: column;
         width: 100%;
     }
+
     .info_fornecedores_int {
         margin-top: 20px;
     }
+
     .info_fornecedores_2 {
         max-width: 400px;
     }
+
     .area_direita_fornecedores {
         max-width: 400px;
     }
+
     .seta_sessao_fornecedores {
         margin-top: 40px;
     }
+
     .bg_texts_fornecedores::before {
         content: " ";
     }
@@ -2632,46 +3241,60 @@ footer img {
     .area_texts_sociedade {
         margin-top: -80px;
     }
+
     .area_principal_5 {
         width: 100%;
         align-items: center;
     }
+
     .area_titulo_principal_5 img {
+        padding-right: 0px;
+    }
+    .area_info_int_5 img {
         padding-right: 0px;
     }
     .title_sociedade {
         align-items: center;
     }
+
     .title_sociedade h2 {
         font-size: 40px;
     }
+
     .area_titulo_principal_5 {
         flex-direction: column;
     }
+
     .area_total_info_5 {
         width: 100%;
         justify-content: center;
     }
+
     .area_info_int_5 {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
+
     .area_principal_sociedade {
         flex-direction: column;
         align-items: center;
     }
+
     .area_info_sociedade {
         flex-direction: column;
     }
+
     .area_direita_sociedade {
         max-width: 400px;
         margin-top: 60px;
     }
+
     .seta_sessao_sociedade {
         margin-top: 40px;
     }
+
     .bg_texts_sociedade::before {
         content: "";
     }
@@ -2680,13 +3303,21 @@ footer img {
     .img_topo_operacao {
         height: 510px;
     }
+
     .title_operacao {
         justify-content: center;
         width: 100%;
         align-items: center;
     }
+
     .title_operacao h2 {
         font-size: 40px;
+    }
+    .area_titulo_principal_6 img {
+        padding-right: 0px;
+    }
+    .info_operacao h2 {
+        padding-right: 0px;
     }
     .area_texts_operacao {
         width: 100%;
@@ -2697,21 +3328,26 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
+
     .area_titulo_principal_6 {
         flex-direction: column;
         align-items: center;
-     
+
     }
+
     .area_direita_operacao {
         max-width: 400px;
         margin-top: 60px;
     }
+
     .info_operacao p {
         text-align: center;
     }
+
     .seta_sessao_operacao {
         margin-top: 40px;
     }
+
     .bg_texts_operacao::before {
         content: " ";
     }
@@ -2720,48 +3356,63 @@ footer img {
     .img_topo_mercado {
         height: 510px;
     }
+
     .area_texts_mercado {
         width: 100%;
         margin-top: -80px;
     }
+    .area_titulo_principal_7 img {
+        padding-right: 0px;
+    }
     .title_mercado {
         align-items: center;
     }
+
     .title_mercado h2 {
         font-size: 40px;
     }
+
     .area_titulo_principal_7 {
         flex-direction: column;
         align-items: center;
     }
+
     .area_titulo_principal_7 h2 {
         font-size: 22px;
     }
+
     .area_principal_mercado {
         flex-direction: column;
         align-items: center;
     }
+
     .lucro_mercado {
         width: 100%;
     }
+
     .info_mercado {
         width: 100%;
         max-width: max-content;
     }
+
     .area_info_int_7 {
         width: 100%;
         align-items: center;
     }
+
     .area_info_int_7 img {
         padding-right: 0px;
     }
+
     .area_info_mercado {
         padding: 0px 20px;
     }
+
     .info_2021 {
         width: 100%;
         max-width: 580px;
     }
+
     .area_direita_mercado {
         max-width: 400px;
         margin-top: 40px;
@@ -2770,20 +3421,26 @@ footer img {
     .seta_sessao_mercado {
         margin: 40px 0px;
     }
+
     .bg_texts_mercado::before {
         content: " ";
     }
 }
+
 @media(max-width: 425px) {
+
     /*Home*/
-    .subtitle, .subtitle_2 {
+    .subtitle,
+    .subtitle_2 {
         padding: 0px 20px;
     }
+
     .area_cima img {
         height: 320px;
         top: -80px;
         right: -361px;
     }
+
     .area_direita img {
         right: -80px;
         z-index: -1;
@@ -2793,6 +3450,7 @@ footer img {
         align-items: center;
         justify-content: center;
     }
+
     .subtitle_relatorio h2 {
         max-width: max-content;
     }
@@ -2801,145 +3459,204 @@ footer img {
     .title_alpha h3 {
         text-align: center;
     }
+
     .area_texts_alpha {
         flex-direction: column;
         align-items: center;
     }
+
     .subtitle_alpha h3 {
         text-align: center;
     }
+
     .subtitle_alpha {
         padding-left: 0px;
     }
+
     .area_total_marcas {
         margin-top: -380px;
     }
+
     .alpa_relatorio p {
         padding: 0px 20px;
     }
+
     .area_direita_alpha {
         padding: 0px 20px;
     }
+
     .map_3 {
         justify-content: space-around;
     }
+
     .area_esquerda_alpha {
         justify-content: center;
         padding-right: 0px;
     }
+
     /*Jornada mobile 425*/
-    .img_topo_jornada {   
+    .img_topo_jornada {
         height: 200px;
     }
+
     .title_jornada h2 {
         font-size: 20px;
     }
+
     .title_jornada h3 {
         font-size: 30px;
     }
+
     .title_jornada {
         align-items: flex-end;
         width: 82%;
     }
+
     /*Geraçao de valor*/
     .title_geracao h3 {
         font-size: 28px;
     }
+
     .title_geracao h2 {
         font-size: 48px;
     }
+
     .subtitle_geracao p {
         font-size: 18px;
     }
+
     .area_direita_geracao img {
         display: none;
     }
+
     .area_direita_baixo_geracao img {
         height: 420px;
     }
+
     .area_esquerda_geracao img {
         height: 320px;
         position: absolute;
         left: -85px;
         margin-top: 230px;
     }
+
+    .area_subtitle_geracao {
+        margin-top: 20px;
+    }
+
     /*Governança*/
+    #governanca {
+        margin-top: 200px;
+    }
+
     .img_topo_governanca {
         height: 380px;
     }
-    .title_governanca {
+
+    .area_total_governanca {
         width: 98%;
+    }
+    .info_governanca p {
+        font-size: 20px;
+    }
+    .title_governanca {
+
         justify-content: flex-end;
     }
+
+    .title_governanca h2 {
+        font-size: 34px;
+    }
+
     .area_texts_governanca {
         margin-top: 20px;
     }
+
     .subtitle_governanca h2 {
         font-size: 18px;
+    }
+
+    .area_total_governanca {
+        justify-content: flex-end;
     }
 
     /*Nossas pessoas*/
     .area_total_nossas_pessoas {
         width: 100%;
     }
+
     .area_titulo_principal_2 h2 {
         font-size: 1em;
     }
+
     .title_usuarios h3 {
         display: none;
     }
+
     .area_total_usuarios {
         justify-content: flex-end;
     }
+
     .title_usuarios {
         display: -webkit-inline-box;
         width: 40%;
     }
+
     .area_texts_usuarios {
         margin-top: 20px;
     }
+
     .subtitle_usuarios h2 {
         padding: 0px 20px;
     }
+
     .area_titulo_principal_3 h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .hava {
         width: 100%;
     }
-    /*OBS*/
+
     /*Forncedores*/
     .img_topo_fornecedores {
         height: 350px;
     }
+
     .subtitle_fornecedores h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_titulo_principal_4 h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
 
-    /*Socidade*/ 
+    /*Socidade*/
     .img_topo_sociedade {
         height: 440px;
     }
+
     .title_sociedade {
         justify-content: flex-end;
     }
+
     .subtitle_sociedade h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_titulo_principal_5 h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_texts_sociedade {
         margin-top: 0px;
     }
+
     .beneficios_sociedade p {
         text-align: center;
     }
@@ -2948,39 +3665,51 @@ footer img {
     .img_topo_operacao {
         height: 330px;
     }
+
     .subtitle_operacao h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_titulo_principal_6 h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_titulo_principal_6 img {
         padding-right: 0px;
     }
+
     /*Mercado*/
     .img_topo_mercado {
         height: 330px;
+    }
+    .info_2021 {
+        max-width: 400px;
     }
     .title_mercado {
         justify-content: flex-end;
         width: 86%;
     }
+
     .area_texts_mercado {
         margin-top: 20px;
     }
+
     .subtitle_mercado h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .area_titulo_principal_7 h2 {
         font-size: 1em;
         padding: 0px 20px;
     }
+
     .lucro_mercado p {
         text-align: center;
     }
+
     .area_titulo_principal_7 img {
         padding-right: 0px;
     }
