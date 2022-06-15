@@ -94,7 +94,8 @@ header {
     margin-top: 2px;
     transition: all ease 1s;
 }
-.close svg {
+.close_s svg {
+    cursor: pointer;
     width: 25px;
 }
 .area_menu {
