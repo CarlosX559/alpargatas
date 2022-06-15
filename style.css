@@ -1606,7 +1606,7 @@ nav a {
     display: flex;
     width: 76%;
     justify-content: center;
-    margin-top: -220px;
+    margin-top: -340px;
     margin-bottom: 20px;
 }
 
@@ -1745,7 +1745,9 @@ nav a {
     display: flex;
     width: 100%;
     justify-content: center;
-    max-width: 1220px;
+    max-width: max-content;
+    gap: 120px;
+    margin: 0 auto;
 }
 
 .area_direita_fornecedores {
@@ -2733,6 +2735,13 @@ footer img {
 @media(max-width: 1496px) {
     .area_texts {
         max-width: 495px;
+    }
+
+    .area_principal_fornecedores{
+        gap: 10px;
+    }
+    .area_texts_fornecedores {
+        margin-top: -200px;
     }
 
     .title {
