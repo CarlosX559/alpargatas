@@ -134,6 +134,7 @@ nav a {
 
 .menu img {
     width: 60px;
+    cursor: pointer;
 }
 
 .area_cima img {
