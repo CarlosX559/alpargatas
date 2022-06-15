@@ -3436,7 +3436,31 @@ footer img {
     .subtitle_2 {
         padding: 0px 20px;
     }
-
+    .bg_menu {
+        top: -14px;
+        left: -14px;
+    }
+    .area_menu {
+        justify-content: flex-start;
+    }
+    .menu_int {
+        width: 360px;
+    }
+    nav a ul li {
+        font-size: 22px;
+    }
+    nav a ul p {
+        font-size: 18px;
+    }
+    .menu {
+        padding: 0px 0px 0px 20px;
+        margin-bottom: 116px;
+        margin-top: 0px;
+    }
+    .logo_home img {
+       
+        padding-right: 80px;
+    }
     .area_cima img {
         height: 320px;
         top: -80px;
