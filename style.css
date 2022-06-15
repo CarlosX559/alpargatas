@@ -3475,12 +3475,14 @@ footer img {
         width: 80%;
     }
     .area_cima img {
+        display: none;
         height: 320px;
         top: -80px;
         right: -361px;
     }
 
     .area_direita img {
+        display: none;
         right: -80px;
         z-index: -1;
     }
@@ -3569,9 +3571,18 @@ footer img {
     }
 
     .area_direita_baixo_geracao img {
+        display: none;
         height: 420px;
     }
-
+    .parceiros {
+        display: none;
+    }
+    .area_info_int_3 img {
+        padding-right: 0px;
+    }
+    footer img {
+        width: 100%;
+    }
     .area_esquerda_geracao img {
         height: 320px;
         position: absolute;
