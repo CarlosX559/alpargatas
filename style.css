@@ -1971,7 +1971,7 @@ nav a {
     align-items: center;
     color: #006A99;
     margin: 0px;
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
 }
 
 .inv p {
@@ -1981,19 +1981,21 @@ nav a {
 .info_sociedade p {
     color: var(--color-cinza-escuro);
     font-size: 23px;
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
     margin: 0px;
 }
 
 .int_info_2 h2 {
     font-size: 25px;
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
 
 }
-
+.small_s {
+    font-family: var(--font-regular);
+}
 .desc {
     font-size: 60px;
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
     padding: 0px 5px;
 }
 
@@ -2207,7 +2209,7 @@ nav a {
 .desc_o {
     display: inline-block;
     font-size: 60px;
-    font-family: var(--font-light);
+    font-family: var(--font-regular);
     padding: 0px 5px;
 }
 
@@ -2760,16 +2762,25 @@ footer img {
      
     }
     .area_total_operacao {
-        max-width: 885px;
+        max-width: 1205px;
     }
     .title_operacao h2 {
         font-size: 140px;
     }
     .area_texts_operacao {
-        max-width: 885px;
+        max-width: 1205px;
     }
     .area_texts_operacao {
         margin-top: -290px;
+    }
+    .area_principal_operacao {
+        max-width:  1500px;
+    } 
+    .area_direita_operacao {
+        margin-top: -120px;
+    }
+    .int_operacao {
+        justify-content: space-between;
     }
 }
 
