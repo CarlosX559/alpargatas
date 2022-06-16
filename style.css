@@ -19,7 +19,7 @@ h2 {
 html {
     overflow-x: hidden !important;
     overflow-x: clip !important;
-    scroll-behavior: smooth;
+
 }
 body {
     margin: 0px;
@@ -299,8 +299,10 @@ nav a {
 }
 .img_side_alpa {
     position: absolute;
-    right: -3px;
-    width: 381px;
+    right: -260px;
+    width: 538px;
+    transform: rotate(-45deg);
+    margin-top: 32px;
 }
 .area_total_alpha {
     display: flex;
@@ -639,7 +641,6 @@ nav a {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-bottom: 50px;
 }
 
 .area_int_jornada {
@@ -651,7 +652,7 @@ nav a {
 
 .subtitle_negocios h2 {
     color: var(--color-cinza);
-    font-size: 28px;
+    font-size: 32px;
     text-transform: uppercase;
     margin-top: 0px;
     line-height: 34px;
@@ -688,27 +689,25 @@ nav a {
 .global {
     padding-right: 10px;
 }
-.global img {
-    width: 60px;
-}
+
 .title_global {
     display: flex;
     flex-direction: column;
-    max-width: 180px;
+    max-width: 290px;
     width: 100%;
 }
 
 .title_global h2 {
     color: var(--color-cinza);
     margin: 0px;
-    font-size: 22px;
+    font-size: 26px;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
 
 .text_pilar p {
     color: var(--color-cinza-escuro);
-    font-size: 18px;
+    font-size: 20px;
     margin: 0px;
     font-family: var(--font-light);
 }
@@ -823,18 +822,19 @@ nav a {
 }
 
 .area_esquerda_geracao img {
-    height: 530px;
+    height: 580px;
     position: absolute;
-    left: -85px;
+    left: -45px;
     z-index: -1;
-    margin-top: 172px;
+    transform: rotate(-180deg);
 }
 
 .area_direita_geracao img {
-    height: 640px;
+    height: 580px;
     position: absolute;
     right: -85px;
     z-index: -1;
+    transform: rotate(90deg);
 }
 
 .area_direita_baixo_geracao img {
@@ -869,7 +869,7 @@ nav a {
 .img_topo_governanca {
     width: 100%;
     padding: 30px 0;
-    margin: 60px 0;
+    margin: 240px 0px 80px 0px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1156,12 +1156,10 @@ nav a {
 .area_int_nossas_pessoas {
     display: flex;
     flex-direction: column;
-    max-width: 1000px;
+    max-width: 790px;
     width: 100%;
 }
-.subtitle_nossas_pessoas{
-    max-width: 790px;
-}
+
 .subtitle_nossas_pessoas h2 {
     color: var(--color-cinza-escuro);
     font-size: 20px;
@@ -1208,7 +1206,7 @@ nav a {
 .area_titulo_principal_2 {
     display: flex;
     align-items: flex-start;
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     margin-top: 40px;
 }
@@ -2886,10 +2884,7 @@ footer > img {
     .title_sociedade {
         align-items: center;
     }
-    .title_sociedade svg {
-        margin-top: 20px;
-        
-    }
+
     .area_texts_sociedade {
         max-width: 1310px;
     }
@@ -2944,17 +2939,24 @@ footer > img {
     }
 }
 
-@media (max-width: 1660px) {
-    .img_side_nossas_pessoas {
-        width: 450px;
-    }
-    .img_side_jornada{
-        height: 450px;
-        top: 25px;
-    }
-}
-
 @media(max-width: 1496px) {
+    /*home*/
+    .linha_1 img {
+        height: 798px;
+        position: absolute;
+        bottom: -210px;
+        left: 30px;
+        z-index: -1;
+    }
+    .linha_2 img {
+        height: 798px;
+        position: absolute;
+        bottom: 148px;
+        right: -758px;
+        z-index: -1;
+    }
+
+    /*Fornecedores*/
     .area_texts {
         max-width: 495px;
     }
@@ -2974,12 +2976,11 @@ footer > img {
     .area_principal_sociedade{
      max-width: 1320px;
     }
-
-    .area_info_int_5{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+    .info_sociedade p {
+        font-size: 20px;
+    }
+    .inv p {
+        font-size: 30px !important;
     }
 
     .area_info_int_5 > img{
@@ -3026,9 +3027,9 @@ footer > img {
     }
 
     .area_direita img {
-        height: 450px;
+        height: 550px;
         position: absolute;
-        top: 420px;
+        top: 270px;
         right: -16px;
         z-index: -1;
         transform: rotate(180deg);
@@ -3058,6 +3059,7 @@ footer > img {
 
     .area_int_localizacao {
         max-width: max-content;
+        padding: 0px 40px;
     }
 
 
@@ -3279,8 +3281,15 @@ footer > img {
 @media(max-width: 1446px) {
     /*Somos Alpa*/
     .img_side_alpa {
-        width: 281px;
+        right: -185px;
+        width: 399px;
+        margin-top: 14px;
     }
+    .img_topo {
+        margin: 80px 0px 0px 0px;
+    }
+    /*Jornada*/
+
     .img_side_jornada {
         left: -80px;
     }
@@ -3299,12 +3308,6 @@ footer > img {
     .jornada{
         width: unset;
     }
-    .area_titulo_principal_2{
-        max-width: 500px;
-    }
-    .area_principal_nossas_pessoas{
-        max-width: 1300px;
-    }
     .area_total_jornada{
         justify-content: center;
     }
@@ -3313,18 +3316,6 @@ footer > img {
     }
     .bg_texts_nossas_pessoas{
         max-width: 800px;
-    }
-    .img_side_operacao{
-        width: 400px;
-    }
-    .area_texts_operacao{
-        margin-top: 100px;
-    }
-    .bg_texts_operacao{
-        max-width: 800px;
-    }
-    .bg_texts_operacao::before{
-        left: 0;
     }
     .area_principal_nossas_pessoas{
         justify-content: flex-start;
@@ -3342,23 +3333,14 @@ footer > img {
     .saiba_mais_int{
         max-width: 1000px;
     }
-    .img_side_fornecedores{
-        width: 400px;
+   
+}
+@media(max-width: 1366px) {
+    .hava {
+        margin-left: -100px;
     }
-    .info_fornecedores_2{
-        max-width: 300px;
-    }
-    .area_texts_fornecedores{
-        max-width: 1000px;
-    }
-    .area_int_fornecedores{
-        max-width: 700px;
-    }
-    .area_direita_fornecedores{
-        margin-right: 130px;
-    }
-    .seta_sessao_fornecedores{
-        margin: 100px 0;
+    .title {
+        margin-left: 0px;
     }
 }
 @media (max-width: 1200px){
@@ -3422,6 +3404,10 @@ footer > img {
         max-width: 820px;
     }
     /*Nossas pessoas*/
+    .img_side_nossas_pessoas {
+        /* right: -145px;
+        width: 460px; */
+    }
     .int_nossas_pessoas {
         max-width: 300px;
     }
@@ -3441,6 +3427,10 @@ footer > img {
     }
     .area_int_usuarios {
         max-width: 550px;
+    }
+    .img_side_fornecedores {
+        width: 460px;
+        right: -158px;
     }
     .area_principal_usuarios {
         max-width: 1350px;
@@ -3512,8 +3502,15 @@ footer > img {
     .int_operacao {
         max-width: 300px;
     }
+    .area_total_operacao {
+        max-width: 720px;
+    }
     .area_texts_operacao {
         max-width: 920px;
+    }
+    .img_side_operacao {
+        right: -154px;
+        width: 460px;
     }
     
     /*mercado*/
@@ -3543,12 +3540,7 @@ footer > img {
     .area_texts_total {
         flex-direction: column;
     }
-    .title_fornecedores{
-        justify-content: center;
-    }
-    .img_side_fornecedores{
-        width: 350px;
-    }
+
     .area_int_nossas_pessoas{
         max-width: 700px;
     }
@@ -3948,11 +3940,7 @@ footer > img {
     }
 
     .area_direita_fornecedores {
-        max-width: 350px;
-        margin: 0 auto;
-    }
-    .int_fornecedores{
-        max-width: 400px;
+        max-width: max-content;
     }
 
     .seta_sessao_fornecedores {
@@ -4031,7 +4019,6 @@ footer > img {
     }
     .area_texts_operacao {
         width: 100%;
-        max-width: unset;
     }
 
     .area_principal_operacao {
@@ -4303,7 +4290,7 @@ footer > img {
     .area_info_int_3 img {
         padding-right: 0px;
     }
-    footer > img {
+    footer img {
         width: 100%;
     }
     .area_esquerda_geracao img {
@@ -4392,11 +4379,10 @@ footer > img {
         padding: 0px 20px;
     }
 
-    /*Socidade*/
-    .img_topo_sociedade {
-        height: 440px;
+    /*Sociedade*/
+    .img_side_sociedade {
+        display: none;
     }
-
     .title_sociedade {
         justify-content: flex-end;
     }
