@@ -2666,9 +2666,21 @@ footer a{
     color: white;
     text-decoration: none;
     font-family: var(--font-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow_top_footer{
+    filter: brightness(255);
+    transform: scale(-0.5);
 }
 footer > img {
     width: 103%;
+}
+.logo_small {
+    color: white;
+    filter: invert(1);
+    display: none;
 }
 
 @media(max-width: 1920px) {
@@ -4135,6 +4147,12 @@ footer > img {
         display: none;
     }
     .img_side_operacao{
+        display: none;
+    }
+    .logo_small {
+        display: block;
+    }
+    .logo_large{
         display: none;
     }
 }
