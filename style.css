@@ -2600,7 +2600,7 @@ nav a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: -122px;
 }
 
@@ -3246,6 +3246,18 @@ footer img {
 
 }
 @media(max-width: 1446px) {
+    /*Widgtes*/
+   
+    .int_usuarios {
+        max-width: 300px;
+    }
+    .int_governanca {
+        max-width: 300px;
+    }
+    .int_sociedade {
+        max-width: 300px;
+    }
+   
     /*Somos Alpa*/
     .img_side_alpa {
         right: -185px;
@@ -3278,6 +3290,7 @@ footer img {
     .area_total_jornada{
         justify-content: center;
     }
+    /*nossas pessoas*/
     .area_int_nossas_pessoas{
         max-width: 1000px;
     }
@@ -3301,6 +3314,7 @@ footer img {
         max-width: 1000px;
     }
    
+   
 }
 @media(max-width: 1366px) {
     .hava {
@@ -3308,6 +3322,53 @@ footer img {
     }
     .title {
         margin-left: 0px;
+    }
+    /*Alpa*/
+    .legenda {
+        margin-top: 20px;
+        max-width: max-content;
+    }
+    .linha_1 img{
+        height: 530px;
+        position: absolute;
+        bottom: -329px;
+        left: 40px;
+        z-index: -1;
+    }
+    .linha_2 img {
+        height: 798px;
+        position: absolute;
+        bottom: 46px;
+        right: -375px;
+        z-index: -1;
+    }
+     /*sociedade*/
+     .img_side_sociedade {
+        left: -128px;
+        width: 355px;
+    }
+    .img_side_usuarios {
+        left: -128px;
+        width: 355px;
+    }
+    /*Governanca*/
+    .img_side_governanca {
+        left: -128px;
+        width: 355px;
+    }
+    .area_total_governanca {
+        max-width: 1180px;
+    }
+    .area_principal {
+        align-items: flex-end;
+        max-width: 725px;
+    }
+    .area_info_int {
+        justify-content: flex-end;
+    }
+  
+    .info_2021 {
+        max-width: 600px;
     }
 }
 @media (max-width: 1200px){
