@@ -18,6 +18,7 @@ h2 {
 html {
   overflow-x: hidden !important;
   overflow-x: clip !important;
+  scroll-behavior: smooth;
 }
 body {
   margin: 0px;
@@ -582,13 +583,13 @@ nav a {
   transform: rotate(-90deg);
 }
 /*
-.img_topo_jornada {
-    width: 100%;
-    height: 750px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/jornada_estrategica/jornada.png);
-}*/
+  .img_topo_jornada {
+      width: 100%;
+      height: 750px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/jornada_estrategica/jornada.png);
+  }*/
 
 .area_total_jornada {
   display: flex;
@@ -681,21 +682,21 @@ nav a {
 .title_global {
   display: flex;
   flex-direction: column;
-  max-width: 290px;
+  max-width: 220px;
   width: 100%;
 }
 
 .title_global h2 {
   color: var(--color-cinza);
   margin: 0px;
-  font-size: 26px;
+  font-size: 22px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .text_pilar p {
   color: var(--color-cinza-escuro);
-  font-size: 20px;
+  font-size: 18px;
   margin: 0px;
   font-family: var(--font-light);
 }
@@ -870,14 +871,14 @@ nav a {
   transform: rotate(45deg);
 }
 /*
-.img_topo_governanca {
-    width: 100%;
-    height: 930px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/governanca/governanca.png);
-}
-*/
+  .img_topo_governanca {
+      width: 100%;
+      height: 930px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/governanca/governanca.png);
+  }
+  */
 .area_total_governanca {
   display: flex;
   align-items: center;
@@ -1096,14 +1097,14 @@ nav a {
   transform: rotate(-45deg);
 }
 /*
-.img_topo_nossas_pessoas {
-    width: 100%;
-    height: 990px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/nossas_pessoas/nossas_pessoas.png);
-}
-*/
+  .img_topo_nossas_pessoas {
+      width: 100%;
+      height: 990px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/nossas_pessoas/nossas_pessoas.png);
+  }
+  */
 .area_total_nossas_pessoas {
   display: flex;
   align-items: center;
@@ -1121,6 +1122,41 @@ nav a {
   align-items: baseline;
   justify-content: flex-start;
   max-width: 1000px;
+}
+
+.animation_slide_left {
+  transition: all 300ms ease-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.animation_slide_left h2 {
+  position: relative;
+}
+
+.animation_slide_left h2:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: white;
+  bottom: -10px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 300ms ease-out;
+}
+
+.animation_slide_left:after {
+  content: "";
+  background: url("");
+}
+
+.animation_slide_left:hover {
+  transform: translateX(20px);
+  gap: 50px;
+}
+.animation_slide_left:hover h2:before {
+  transform: scaleX(1);
 }
 
 .title_nossas_pessoas h2 {
@@ -1349,14 +1385,14 @@ nav a {
   transform: rotate(45deg);
 }
 /*
-.img_topo_usuarios {
-    width: 100%;
-    height: 990px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/usuarios/usuarios.png);
-}
-*/
+  .img_topo_usuarios {
+      width: 100%;
+      height: 990px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/usuarios/usuarios.png);
+  }
+  */
 
 .area_total_usuarios {
   display: flex;
@@ -1657,10 +1693,9 @@ nav a {
 .area_int_fornecedores {
   display: flex;
   flex-direction: column;
-  max-width: 670px;
+  max-width: 680px;
   width: 100%;
 }
-
 .subtitle_fornecedores h2 {
   color: var(--color-cinza-escuro);
   font-family: var(--font-light);
@@ -1732,7 +1767,7 @@ nav a {
 }
 
 .icon_fashion {
-  width: 320px;
+  width: 220px;
   padding-left: 30px;
 }
 
@@ -1833,6 +1868,7 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin: 50px 0;
 }
 
 .seta_sessao_fornecedores img {
@@ -1861,14 +1897,14 @@ nav a {
   width: 540px;
 }
 /*
-.img_topo_sociedade {
-    width: 100%;
-    height: 990px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/sociedade/sociedade.png);
-}
-*/
+  .img_topo_sociedade {
+      width: 100%;
+      height: 990px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/sociedade/sociedade.png);
+  }
+  */
 .area_total_sociedade {
   display: flex;
   max-width: 1500px;
@@ -2118,14 +2154,14 @@ nav a {
   width: 540px;
 }
 /*
-.img_topo_operacao {
-    width: 100%;
-    height: 990px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/operacao/operacao.png);
-}
-*/
+  .img_topo_operacao {
+      width: 100%;
+      height: 990px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/operacao/operacao.png);
+  }
+  */
 .area_total_operacao {
   display: flex;
   width: 100%;
@@ -2147,10 +2183,12 @@ nav a {
 }
 
 .area_texts_operacao {
+  position: absolute;
   display: flex;
   width: 100%;
   justify-content: center;
   margin-bottom: 20px;
+  top: -130px;
 }
 
 .area_int_operacao {
@@ -2168,6 +2206,7 @@ nav a {
 }
 
 .area_principal_texts_6 {
+  position: relative;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -2273,6 +2312,7 @@ nav a {
 }
 
 .area_principal_operacao {
+  margin-top: 200px;
   display: flex;
   width: 100%;
   justify-content: center;
@@ -2326,6 +2366,7 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
+  margin-top: 100px;
 }
 
 .seta_sessao_operacao img {
@@ -2353,14 +2394,14 @@ nav a {
   width: 540px;
 }
 /*
-.img_topo_mercado {
-    width: 100%;
-    height: 990px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(img/mercado/mercado.png);
-}
-*/
+  .img_topo_mercado {
+      width: 100%;
+      height: 990px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-image: url(img/mercado/mercado.png);
+  }
+  */
 
 .area_total_mercado {
   display: flex;
@@ -2619,6 +2660,120 @@ footer > img {
   display: none;
 }
 
+footer #relatorio {
+  width: 100%;
+  background: linear-gradient(to right, #34999a, #de9125, #ec1c24);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0;
+}
+
+footer #wrapperRelatorio {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  cursor: pointer;
+}
+
+footer #iconRelatorio {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(45deg);
+}
+
+footer #iconLine {
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  border: 3px solid #fcc956;
+}
+
+footer #iconWrapper {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 10em;
+  z-index: 2;
+}
+
+footer #iconWrapper:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(#31caff, #0093c6);
+  transform: scale(0);
+  transition: all 300ms ease-out;
+}
+
+footer #iconWrapper img {
+  width: 50%;
+  transform: rotate(-45deg);
+  color: #79b369;
+  transition: all 300ms ease-out;
+}
+
+footer #contentRelatorio {
+  color: white;
+  transition: all 300ms ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+footer #contentRelatorio h3 {
+  font-size: 2.2em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+footer #contentRelatorio h3 svg {
+  transition: all 300ms ease-out;
+}
+
+footer #contentRelatorio h4 {
+  font-family: var(--font-light);
+  margin: 0;
+}
+footer #contentRelatorio p {
+  margin: 0;
+}
+
+footer #wrapperRelatorio:hover #iconWrapper img {
+  filter: brightness(255);
+}
+
+footer #wrapperRelatorio:hover #iconWrapper:before {
+  transform: scale(1);
+}
+
+footer #wrapperRelatorio:hover #contentRelatorio {
+  transform: translateX(20px);
+}
+footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
+  transform: translateX(20px);
+}
+
 @media (max-width: 1920px) {
   /*Somos Alpa*/
   .area_int_localizacao {
@@ -2717,18 +2872,15 @@ footer > img {
     align-items: center;
     gap: 10px;
   }
-
+  .area_texts_fornecedores,
   .area_texts_nossas_pessoas {
-    max-width: 1300px;
+    max-width: 1000px;
   }
   .subtitle_nossas_pessoas h2 {
     font-size: 23px;
   }
   .area_titulo_principal_2 img {
     width: 140px;
-  }
-  .area_principal_nossas_pessoas {
-    max-width: 1500px;
   }
   .area_total_info_2 {
     width: 88%;
@@ -2873,6 +3025,14 @@ footer > img {
   .title_mercado h2 {
     font-size: 140px;
   }
+
+  .bg_texts_nossas_pessoas {
+    max-width: 800px;
+  }
+
+  .bg_texts_nossas_pessoas::before {
+    left: 0;
+  }
 }
 @media (max-width: 1660px) {
   .img_side_operacao {
@@ -2881,14 +3041,15 @@ footer > img {
   .bg_texts_operacao {
     max-width: 700px;
   }
-  /* .area_texts_operacao{
-        max-width: unset;
-    }
-    .area_int_operacao{
-        max-width: 1020px;
-    }*/
   .subtitle_operacao {
     max-width: 600px;
+  }
+  .img_side_jornada {
+    height: 450px;
+    top: 24px;
+  }
+  .img_side_nossas_pessoas {
+    width: 500px;
   }
 }
 @media (max-width: 1496px) {
@@ -2934,15 +3095,16 @@ footer > img {
   .area_principal_fornecedores {
     gap: 10px;
     max-width: 1280px;
+    width: 95%;
   }
   .title_fornecedores {
     max-width: 1006px;
     justify-content: flex-start;
   }
   /*
-    .area_texts_fornecedores {
-        margin-top: -200px;
-    }*/
+      .area_texts_fornecedores {
+          margin-top: -200px;
+      }*/
 
   .area_principal_sociedade {
     max-width: 1320px;
@@ -3020,6 +3182,128 @@ footer > img {
     padding: 0px 40px;
   }
 
+  /*Governança*/
+  .title_governanca {
+    justify-content: center;
+    max-width: max-content;
+  }
+  .area_principal_governanca {
+    max-width: 1400px;
+  }
+  .area_principal {
+    align-items: flex-end;
+    max-width: 841px;
+  }
+  .area_info_governanca img {
+    max-width: 260px;
+  }
+  .area_info_int {
+    max-width: max-content;
+  }
+  .seta_sessao_geracao img {
+    margin-top: 0px;
+  }
+
+  /*Sociedade*/
+  .int_sociedade {
+    margin-top: 40px;
+  }
+
+  /*Usuarios*/
+  .area_principal_usuarios {
+    max-width: 1375px;
+  }
+  .esquerda_info {
+    margin-top: 86px;
+  }
+  .info_usuarios_int {
+    width: 36%;
+  }
+  .parceiros {
+    justify-content: center;
+  }
+  .int_usuarios {
+    padding-left: 20px;
+  }
+  .info_usuarios_int {
+    justify-content: center;
+  }
+  .total_int_usuarios {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info_usuarios {
+    max-width: 600px;
+  }
+  .info_usuarios h2 {
+    margin: 0px;
+    padding-right: 0px;
+  }
+  .info_usuarios p {
+    max-width: 350px;
+  }
+  .value {
+    font-size: 50px;
+  }
+  .hava {
+    position: absolute;
+    left: -100px;
+  }
+  .area_total_info_3 {
+    justify-content: flex-end;
+  }
+  .seta_sessao_usuarios {
+    margin-bottom: 320px;
+  }
+  /*Sociedade*/
+  .area_int_principal_5 {
+    justify-content: flex-end;
+  }
+  .int_sociedade {
+    padding-left: 20px;
+    margin-top: -100px;
+  }
+  .area_texts_sociedade {
+    max-width: 1256px;
+  }
+  .beneficios_sociedade {
+    justify-content: flex-end;
+    max-width: 833px;
+  }
+  .info_sociedade p {
+    max-width: 215px;
+  }
+  .area_total_info_5 {
+    justify-content: flex-end;
+    max-width: 902px;
+  }
+  .saiba_mais_sociedade {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    max-width: 596px;
+    margin-top: 20px;
+  }
+  .saiba_mais_sociedade p {
+    color: #a3a4a8;
+    max-width: 280px;
+    font-family: var(--font-regular);
+  }
+
+  /*mercado*/
+  .area_info_int_7 img {
+    max-width: 660px;
+  }
+  .area_principal_mercado {
+    max-width: 1430px;
+  }
+  .area_texts_mercado {
+    max-width: 1298px;
+  }
+  .area_int_mercado {
+    max-width: 585px;
+  }
   /*Governança*/
   .title_governanca {
     justify-content: center;
@@ -3363,6 +3647,8 @@ footer > img {
 
   .img_side_jornada {
     left: -80px;
+    height: 450px;
+    top: 24px;
   }
   .title_jornada {
     max-width: 1040px;
@@ -3383,9 +3669,7 @@ footer > img {
     justify-content: center;
   }
   /*nossas pessoas*/
-  .area_int_nossas_pessoas {
-    max-width: 1000px;
-  }
+
   .bg_texts_nossas_pessoas {
     max-width: 800px;
   }
@@ -4015,10 +4299,10 @@ footer > img {
     font-size: 40px;
   }
   /*
-    .area_texts_fornecedores {
-        margin-top: -80px;
-    }
-*/
+      .area_texts_fornecedores {
+          margin-top: -80px;
+      }
+  */
   .area_texts_fornecedores {
     width: 100%;
   }
@@ -4273,6 +4557,24 @@ footer > img {
   }
 }
 
+@media (max-width: 650px) {
+  .area_pilares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .area_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .global {
+    width: 60px;
+    padding: 0;
+  }
+}
 @media (max-width: 425px) {
   /*Home*/
   .subtitle,
