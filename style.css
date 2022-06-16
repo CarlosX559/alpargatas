@@ -2860,7 +2860,7 @@ footer > img {
         max-width: 1095px;
     }
     .area_principal_fornecedores {
-        max-width: 1500px;
+        max-width: 1400px;
     }
     .int_fornecedores {
         justify-content: space-evenly;   
@@ -2938,7 +2938,9 @@ footer > img {
         font-size: 140px;
     }
 }
+@media (max-width: 1660px) {
 
+}
 @media(max-width: 1496px) {
     /*home*/
     .linha_1 img {
@@ -3333,6 +3335,9 @@ footer > img {
     .saiba_mais_int{
         max-width: 1000px;
     }
+    .img_side_fornecedores{
+        width: 450px;
+    }
    
 }
 @media(max-width: 1366px) {
@@ -3429,7 +3434,7 @@ footer > img {
         max-width: 550px;
     }
     .img_side_fornecedores {
-        width: 460px;
+        width: 420px;
         right: -158px;
     }
     .area_principal_usuarios {
@@ -3549,6 +3554,9 @@ footer > img {
     }
     .saiba_mais_int{
         justify-content: center;
+    }
+    .img_side_fornecedores{
+        width: 300px;
     }
 
     .img_side_jornada{
@@ -3885,6 +3893,7 @@ footer > img {
     
     .title_fornecedores {
         align-items: center;
+        justify-content: center;
     }
 
     .title_fornecedores h2 {
