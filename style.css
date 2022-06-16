@@ -673,7 +673,7 @@ nav a {
     display: flex;
     width: 100%;
     margin-top: 20px;
-
+    gap: 20px;
 }
 
 .area_title {
@@ -2664,16 +2664,13 @@ footer img {
        justify-content: center;
     }
     .title_jornada {
-        align-items: flex-end;
-        width: 62%;
+        align-items: center;
     }
     .title_jornada h2 {
         font-size: 100px;
     }
     .title_jornada h3 {
         font-size: 110px;
-        margin-left: 80px;
-        margin-top: -30px;
     }
 
     .area_pilares {
@@ -2916,7 +2913,6 @@ footer img {
     .area_texts {
         max-width: 495px;
     }
-    
     .area_principal_fornecedores{
         gap: 10px;
         max-width: 1280px;
@@ -3238,21 +3234,23 @@ footer img {
     .img_side_alpa {
         width: 281px;
     }
-    /*Jornada*/
     .img_side_jornada {
-        width: 446px;
-    }
-    .img_side_jornada {
-        left: -32px;
-        margin-top: 37px;
+        left: -80px;
     }
     .title_jornada {
         max-width: 1040px;
         width: 100%;
+        align-items: center;
     }
     .title_jornada h2 {
         font-size: 5em;
-        margin-left: 150px;
+        margin-left: 70px;
+    }
+    .title_jornada h3 {
+        margin-left: 250px;
+    }
+    .jornada{
+        width: unset;
     }
     .area_total_jornada{
         justify-content: center;
