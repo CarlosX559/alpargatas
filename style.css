@@ -19,7 +19,7 @@ h2 {
 html {
     overflow-x: hidden !important;
     overflow-x: clip !important;
-
+    scroll-behavior: smooth;
 }
 body {
     margin: 0px;
@@ -2647,9 +2647,30 @@ nav a {
     cursor: pointer;
 }
 
-footer img {
+footer #mainFooter{
+    background: #77787b;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+#footerWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: var(--font-light);
+}
+footer > img {
     width: 103%;
 }
+
 @media(max-width: 1920px) {
       /*Somos Alpa*/
     .area_int_localizacao {
@@ -4264,7 +4285,7 @@ footer img {
     .area_info_int_3 img {
         padding-right: 0px;
     }
-    footer img {
+    footer > img {
         width: 100%;
     }
     .area_esquerda_geracao img {
