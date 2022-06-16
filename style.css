@@ -3233,13 +3233,6 @@ footer img {
     .img_side_alpa {
         width: 281px;
     }
-<<<<<<< HEAD
-    .img_topo {
-        margin: 80px 0px 0px 0px;
-    }
-    /*Jornada*/
-=======
->>>>>>> ff1b3319174acdc5a1f3f7499462ad11466fa508
     .img_side_jornada {
         left: -80px;
     }
@@ -3491,7 +3484,12 @@ footer img {
     .area_texts_total {
         flex-direction: column;
     }
-
+    .title_fornecedores{
+        justify-content: center;
+    }
+    .img_side_fornecedores{
+        width: 350px;
+    }
     .area_int_nossas_pessoas{
         max-width: 700px;
     }
@@ -3891,7 +3889,11 @@ footer img {
     }
 
     .area_direita_fornecedores {
-        max-width: max-content;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    .int_fornecedores{
+        max-width: 400px;
     }
 
     .seta_sessao_fornecedores {
@@ -4079,6 +4081,9 @@ footer img {
         display: none;
     }
     .img_side_nossas_pessoas{
+        display: none;
+    }
+    .img_side_fornecedores{
         display: none;
     }
 }
