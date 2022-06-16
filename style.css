@@ -3260,6 +3260,18 @@ footer img {
     .bg_texts_nossas_pessoas{
         max-width: 800px;
     }
+    .img_side_operacao{
+        width: 400px;
+    }
+    .area_texts_operacao{
+        margin-top: 100px;
+    }
+    .bg_texts_operacao{
+        max-width: 800px;
+    }
+    .bg_texts_operacao::before{
+        left: 0;
+    }
     .area_principal_nossas_pessoas{
         justify-content: flex-start;
     }
@@ -3446,15 +3458,8 @@ footer img {
     .int_operacao {
         max-width: 300px;
     }
-    .area_total_operacao {
-        max-width: 720px;
-    }
     .area_texts_operacao {
         max-width: 920px;
-    }
-    .img_side_operacao {
-        right: -154px;
-        width: 460px;
     }
     
     /*mercado*/
@@ -3972,6 +3977,7 @@ footer img {
     }
     .area_texts_operacao {
         width: 100%;
+        max-width: unset;
     }
 
     .area_principal_operacao {
@@ -4084,6 +4090,9 @@ footer img {
         display: none;
     }
     .img_side_fornecedores{
+        display: none;
+    }
+    .img_side_operacao{
         display: none;
     }
 }
