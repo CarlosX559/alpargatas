@@ -3279,6 +3279,24 @@ footer img {
     .saiba_mais_int{
         max-width: 1000px;
     }
+    .img_side_fornecedores{
+        width: 400px;
+    }
+    .info_fornecedores_2{
+        max-width: 300px;
+    }
+    .area_texts_fornecedores{
+        max-width: 1000px;
+    }
+    .area_int_fornecedores{
+        max-width: 700px;
+    }
+    .area_direita_fornecedores{
+        margin-right: 130px;
+    }
+    .seta_sessao_fornecedores{
+        margin: 100px 0;
+    }
 }
 @media (max-width: 1200px){
     .img_side_jornada{
@@ -3329,10 +3347,6 @@ footer img {
         max-width: 820px;
     }
     /*Nossas pessoas*/
-    .img_side_nossas_pessoas {
-        /* right: -145px;
-        width: 460px; */
-    }
     .int_nossas_pessoas {
         max-width: 300px;
     }
@@ -3352,10 +3366,6 @@ footer img {
     }
     .area_int_usuarios {
         max-width: 550px;
-    }
-    .img_side_fornecedores {
-        width: 460px;
-        right: -158px;
     }
     .area_principal_usuarios {
         max-width: 1350px;
