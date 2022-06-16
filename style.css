@@ -162,6 +162,7 @@ nav a {
     position: absolute;
     top: 265px;
     right: -1px;
+    z-index: -1;
 }
 
 .area_esquerda img {
@@ -169,7 +170,7 @@ nav a {
     position: absolute;
     bottom: -83px;
     left: -195px;
-
+    z-index: -1;
 }
 
 .area_texts_total {
