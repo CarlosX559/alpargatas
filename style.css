@@ -162,6 +162,7 @@ nav a {
     position: absolute;
     top: 265px;
     right: -1px;
+    z-index: -1;
 }
 
 .area_esquerda img {
@@ -169,7 +170,7 @@ nav a {
     position: absolute;
     bottom: -83px;
     left: -195px;
-
+    z-index: -1;
 }
 
 .area_texts_total {
@@ -288,7 +289,7 @@ nav a {
 
 .img_topo {
     width: 100%;
-    height: 1400px;
+    height: 1130px;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/somos_alpha/somos_alpha.png);
@@ -305,12 +306,14 @@ nav a {
 .area_texts_alpha {
     display: flex;
     justify-content: space-between;
-    max-width: 1400px;
-    width: 100%;
+    align-items: end;
+    margin-right: 120px;
+    /* max-width: 1400px;
+    width: 100%; */
 }
 
 .title_alpha {
-    width: 100%;
+    /* width: 100%; */
 }
 
 .title_alpha h3 {
@@ -328,14 +331,14 @@ nav a {
     color: #fff;
     margin: 0px;
     text-align: center;
-    margin-left: 25px;
+    margin-left: 155px;
 }
 
 .subtitle_alpha {
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 540px;
+    max-width: 430px;
     padding-left: 40px;
 }
 
@@ -1028,6 +1031,10 @@ nav a {
     padding-top: 20px;
 }
 
+.top-space{
+    margin-top: 80px;
+}
+
 .info_direita_governanca img {
     padding-right: 20px;
     width: 30px;
@@ -1054,7 +1061,7 @@ nav a {
 /*Inicio Nossas pessoas*/
 .container_6 {
     width: 100%;
-    margin-top: 120px;
+    margin-top: 50px;
 }
 
 .img_topo_nossas_pessoas {
@@ -1100,7 +1107,7 @@ nav a {
 .area_int_nossas_pessoas {
     display: flex;
     flex-direction: column;
-    max-width: 670px;
+    max-width: 790px;
     width: 100%;
 }
 
@@ -1573,10 +1580,11 @@ nav a {
 
 .img_topo_fornecedores {
     width: 100%;
-    height: 990px;
+    padding: 40px 0;
+    margin: 50px 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(img/fornecedores/fornecedores.png);
+    background-image: url(img/fornecedores/fornecedores-faixa.png);
 }
 
 .area_total_fornecedores {
@@ -1602,11 +1610,17 @@ nav a {
 
 }
 
+.img_side_fornecedores{
+    position: absolute;
+    right: 0;
+    width: 400px;
+}
+
 .area_texts_fornecedores {
     display: flex;
     width: 76%;
     justify-content: center;
-    margin-top: -340px;
+    /* margin-top: -340px; */
     margin-bottom: 20px;
 }
 
