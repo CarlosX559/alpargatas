@@ -639,6 +639,7 @@ nav a {
     display: flex;
     width: 100%;
     justify-content: center;
+    margin-bottom: 50px;
 }
 
 .area_int_jornada {
@@ -650,7 +651,7 @@ nav a {
 
 .subtitle_negocios h2 {
     color: var(--color-cinza);
-    font-size: 32px;
+    font-size: 28px;
     text-transform: uppercase;
     margin-top: 0px;
     line-height: 34px;
