@@ -153,8 +153,8 @@ nav a {
 .area_cima img {
     height: 700px;
     position: absolute;
-    top: -153px;
-    right: -712px;
+    top: -6px;
+    right: -3px;
 }
 
 .area_direita img {
@@ -903,6 +903,7 @@ nav a {
     align-items: baseline;
     max-width: 570px;
     margin-left: 100px;
+    gap: 10px;
 }
 
 .title_governanca h2 {
@@ -2705,10 +2706,6 @@ footer img {
     .area_total_nossas_pessoas {
         max-width: 1280px;
     }
-    .title_governanca svg {
-        margin-top: 20px;
-        padding-left: 20px;
-    }
     .title_governanca {
         align-items: center;
         max-width: max-content;
@@ -2748,11 +2745,9 @@ footer img {
     }
     .title_nossas_pessoas {
         align-items: center;
+        gap: 10px;
     }
-    .title_nossas_pessoas svg {
-        margin-top: 20px;
-        padding-left: 20px;
-    }
+  
     .area_texts_nossas_pessoas {
         max-width: 1300px;
     }
@@ -2974,6 +2969,7 @@ footer img {
     }
 
     .area_cima img {
+        height: 400px;
         z-index: -1;
     }
     .area_esquerda img {
@@ -2991,6 +2987,7 @@ footer img {
         top: 420px;
         right: -16px;
         z-index: -1;
+        transform: rotate(180deg);
     }
 
     /*Somos alpada */
@@ -3053,7 +3050,7 @@ footer img {
     .subtitle_relatorio_2 h2 {
         font-size: 2em;
     }
-
+   
     .area_direita_mercado{
         max-width: 500px;
     }
@@ -3240,6 +3237,9 @@ footer img {
     .img_side_alpa {
         width: 281px;
     }
+    .img_topo {
+        margin: 80px 0px 0px 0px;
+    }
     /*Jornada*/
     .img_side_jornada {
         width: 446px;
@@ -3262,6 +3262,18 @@ footer img {
     }
     .saiba_mais_int {
         max-width: 1220px;
+    }
+    /*geração de valor*/
+    .area_esquerda_geracao img {
+        height: 640px;
+        left: -85px;
+        transform: rotate(-180deg);
+        margin-top: 0px;
+    }
+    .area_direita_geracao img {
+        height: 540px;
+        transform: rotate(-270deg);
+
     }
     /*Alpa*/
     
@@ -3339,7 +3351,7 @@ footer img {
         max-width: 300px;
     }
     .esquerda_info {
-        max-width: 970px;
+        max-width: 1040px;
     }
     .img_side_usuarios {
         left: -186px;
@@ -3536,13 +3548,16 @@ footer img {
     .container_int_4 {
         align-items: center;
     }
-
+    /*geracao*/
     .area_direita_geracao img {
         height: 420px;
     }
-
+    .valor {
+        justify-content: center;
+    }
     .area_esquerda_geracao img {
-        height: 420px;
+        height: 580px;
+        margin-top: 180px;
     }
 
     .subtitle_geracao p {
@@ -3556,16 +3571,32 @@ footer img {
     .seta_sessao_jornada {
         margin-top: 40px;
     }
-
+    /*Governança*/
+    .area_principal {
+        align-items: center;
+        max-width: max-content;
+    }
+    .img_side_governanca {
+        width: 340px;
+        left: -142px;
+    }
+    .area_total_info {
+        justify-content: center;
+    }
     .title_governanca {
         align-items: center;
         justify-content: center;
+        margin-left: 0px;
     }
-
+    .area_total_governanca {
+        justify-content: center;
+    }
     .title_governanca h2 {
         font-size: 40px;
     }
-
+    .info_governanca {
+        padding-right: 0px;
+    }
     .area_titulo_principal {
         flex-direction: column;
         margin-top: 20px;
@@ -3587,7 +3618,7 @@ footer img {
 
     .area_direita_governanca {
         margin-top: 60px;
-        max-width: 400px;
+        max-width: max-content;
     }
 
     .seta_sessao_governanca {
@@ -3602,7 +3633,9 @@ footer img {
     .container_6 {
         margin-top: 0px;
     }
-
+    .img_side_nossas_pessoas {
+        width: 340px;
+    }
     .area_titulo_principal_2 img {
         padding-right: 0px;
     }
@@ -3625,9 +3658,11 @@ footer img {
         flex-direction: column;
         align-items: center;
     }
-
+    .area_total_info_2 {
+        width: 100%;
+    }
     .area_direita_nossas_pessoas {
-        max-width: 400px;
+        max-width: max-content;
         margin-top: 60px;
     }
 
@@ -3662,21 +3697,23 @@ footer img {
         margin-top: 40px;
     }
 
-    /*Usuarios e parceiros mobile*/
-    .img_topo_usuarios {
-        height: 510px;
-    }
-
+    /*Usuarios*/
+   
     .parceiros {
         align-items: center;
+        justify-content: center;
     }
-
+    .int_usuarios {
+        margin-top: 0px;
+    }
     .title_usuarios h2 {
         font-size: 40px;
     }
-
+    .hava {
+        margin-left: 0px;
+    }
     .title_usuarios h3 {
-        font-size: 5em;
+        font-size: 3em;
     }
     .area_principal_usuarios {
         align-items: center;
@@ -3709,7 +3746,7 @@ footer img {
     }
 
     .area_direita_usuarios {
-        max-width: 400px;
+        max-width: max-content;
         margin-top: 60px;
     }
 
@@ -3766,7 +3803,10 @@ footer img {
         flex-direction: column;
         width: 100%;
     }
-
+    /*fornecedores*/
+    .icon_fashion {
+        padding-left: 0px;
+    }
     .info_fornecedores_int {
         margin-top: 20px;
     }
@@ -3776,7 +3816,7 @@ footer img {
     }
 
     .area_direita_fornecedores {
-        max-width: 400px;
+        max-width: max-content;
     }
 
     .seta_sessao_fornecedores {
@@ -3788,10 +3828,7 @@ footer img {
     }
 
     /*Sociedade*/
-    .img_topo_sociedade {
-        height: 510px;
-    }
-
+ 
     .area_principal_5 {
         align-items: center;
     }
@@ -3826,7 +3863,7 @@ footer img {
     }
 
     .area_direita_sociedade {
-        max-width: 400px;
+        max-width: max-content;
         margin-top: 60px;
     }
 
@@ -3839,9 +3876,7 @@ footer img {
     }
 
     /*Operação*/
-    .img_topo_operacao {
-        height: 510px;
-    }
+
 
     .title_operacao {
         justify-content: center;
@@ -3874,7 +3909,7 @@ footer img {
     }
 
     .area_direita_operacao {
-        max-width: 400px;
+        max-width: max-content;
         margin-top: 60px;
     }
 
@@ -3891,9 +3926,6 @@ footer img {
     }
 
     /*Mercado Mobile*/
-    .img_topo_mercado {
-        height: 510px;
-    }
 
     .area_texts_mercado {
         width: 100%;
@@ -3952,10 +3984,12 @@ footer img {
     }
 
     .area_direita_mercado {
-        max-width: 400px;
+        max-width: max-content;
         margin-top: 40px;
     }
-
+    .int_mercado {
+        margin-top: 0px;
+    }
     .seta_sessao_mercado {
         margin: 40px 0px;
     }
@@ -4005,9 +4039,7 @@ footer img {
     }
     .area_cima img {
         display: none;
-        height: 320px;
-        top: -80px;
-        right: -361px;
+    
     }
 
     .area_direita img {
@@ -4029,25 +4061,35 @@ footer img {
     .title_alpha h3 {
         text-align: center;
     }
-
+    .img_side_alpa {
+        display: none;
+    }
     .area_texts_alpha {
         flex-direction: column;
         align-items: center;
+        margin-right: 0px;
     }
-
+    .title_alpha h2 {
+        margin-left: 0px;
+        font-size: 4em;
+        margin-bottom: 10px;
+    }
     .subtitle_alpha h3 {
         text-align: center;
+        margin-bottom: 0px;
     }
 
     .subtitle_alpha {
         padding-left: 0px;
+        max-width: max-content;
     }
     .alpa_relatorio p {
         padding: 0px 20px;
     }
-
+ 
     .area_direita_alpha {
         padding: 0px 20px;
+        margin-left: 0px;
     }
 
     .map_3 {
@@ -4073,13 +4115,18 @@ footer img {
 
     /*Geraçao de valor*/
     .title_geracao h3 {
-        font-size: 28px;
+        font-size: 2.5em;
     }
-
+    .valor {
+        justify-content: center;
+        gap: 10px;
+    }
     .title_geracao h2 {
         font-size: 48px;
     }
-
+    .subtitle_geracao {
+        padding: 0px 20px;
+    }
     .subtitle_geracao p {
         font-size: 18px;
     }
@@ -4118,6 +4165,12 @@ footer img {
     }
     .area_total_governanca {
         width: 98%;
+    }
+    .img_side_governanca {
+        display: none;
+    }
+    .area_direita_governanca {
+        max-width: max-content;
     }
     .info_governanca p {
         font-size: 20px;
