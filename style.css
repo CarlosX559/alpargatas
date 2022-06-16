@@ -1833,6 +1833,7 @@ nav a {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    gap: 20px;
 }
 
 .title_sociedade h2 {
@@ -1955,8 +1956,10 @@ nav a {
 .info_sociedade {
     display: flex;
     align-items: center;
-    max-width: 560px;
+    max-width: 500px;
     width: 100%;
+    min-width: max-content;
+    flex: 1;
 }
 
 .info_sociedade img {
@@ -2737,12 +2740,37 @@ footer img {
     .area_texts {
         max-width: 495px;
     }
-
+    
     .area_principal_fornecedores{
         gap: 10px;
     }
     .area_texts_fornecedores {
         margin-top: -200px;
+    }
+
+    .area_principal_sociedade{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area_info_int_5{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .area_info_int_5 > img{
+        width: 250px;
+    }
+
+    .area_total_info_5{
+        justify-content: center;
+    }
+
+    .seta_sessao_sociedade{
+        margin-top: 50px;
     }
 
     .title {
@@ -3087,6 +3115,10 @@ footer img {
 
     .area_texts_direita {
         margin-top: 20px;
+    }
+
+    .area_int_sociedade{
+        max-width: 500px;
     }
 
     h2 {
@@ -3522,10 +3554,9 @@ footer img {
     }
 
     .area_info_int_5 {
-        display: flex;
+        /* display: flex;
         align-items: center;
-        flex-direction: column;
-        justify-content: center;
+        justify-content: center; */
     }
 
     .area_principal_sociedade {
