@@ -2148,10 +2148,12 @@ nav a {
 }
 
 .area_texts_operacao {
+    position: absolute;
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	margin-bottom: 20px;
+    top: -130px;
 }
 
 .area_int_operacao {
@@ -2169,6 +2171,7 @@ nav a {
 }
 
 .area_principal_texts_6 {
+    position: relative;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
@@ -2274,6 +2277,7 @@ nav a {
 }
 
 .area_principal_operacao {
+    margin-top: 200px;
 	display: flex;
 	width: 100%;
 	justify-content: center;
