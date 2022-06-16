@@ -168,7 +168,7 @@ nav a {
 .area_esquerda img {
     height: 540px;
     position: absolute;
-    bottom: -83px;
+    bottom: -265px;
     left: -195px;
     z-index: -1;
 }
@@ -1643,10 +1643,17 @@ nav a {
 .img_topo_fornecedores {
     width: 100%;
     padding: 40px 0;
-    margin: 150px 0;
+    margin: 150px 0px 60px 0px;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(img/fornecedores/fornecedores-faixa.png);
+}
+.img_side_fornecedores {
+    position: absolute;
+    transform: rotate(-45deg);
+    right: -200px;
+    width: 540px;
 }
 
 .area_total_fornecedores {
@@ -1672,13 +1679,6 @@ nav a {
     margin: 0px;
 
 }
-
-.img_side_fornecedores{
-    position: absolute;
-    right: 0;
-    width: 400px;
-}
-
 .area_texts_fornecedores {
     display: flex;
     justify-content: center;
@@ -1771,7 +1771,7 @@ nav a {
 .icon_fashion {
     width: 320px;
     height: 320px;
-    padding-left: 40px;
+    padding-left: 30px;
 }
 
 .area_info_fornecedores {
@@ -1885,7 +1885,22 @@ nav a {
     width: 100%;
 
 }
-
+.img_topo_sociedade {
+    width: 100%;
+    padding: 40px 0;
+    margin: 150px 0px 60px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/sociedade/1.png);
+}
+.img_side_sociedade {
+    position: absolute;
+    transform: rotate(47deg);
+    left: -230px;
+    width: 540px;
+}
+/*
 .img_topo_sociedade {
     width: 100%;
     height: 990px;
@@ -1893,17 +1908,17 @@ nav a {
     background-repeat: no-repeat;
     background-image: url(img/sociedade/sociedade.png);
 }
-
+*/
 .area_total_sociedade {
     display: flex;
-    width: 100%;
+    max-width: 1500px;
     align-items: center;
     height: 100%;
     justify-content: center;
 }
 
 .title_sociedade {
-    width: 100%;
+    width: max-content;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -1920,7 +1935,6 @@ nav a {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: -280px;
     margin-bottom: 20px;
 }
 
@@ -1962,7 +1976,7 @@ nav a {
 
 .area_int_principal_5 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
 
@@ -1999,6 +2013,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
 }
 
 .beneficios_sociedade p {
@@ -2010,16 +2025,12 @@ nav a {
 
 .area_total_info_5 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 100%;
 }
 
 .area_info_int_5 {
     display: -webkit-box;
-}
-
-.area_info_int_5 img {
-    padding-right: 20px;
 }
 
 .area_info_sociedade {
@@ -2076,7 +2087,6 @@ nav a {
 
 .area_principal_sociedade {
     display: flex;
-    width: 100%;
     justify-content: center;
     max-width: 1380px;
 }
@@ -2140,7 +2150,22 @@ nav a {
     width: 100%;
 
 }
-
+.img_topo_operacao {
+    width: 100%;
+    padding: 40px 0;
+    margin: 150px 0px 60px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/operacao/1.png);
+}
+.img_side_operacao {
+    position: absolute;
+    transform: rotate(-44deg);
+    right: -230px;
+    width: 540px;
+}
+/*
 .img_topo_operacao {
     width: 100%;
     height: 990px;
@@ -2148,7 +2173,7 @@ nav a {
     background-repeat: no-repeat;
     background-image: url(img/operacao/operacao.png);
 }
-
+*/
 .area_total_operacao {
     display: flex;
     width: 100%;
@@ -2173,7 +2198,6 @@ nav a {
     display: flex;
     width: 100%;
     justify-content: center;
-    margin-top: -230px;
     margin-bottom: 20px;
 }
 
@@ -2367,7 +2391,22 @@ nav a {
     width: 100%;
 
 }
-
+.img_topo_mercado {
+    width: 100%;
+    padding: 40px 0;
+    margin: 150px 0px 60px 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(img/mercado/1.png);
+}
+.img_side_mercado {
+    position: absolute;
+    transform: rotate(45deg);
+    left: -230px;
+    width: 540px;
+}
+/*
 .img_topo_mercado {
     width: 100%;
     height: 990px;
@@ -2375,17 +2414,17 @@ nav a {
     background-repeat: no-repeat;
     background-image: url(img/mercado/mercado.png);
 }
+*/
 
 .area_total_mercado {
     display: flex;
-    width: 100%;
+   max-width: 1400px;
     align-items: center;
     height: 100%;
     justify-content: center;
 }
 
 .title_mercado {
-    width: 100%;
     display: flex;
     align-items: baseline;
     justify-content: center;
@@ -2400,9 +2439,8 @@ nav a {
 
 .area_texts_mercado {
     display: flex;
-    width: 100%;
+    max-width: 1480px;
     justify-content: center;
-    margin-top: -270px;
     margin-bottom: 20px;
 }
 
@@ -2443,6 +2481,7 @@ nav a {
 
 .area_int_principal_7 {
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
 
@@ -2465,8 +2504,7 @@ nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    max-width: 1126px;
+    max-width: max-content;
 
 }
 
@@ -2546,9 +2584,8 @@ nav a {
 
 .area_principal_mercado {
     display: flex;
-    width: 100%;
     justify-content: center;
-    max-width: 1400px;
+    max-width: 1496px;
 }
 
 .area_direita_mercado {
@@ -2787,7 +2824,7 @@ footer img {
         font-family: var(--font-regular);
     }
     .area_texts_fornecedores {
-        max-width: 1165px;
+        max-width: 1095px;
     }
     .area_principal_4 {
         justify-content: center;
@@ -2809,7 +2846,7 @@ footer img {
     }
     /*Fornecedores*/
     .title_fornecedores {
-        max-width: 1415px;
+        max-width: 1500px;
         justify-content: flex-start;
     }
     /*Sociedade*/
@@ -2824,32 +2861,29 @@ footer img {
         
     }
     .area_texts_sociedade {
-        max-width: 1734px;
+        max-width: 1310px;
     }
     .area_int_sociedade {
         max-width: 530px;
     }
     .area_principal_sociedade {
-        max-width: 1680px;
+        max-width: 1500px;
     }
     .area_int_principal_5 {
-        max-width: 1080px;
+        max-width: 1140px;
     }
     .area_total_info_5 {
-        justify-content: center;
+        justify-content: flex-start;
     }
     .int_sociedade {
         justify-content: space-between;
         margin-top: -100px;
     }
     /*Operação*/
-    .title_operacao svg {
-        margin-top: 20px;
-        padding-left: 20px;
-    }
+
     .title_operacao {
         align-items: center;
-     
+        gap: 20px;
     }
     .area_total_operacao {
         max-width: 1205px;
@@ -2859,9 +2893,6 @@ footer img {
     }
     .area_texts_operacao {
         max-width: 1205px;
-    }
-    .area_texts_operacao {
-        margin-top: -290px;
     }
     
     .area_principal_operacao {
@@ -3013,10 +3044,6 @@ footer img {
     }
     .img_topo_sociedade {
         height: 740px;
-    }
-
-    .area_texts_sociedade {
-        margin-top: -200px;
     }
 
     /*Operação*/
@@ -3611,18 +3638,11 @@ footer img {
         height: 510px;
     }
 
-    .area_texts_sociedade {
-        margin-top: -80px;
-    }
-
     .area_principal_5 {
         align-items: center;
     }
 
     .area_titulo_principal_5 img {
-        padding-right: 0px;
-    }
-    .area_info_int_5 img {
         padding-right: 0px;
     }
     .title_sociedade {
@@ -3686,7 +3706,6 @@ footer img {
     }
     .area_texts_operacao {
         width: 100%;
-        margin-top: -80px;
     }
 
     .area_principal_operacao {
@@ -3724,7 +3743,6 @@ footer img {
 
     .area_texts_mercado {
         width: 100%;
-        margin-top: -80px;
     }
     .area_titulo_principal_7 img {
         padding-right: 0px;
@@ -4033,10 +4051,6 @@ footer img {
         padding: 0px 20px;
     }
 
-    .area_texts_sociedade {
-        margin-top: 0px;
-    }
-
     .beneficios_sociedade p {
         text-align: center;
     }
@@ -4070,10 +4084,6 @@ footer img {
     .title_mercado {
         justify-content: flex-end;
         width: 86%;
-    }
-
-    .area_texts_mercado {
-        margin-top: 20px;
     }
 
     .subtitle_mercado h2 {
