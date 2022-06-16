@@ -1067,7 +1067,6 @@ nav a {
 
 .area_total_nossas_pessoas {
     display: flex;
-    width: 75%;
     align-items: center;
     height: 100%;
     justify-content: center;
@@ -2076,7 +2075,6 @@ nav a {
 }
 
 .title_operacao {
-    width: 86%;
     display: flex;
     align-items: baseline;
     justify-content: flex-start;
@@ -2090,7 +2088,7 @@ nav a {
 
 .area_texts_operacao {
     display: flex;
-    width: 61%;
+    width: 100%;
     justify-content: center;
     margin-top: -230px;
     margin-bottom: 20px;
@@ -2599,6 +2597,9 @@ footer img {
     .title_governanca h2 {
         font-size: 140px;
     }
+    .area_total_nossas_pessoas {
+        max-width: 1588px;
+    }
     .title_governanca svg {
         margin-top: 20px;
         padding-left: 20px;
@@ -2614,7 +2615,7 @@ footer img {
         margin-top: -128px;
     }
     .area_texts_governanca {
-        width: 90%;
+        max-width: 1490px;
     }
     .area_int_principal {
         justify-content: flex-end;
@@ -2650,13 +2651,10 @@ footer img {
         padding-left: 20px;
     }
     .area_texts_nossas_pessoas {
-        width: 62%;
+        max-width: 1205px;
     }
     .subtitle_nossas_pessoas h2 {
         font-size: 23px;
-    }
-    .area_total_nossas_pessoas {
-        width: 81%;
     }
     .area_titulo_principal_2 img {
         width: 140px;
@@ -2728,8 +2726,47 @@ footer img {
     .esquerda_info {
         width: 84%;
     }
-    
+    .area_texts_fornecedores {
+        max-width: 1165px;
+    }
+    .area_principal_4 {
+        justify-content: center;
+        align-items: center;
+        max-width: 1095px;
+    }
+    .area_principal_fornecedores {
+        max-width: 1640px;
+    }
+    .esquerda_info {
+        margin-top: -32px;
+    }
+    .area_texts_usuarios {
+        max-width: 1675px;
+    }
+
+    /*Operação*/
+    .title_operacao svg {
+        margin-top: 20px;
+        padding-left: 20px;
+    }
+    .title_operacao {
+        align-items: center;
+     
+    }
+    .area_total_operacao {
+        max-width: 885px;
+    }
+    .title_operacao h2 {
+        font-size: 140px;
+    }
+    .area_texts_operacao {
+        max-width: 885px;
+    }
+    .area_texts_operacao {
+        margin-top: -290px;
+    }
 }
+
 @media(max-width: 1496px) {
     .area_texts {
         max-width: 495px;
@@ -3863,9 +3900,6 @@ footer img {
     }
 
     /*Nossas pessoas*/
-    .area_total_nossas_pessoas {
-        width: 100%;
-    }
 
     .area_titulo_principal_2 h2 {
         font-size: 1em;
