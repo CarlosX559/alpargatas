@@ -2906,6 +2906,12 @@ footer img {
     }
 }
 
+@media (max-width: 1660px) {
+    .img_side_nossas_pessoas {
+        width: 450px;
+    }
+}
+
 @media(max-width: 1496px) {
     .area_texts {
         max-width: 495px;
