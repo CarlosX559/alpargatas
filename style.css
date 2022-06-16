@@ -18,6 +18,7 @@ h2 {
 html {
 	overflow-x: hidden !important;
 	overflow-x: clip !important;
+    scroll-behavior: smooth;
 }
 body {
 	margin: 0px;
@@ -2721,16 +2722,13 @@ footer > img {
 	}
 
 	.area_texts_nossas_pessoas {
-		max-width: 1300px;
+		max-width: 1000px;
 	}
 	.subtitle_nossas_pessoas h2 {
 		font-size: 23px;
 	}
 	.area_titulo_principal_2 img {
 		width: 140px;
-	}
-	.area_principal_nossas_pessoas {
-		max-width: 1500px;
 	}
 	.area_total_info_2 {
 		width: 88%;
@@ -2875,6 +2873,14 @@ footer > img {
 	.title_mercado h2 {
 		font-size: 140px;
 	}
+
+    .bg_texts_nossas_pessoas{
+        max-width: 800px;
+    }
+
+    .bg_texts_nossas_pessoas::before{
+        left: 0;
+    }
 }
 @media (max-width: 1660px) {
 	.img_side_operacao {
@@ -2890,6 +2896,9 @@ footer > img {
 		height: 450px;
 		top: 24px;
 	}
+    .img_side_nossas_pessoas{
+        width: 500px;
+    }
 }
 @media (max-width: 1496px) {
 	/*home*/
@@ -2915,6 +2924,7 @@ footer > img {
 	.area_principal_fornecedores {
 		gap: 10px;
 		max-width: 1280px;
+        width: 95%;
 	}
 	.title_fornecedores {
 		max-width: 1006px;
@@ -3271,9 +3281,7 @@ footer > img {
 		justify-content: center;
 	}
 	/*nossas pessoas*/
-	.area_int_nossas_pessoas {
-		max-width: 1000px;
-	}
+	
 	.bg_texts_nossas_pessoas {
 		max-width: 800px;
 	}
@@ -4169,6 +4177,7 @@ footer > img {
     }
 	.global {
 		width: 60px;
+        padding: 0;
 	}
 }
 @media (max-width: 425px) {
