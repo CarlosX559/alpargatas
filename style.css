@@ -3711,6 +3711,19 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .subtitle_relatorio_2 h2 {
     font-size: 1.8em;
   }
+  .area_texts {
+    max-width: 450px;
+  }
+  .title h2 {
+    font-size: 5em;
+    margin-left: -70px;
+  }
+  .area_mapa p {
+    font-size: 0.8em;
+  }
+  .area_int_mapa {
+    max-width: 580px;
+  }
   .title_2 h2 {
     font-size: 1em;
   }
@@ -3729,22 +3742,32 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 50px;
   }
   /*Alpa*/
+  .area_esquerda_alpha {
+    max-width: 360px;
+    padding-right: 30px;
+  }
   .legenda {
-    margin-top: 20px;
-    max-width: max-content;
+    margin-top: -163px;
+    max-width: initial;
+  }
+  .title_rothys h2 {
+    font-size: 1.2em;
+  }
+  .title_ioasys h2 {
+    font-size: 1.2em;
   }
   .linha_1 img {
     height: 640px;
     position: absolute;
-    bottom: -121px;
+    bottom: -168px;
     left: 40px;
     z-index: -1;
   }
   .linha_2 img {
-    height: 798px;
+    height: 772px;
     position: absolute;
-    bottom: 160px;
-    right: -746px;
+    bottom: -140px;
+    right: -706px;
     z-index: -1;
   }
   /*sociedade*/
