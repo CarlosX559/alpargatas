@@ -720,6 +720,9 @@ nav a {
 	width: 100%;
 }
 
+.area_saiba_mais:hover {
+}
+
 .area_saiba_mais p {
 	color: #a3a4a8;
 	font-size: 24px;
@@ -1122,6 +1125,41 @@ nav a {
 	align-items: baseline;
 	justify-content: flex-start;
 	max-width: 1000px;
+}
+
+.animation_slide_left {
+	transition: all 300ms ease-out;
+	position: relative;
+	cursor: pointer;
+}
+
+.animation_slide_left h2 {
+	position: relative;
+}
+
+.animation_slide_left h2:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background: white;
+	bottom: -10px;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: transform 300ms ease-out;
+}
+
+.animation_slide_left:after {
+	content: "";
+	background: url("");
+}
+
+.animation_slide_left:hover {
+	transform: translateX(20px);
+	gap: 50px;
+}
+.animation_slide_left:hover h2:before {
+	transform: scaleX(1);
 }
 
 .title_nossas_pessoas h2 {
@@ -2148,12 +2186,12 @@ nav a {
 }
 
 .area_texts_operacao {
-    position: absolute;
+	position: absolute;
 	display: flex;
 	width: 100%;
 	justify-content: center;
 	margin-bottom: 20px;
-    top: -130px;
+	top: -130px;
 }
 
 .area_int_operacao {
@@ -2171,7 +2209,7 @@ nav a {
 }
 
 .area_principal_texts_6 {
-    position: relative;
+	position: relative;
 	display: flex;
 	width: 100%;
 	flex-direction: column;
@@ -2277,7 +2315,7 @@ nav a {
 }
 
 .area_principal_operacao {
-    margin-top: 200px;
+	margin-top: 200px;
 	display: flex;
 	width: 100%;
 	justify-content: center;
@@ -2623,6 +2661,120 @@ footer > img {
 	color: white;
 	filter: invert(1);
 	display: none;
+}
+
+footer #relatorio {
+	width: 100%;
+	background: linear-gradient(to right, #34999a, #de9125, #ec1c24);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    margin: 100px 0;
+}
+
+footer #wrapperRelatorio {
+	max-width: 1000px;
+    width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 100px;
+	cursor: pointer;
+}
+
+footer #iconRelatorio {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotate(45deg);
+}
+
+footer #iconLine {
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	border: 3px solid #fcc956;
+}
+
+footer #iconWrapper {
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	font-size: 10em;
+	z-index: 2;
+}
+
+footer #iconWrapper:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: linear-gradient(#31caff, #0093c6);
+	transform: scale(0);
+	transition: all 300ms ease-out;
+}
+
+footer #iconWrapper img {
+	width: 50%;
+	transform: rotate(-45deg);
+	color: #79b369;
+	transition: all 300ms ease-out;
+}
+
+footer #contentRelatorio {
+	color: white;
+	transition: all 300ms ease-out;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+    flex: 1;
+}
+
+footer #contentRelatorio h3 {
+	font-size: 2.2em;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	width: 100%;
+}
+
+footer #contentRelatorio h3 svg {
+	transition: all 300ms ease-out;
+}
+
+footer #contentRelatorio h4 {
+	font-family: var(--font-light);
+	margin: 0;
+}
+footer #contentRelatorio p {
+	margin: 0;
+}
+
+footer #wrapperRelatorio:hover #iconWrapper img {
+	filter: brightness(255);
+}
+
+footer #wrapperRelatorio:hover #iconWrapper:before {
+	transform: scale(1);
+}
+
+footer #wrapperRelatorio:hover #contentRelatorio {
+	transform: translateX(20px);
+}
+footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
+	transform: translateX(20px);
 }
 
 @media (max-width: 1920px) {
