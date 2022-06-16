@@ -681,21 +681,21 @@ nav a {
 .title_global {
 	display: flex;
 	flex-direction: column;
-	max-width: 290px;
+	max-width: 220px;
 	width: 100%;
 }
 
 .title_global h2 {
 	color: var(--color-cinza);
 	margin: 0px;
-	font-size: 26px;
+	font-size: 22px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
 .text_pilar p {
 	color: var(--color-cinza-escuro);
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0px;
 	font-family: var(--font-light);
 }
@@ -1732,7 +1732,7 @@ nav a {
 }
 
 .icon_fashion {
-	width: 320px;
+	width: 220px;
 	padding-left: 30px;
 }
 
@@ -1833,6 +1833,7 @@ nav a {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	margin: 50px 0;
 }
 
 .seta_sessao_fornecedores img {
@@ -2326,6 +2327,7 @@ nav a {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	margin-top: 100px;
 }
 
 .seta_sessao_operacao img {
@@ -2881,14 +2883,12 @@ footer > img {
 	.bg_texts_operacao {
 		max-width: 700px;
 	}
-	/* .area_texts_operacao{
-        max-width: unset;
-    }
-    .area_int_operacao{
-        max-width: 1020px;
-    }*/
 	.subtitle_operacao {
 		max-width: 600px;
+	}
+	.img_side_jornada {
+		height: 450px;
+		top: 24px;
 	}
 }
 @media (max-width: 1496px) {
@@ -3249,6 +3249,8 @@ footer > img {
 
 	.img_side_jornada {
 		left: -80px;
+		height: 450px;
+		top: 24px;
 	}
 	.title_jornada {
 		max-width: 1040px;
@@ -4152,6 +4154,23 @@ footer > img {
 	}
 }
 
+@media (max-width: 650px) {
+	.area_pilares {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+    .area_title{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+    }
+	.global {
+		width: 60px;
+	}
+}
 @media (max-width: 425px) {
 	/*Home*/
 	.subtitle,
