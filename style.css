@@ -3120,6 +3120,10 @@ footer img {
         max-width: 500px;
     }
 
+    .area_principal_fornecedores{
+        margin: 0 auto;
+    }
+
     h2 {
         text-align: center !important;
     }
