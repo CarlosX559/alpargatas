@@ -1095,6 +1095,7 @@ nav a {
     width: 100%;
     padding: 30px 0;
     margin: 60px 0;
+    position: relative;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1103,6 +1104,7 @@ nav a {
 .img_side_nossas_pessoas {
     position: absolute;
     right: -224px;
+    top: -205px;
     width: 540px;
     transform: rotate(-45deg);
 }
@@ -1130,7 +1132,8 @@ nav a {
     width: 100%;
     display: flex;
     align-items: baseline;
-    justify-content: center;
+    justify-content: flex-start;
+    max-width: 1000px;
 }
 
 .title_nossas_pessoas h2 {
@@ -1185,7 +1188,6 @@ nav a {
     display: flex;
     width: 100%;
     max-width: 1200px;
-
 }
 
 .area_principal_2 {
@@ -3255,7 +3257,22 @@ footer img {
     .area_total_jornada{
         justify-content: center;
     }
-
+    .area_int_nossas_pessoas{
+        max-width: 1000px;
+    }
+    .bg_texts_nossas_pessoas{
+        max-width: 800px;
+    }
+    .area_principal_nossas_pessoas{
+        justify-content: flex-start;
+    }
+    .seta_sessao_nossas_pessoas{
+        margin-bottom: 150px;
+    }
+    .img_side_nossas_pessoas{
+        width: 400px;
+        top: -130px;
+    }
     .area_pilares{
         flex-wrap: wrap;
     }
@@ -3267,7 +3284,12 @@ footer img {
     .img_side_jornada{
         left: -180px;
     }
-
+    .title_nossas_pessoas{
+        max-width: 800px;
+    }
+    .area_int_nossas_pessoas{
+        max-width: 800px;
+    }
     .title_global {
         padding-right:0px;
         max-width: 260px;
@@ -3308,8 +3330,8 @@ footer img {
     }
     /*Nossas pessoas*/
     .img_side_nossas_pessoas {
-        right: -145px;
-        width: 460px;
+        /* right: -145px;
+        width: 460px; */
     }
     .int_nossas_pessoas {
         max-width: 300px;
@@ -3444,6 +3466,12 @@ footer img {
         flex-direction: column;
     }
 
+    .area_int_nossas_pessoas{
+        max-width: 700px;
+    }
+    .area_texts_nossas_pessoas{
+        margin-top: 100px;
+    }
     .saiba_mais_int{
         justify-content: center;
     }
@@ -3631,6 +3659,13 @@ footer img {
     }
     .title_nossas_pessoas {
         align-items: center;
+        justify-content: center;
+    }
+    .title_nossas_pessoas svg{
+        margin: 0;
+    }
+    .area_total_info_2{
+        margin: 0 auto;
     }
     .area_texts_int_pessoas {
         margin-top: 20px;
@@ -3652,8 +3687,11 @@ footer img {
     .area_direita_nossas_pessoas {
         max-width: 400px;
         margin-top: 60px;
+        justify-content: center;
     }
-
+    .img_side_nossas_pessoas{
+        top: -150px;
+    }
     .area_titulo_principal_2 {
         flex-direction: column;
         align-items: center;
@@ -3990,6 +4028,9 @@ footer img {
 
 @media (max-width: 768px) {
     .img_side_jornada{
+        display: none;
+    }
+    .img_side_nossas_pessoas{
         display: none;
     }
 }
