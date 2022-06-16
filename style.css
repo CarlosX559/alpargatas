@@ -18,6 +18,7 @@ h2 {
 html {
 	overflow-x: hidden !important;
 	overflow-x: clip !important;
+	scroll-behavior: smooth;
 }
 body {
 	margin: 0px;
@@ -681,21 +682,21 @@ nav a {
 .title_global {
 	display: flex;
 	flex-direction: column;
-	max-width: 290px;
+	max-width: 220px;
 	width: 100%;
 }
 
 .title_global h2 {
 	color: var(--color-cinza);
 	margin: 0px;
-	font-size: 26px;
+	font-size: 22px;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
 
 .text_pilar p {
 	color: var(--color-cinza-escuro);
-	font-size: 20px;
+	font-size: 18px;
 	margin: 0px;
 	font-family: var(--font-light);
 }
@@ -1657,10 +1658,9 @@ nav a {
 .area_int_fornecedores {
 	display: flex;
 	flex-direction: column;
-	max-width: 670px;
+	max-width: 680px;
 	width: 100%;
 }
-
 .subtitle_fornecedores h2 {
 	color: var(--color-cinza-escuro);
 	font-family: var(--font-light);
@@ -1732,7 +1732,7 @@ nav a {
 }
 
 .icon_fashion {
-	width: 320px;
+	width: 220px;
 	padding-left: 30px;
 }
 
@@ -1833,6 +1833,7 @@ nav a {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	margin: 50px 0;
 }
 
 .seta_sessao_fornecedores img {
@@ -2326,6 +2327,7 @@ nav a {
 	display: flex;
 	width: 100%;
 	justify-content: center;
+	margin-top: 100px;
 }
 
 .seta_sessao_operacao img {
@@ -2717,18 +2719,15 @@ footer > img {
 		align-items: center;
 		gap: 10px;
 	}
-
+	.area_texts_fornecedores,
 	.area_texts_nossas_pessoas {
-		max-width: 1300px;
+		max-width: 1000px;
 	}
 	.subtitle_nossas_pessoas h2 {
 		font-size: 23px;
 	}
 	.area_titulo_principal_2 img {
 		width: 140px;
-	}
-	.area_principal_nossas_pessoas {
-		max-width: 1500px;
 	}
 	.area_total_info_2 {
 		width: 88%;
@@ -2787,9 +2786,6 @@ footer > img {
 	.tyne {
 		font-family: var(--font-regular);
 	}
-	.area_texts_fornecedores {
-		max-width: 1095px;
-	}
 	.area_principal_4 {
 		justify-content: center;
 		align-items: center;
@@ -2810,7 +2806,7 @@ footer > img {
 	}
 	/*Fornecedores*/
 	.title_fornecedores {
-		max-width: 1500px;
+		max-width: 1000px;
 		justify-content: flex-start;
 	}
 	/*Sociedade*/
@@ -2873,6 +2869,14 @@ footer > img {
 	.title_mercado h2 {
 		font-size: 140px;
 	}
+
+	.bg_texts_nossas_pessoas {
+		max-width: 800px;
+	}
+
+	.bg_texts_nossas_pessoas::before {
+		left: 0;
+	}
 }
 @media (max-width: 1660px) {
 	.img_side_operacao {
@@ -2881,14 +2885,15 @@ footer > img {
 	.bg_texts_operacao {
 		max-width: 700px;
 	}
-	/* .area_texts_operacao{
-        max-width: unset;
-    }
-    .area_int_operacao{
-        max-width: 1020px;
-    }*/
 	.subtitle_operacao {
 		max-width: 600px;
+	}
+	.img_side_jornada {
+		height: 450px;
+		top: 24px;
+	}
+	.img_side_nossas_pessoas {
+		width: 500px;
 	}
 }
 @media (max-width: 1496px) {
@@ -2915,6 +2920,7 @@ footer > img {
 	.area_principal_fornecedores {
 		gap: 10px;
 		max-width: 1280px;
+		width: 95%;
 	}
 	.title_fornecedores {
 		max-width: 1006px;
@@ -3249,6 +3255,8 @@ footer > img {
 
 	.img_side_jornada {
 		left: -80px;
+		height: 450px;
+		top: 24px;
 	}
 	.title_jornada {
 		max-width: 1040px;
@@ -3269,9 +3277,7 @@ footer > img {
 		justify-content: center;
 	}
 	/*nossas pessoas*/
-	.area_int_nossas_pessoas {
-		max-width: 1000px;
-	}
+
 	.bg_texts_nossas_pessoas {
 		max-width: 800px;
 	}
@@ -3431,7 +3437,7 @@ footer > img {
 		max-width: 550px;
 	}
 	.img_side_fornecedores {
-		width: 420px;
+		width: 350px;
 		right: -158px;
 	}
 	.area_principal_usuarios {
@@ -4152,6 +4158,24 @@ footer > img {
 	}
 }
 
+@media (max-width: 650px) {
+	.area_pilares {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.area_title {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.global {
+		width: 60px;
+		padding: 0;
+	}
+}
 @media (max-width: 425px) {
 	/*Home*/
 	.subtitle,
