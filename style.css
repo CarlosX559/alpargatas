@@ -3300,22 +3300,7 @@ footer img {
     .saiba_mais_int{
         max-width: 1000px;
     }
-    /*Fornecedores*/
-    .icon_fashion {
-        width: 300px;
-    }
-    .img_side_fornecedores {
-        width: 460px;
-       
-    }
-    /*usuarios*/
-    .img_side_usuarios {
-        width: 460px;
-        left: -186px;
-    }
-    .img_topo_fornecedores {
-        margin: 190px 0px 60px 0px;
-    }
+   
 }
 @media(max-width: 1366px) {
     .hava {
