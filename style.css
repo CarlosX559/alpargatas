@@ -4075,7 +4075,15 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     width: 100%;
     text-align: center;
   }
-
+  .legenda {
+    margin-top: 20px;
+  }
+  .title_rothys h2 {
+    margin-bottom: 10px;
+  }
+  .title_rothys h2 {
+    margin-bottom: 10px;
+  }
   .area_int_localizacao {
     flex-direction: column-reverse;
     align-items: center;
@@ -4103,6 +4111,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
 
   .area_icons h2 {
     width: 100%;
+    text-align: left !important;
   }
 
   .area_info p {
@@ -4302,7 +4311,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
 
   /*Usuarios*/
-
+  .area_info_int_3 img {
+    display: none;
+  }
   .parceiros {
     align-items: center;
     justify-content: center;
@@ -4535,9 +4546,15 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
 
   /*Mercado Mobile*/
-
+  .area_total_mercado {
+    max-width: 617px;
+  }
   .area_texts_mercado {
     width: 100%;
+  }
+  .area_int_principal_7 {
+    justify-content: center;
+    max-width: 100%;
   }
   .area_titulo_principal_7 img {
     padding-right: 0px;
@@ -4652,6 +4669,12 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .subtitle,
   .subtitle_2 {
     padding: 0px 20px;
+  }
+  .linha_1 img {
+    display: none;
+  }
+  .linha_2 img {
+    display: none;
   }
   .bg_menu {
     top: -50px;
