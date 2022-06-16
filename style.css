@@ -1747,7 +1747,6 @@ nav a {
     justify-content: center;
     max-width: max-content;
     gap: 120px;
-    margin: 0 auto;
 }
 
 .area_direita_fornecedores {
@@ -2314,6 +2313,7 @@ nav a {
     display: flex;
     align-items: baseline;
     justify-content: center;
+    gap: 20px;
 }
 
 .title_mercado h2 {
@@ -2324,7 +2324,7 @@ nav a {
 
 .area_texts_mercado {
     display: flex;
-    width: 94%;
+    width: 100%;
     justify-content: center;
     margin-top: -270px;
     margin-bottom: 20px;
@@ -2954,12 +2954,30 @@ footer img {
         font-size: 2em;
     }
 
+    .area_direita_mercado{
+        max-width: 500px;
+    }
+
+    .seta_sessao_mercado{
+        margin-top: 60px;
+    }
+
+    .area_info_int_7{
+        align-items: start;
+    }
+
     .ano h2 {
         font-size: 1.5em;
     }
 
     .area_texts_total {
         height: auto;
+    }
+
+    .area_principal_mercado{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .title h2 {
@@ -3167,6 +3185,10 @@ footer img {
 
     .area_int_sociedade{
         max-width: 500px;
+    }
+
+    .area_principal_fornecedores{
+        margin: 0 auto;
     }
 
     h2 {
@@ -3601,12 +3623,6 @@ footer img {
         justify-content: center;
     }
 
-    .area_info_int_5 {
-        /* display: flex;
-        align-items: center;
-        justify-content: center; */
-    }
-
     .area_principal_sociedade {
         flex-direction: column;
         align-items: center;
@@ -3727,7 +3743,8 @@ footer img {
 
     .area_info_int_7 {
         width: 100%;
-        align-items: center;
+        align-items: start;
+        width: max-content;
     }
 
     .area_info_int_7 img {
