@@ -1145,7 +1145,7 @@ nav a {
   transform: scaleX(0);
   transition: transform 300ms ease-out;
 }
-
+/**/
 .animation_slide_left:after {
   content: "";
   background: url("");
