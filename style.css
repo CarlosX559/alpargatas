@@ -1155,10 +1155,12 @@ nav a {
 .area_int_nossas_pessoas {
     display: flex;
     flex-direction: column;
-    max-width: 790px;
+    max-width: 1000px;
     width: 100%;
 }
-
+.subtitle_nossas_pessoas{
+    max-width: 790px;
+}
 .subtitle_nossas_pessoas h2 {
     color: var(--color-cinza-escuro);
     font-size: 20px;
@@ -1205,7 +1207,7 @@ nav a {
 .area_titulo_principal_2 {
     display: flex;
     align-items: flex-start;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     margin-top: 40px;
 }
@@ -3262,6 +3264,12 @@ footer img {
     }
     .jornada{
         width: unset;
+    }
+    .area_titulo_principal_2{
+        max-width: 500px;
+    }
+    .area_principal_nossas_pessoas{
+        max-width: 1300px;
     }
     .area_total_jornada{
         justify-content: center;
