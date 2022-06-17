@@ -1741,8 +1741,12 @@ nav a {
 .area_int_fornecedores {
   display: flex;
   flex-direction: column;
-  max-width: 680px;
-  width: 100%;
+  max-width: 1250px;
+  width: 90%;
+}
+.subtitle_fornecedores{
+	max-width: 680px;
+
 }
 .subtitle_fornecedores h2 {
   color: var(--color-cinza-escuro);
@@ -1757,9 +1761,6 @@ nav a {
   flex-direction: column;
 }
 
-.bg_texts_fornecedores {
-  width: 100%;
-}
 
 .bg_texts_fornecedores::before {
   content: url(img/fornecedores/bg_fornecedores.png);
@@ -1768,6 +1769,7 @@ nav a {
   height: max-content;
   position: absolute;
   z-index: -10;
+  left: 0;
 }
 
 .area_int_principal_4 {
@@ -1779,7 +1781,6 @@ nav a {
 .area_principal_4 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   width: 100%;
   max-width: 1126px;
 }
@@ -1816,7 +1817,6 @@ nav a {
 
 .icon_fashion {
   width: 220px;
-  padding-left: 30px;
 }
 
 .area_info_fornecedores {
@@ -1867,6 +1867,7 @@ nav a {
   justify-content: center;
   max-width: max-content;
   gap: 120px;
+  margin: 0 auto;
 }
 
 .area_direita_fornecedores {
@@ -2920,7 +2921,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     align-items: center;
     gap: 10px;
   }
-  .area_texts_fornecedores,
   .area_texts_nossas_pessoas {
     max-width: 1000px;
   }
@@ -2986,14 +2986,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .tyne {
     font-family: var(--font-regular);
-  }
-  .area_texts_fornecedores {
-    max-width: 1095px;
-  }
-  .area_principal_4 {
-    justify-content: center;
-    align-items: center;
-    max-width: 1095px;
   }
   .area_principal_fornecedores {
     max-width: 1400px;
@@ -4474,9 +4466,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     margin-top: 40px;
   }
 
-  .bg_texts_fornecedores::before {
-    content: " ";
-  }
 
   /*Sociedade*/
 
