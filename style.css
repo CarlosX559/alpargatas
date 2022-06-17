@@ -1194,8 +1194,12 @@ nav a {
 .area_int_nossas_pessoas {
   display: flex;
   flex-direction: column;
-  max-width: 790px;
+  max-width: 1000px;
   width: 100%;
+}
+
+.subtitle_nossas_pessoas {
+	max-width: 790px;
 }
 
 .subtitle_nossas_pessoas h2 {
@@ -1222,6 +1226,7 @@ nav a {
   position: absolute;
   z-index: -10;
   opacity: 0.5;
+  left: 0;
 }
 
 .area_int_principal_2 {
@@ -1327,6 +1332,7 @@ nav a {
   width: 100%;
   justify-content: center;
   max-width: 1180px;
+  margin: 0 auto;
 }
 
 .area_direita_nossas_pessoas {
@@ -2921,12 +2927,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     align-items: center;
     gap: 10px;
   }
-  .area_texts_nossas_pessoas {
-    max-width: 1000px;
-  }
-  .subtitle_nossas_pessoas h2 {
-    font-size: 23px;
-  }
   .area_titulo_principal_2 img {
     width: 140px;
   }
@@ -3069,10 +3069,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .bg_texts_nossas_pessoas {
     max-width: 800px;
   }
-
-  .bg_texts_nossas_pessoas::before {
-    left: 0;
-  }
 }
 @media (max-width: 1660px) {
   .img_side_operacao {
@@ -3090,6 +3086,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .img_side_nossas_pessoas {
     width: 500px;
+  }
+  .img_side_fornecedores{
+	width: 500px;
   }
 }
 @media (max-width: 1496px) {
@@ -3933,9 +3932,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 1220px;
     gap: 10px;
   }
-  .area_texts_nossas_pessoas {
-    max-width: 1040px;
-  }
   /*usuarios*/
   .area_texts_usuarios {
     max-width: 1305px;
@@ -4057,9 +4053,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
 
   .area_int_nossas_pessoas {
     max-width: 700px;
-  }
-  .area_texts_nossas_pessoas {
-    margin-top: 100px;
   }
   .img_side_fornecedores {
     width: 300px;
@@ -4328,10 +4321,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
 
   .logo_alu {
     width: 255px;
-  }
-
-  .bg_texts_nossas_pessoas::before {
-    content: " ";
   }
 
   .seta_sessao_nossas_pessoas {
