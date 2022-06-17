@@ -761,6 +761,12 @@ nav a {
   align-items: center;
   max-width: 385px;
   width: 100%;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.area_saiba_mais:hover{
+	transform: translateX(20px);
 }
 
 .area_saiba_mais p {
@@ -774,6 +780,10 @@ nav a {
   padding-right: 10px;
 }
 
+.area_saiba_mais:hover svg,
+.area_saiba_mais:hover p{
+	color: #ea5f00;
+}
 .seta_sessao_jornada {
   display: flex;
   justify-content: center;
