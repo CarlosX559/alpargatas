@@ -429,6 +429,18 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
+  position: relative;
+}
+.triangle_localizacao {
+  position: absolute;
+  right: 0;
+  top: -300px;
+  width: 300px;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+.triangle_localizacao img {
+  width: 100%;
 }
 
 .linha_1 img {
@@ -602,8 +614,9 @@ nav a {
 
 /*para tela menor*/
 .img_topo_jornada {
+  position: relative;
   width: 100%;
-  padding: 80px 0;
+  padding: 30px 0;
   margin: 150px 0px 100px 0px;
   background-position: center;
   background-size: cover;
@@ -656,8 +669,7 @@ nav a {
 .jornada {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  width: 50%;
+  margin-left: 100px;
 }
 
 .area_texts_jornada {
@@ -672,7 +684,21 @@ nav a {
   max-width: 680px;
   width: 100%;
 }
-
+.triangle_jornada_left,
+.triangle_jornada_right {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  bottom: -500px;
+  z-index: -1;
+}
+.triangle_jornada_left {
+  bottom: -1000px;
+  left: 0;
+}
+.triangle_jornada_right {
+  right: 0;
+}
 .subtitle_negocios h2 {
   color: var(--color-cinza);
   font-size: 32px;
@@ -685,6 +711,7 @@ nav a {
 .area_pilares_total {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -711,6 +738,7 @@ nav a {
 
 .global {
   padding-right: 10px;
+  height: 40px;
 }
 
 .title_global {
@@ -739,11 +767,13 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .saiba_mais_int {
   display: flex;
-  width: 100%;
+  width: 80%;
   max-width: 1590px;
 }
 
@@ -752,17 +782,29 @@ nav a {
   align-items: center;
   max-width: 385px;
   width: 100%;
+  cursor: pointer;
+  transition: all 300ms ease-out;
+}
+
+.area_saiba_mais:hover {
+  transform: translateX(20px);
 }
 
 .area_saiba_mais p {
   color: #a3a4a8;
   font-size: 24px;
+  font-family: var(--font-regular);
+  max-width: 275px;
 }
 
 .area_saiba_mais svg {
   padding-right: 10px;
 }
 
+.area_saiba_mais:hover svg,
+.area_saiba_mais:hover p {
+  color: #ea5f00;
+}
 .seta_sessao_jornada {
   display: flex;
   justify-content: center;
@@ -1209,8 +1251,12 @@ nav a {
 .area_int_nossas_pessoas {
   display: flex;
   flex-direction: column;
-  max-width: 790px;
+  max-width: 1000px;
   width: 100%;
+}
+
+.subtitle_nossas_pessoas {
+  max-width: 790px;
 }
 
 .subtitle_nossas_pessoas h2 {
@@ -1237,6 +1283,7 @@ nav a {
   position: absolute;
   z-index: -10;
   opacity: 0.5;
+  left: 0;
 }
 
 .area_int_principal_2 {
@@ -1281,6 +1328,7 @@ nav a {
   font-size: 30px;
   padding-left: 20px;
   font-family: var(--font-light);
+  text-align: left;
 }
 .area_titulo_principal_2 h2 {
   color: #00aeea;
@@ -1341,6 +1389,7 @@ nav a {
   width: 100%;
   justify-content: center;
   max-width: 1180px;
+  margin: 0 auto;
 }
 
 .area_direita_nossas_pessoas {
@@ -1730,8 +1779,11 @@ nav a {
 .area_int_fornecedores {
   display: flex;
   flex-direction: column;
+  max-width: 1250px;
+  width: 90%;
+}
+.subtitle_fornecedores {
   max-width: 680px;
-  width: 100%;
 }
 .subtitle_fornecedores h2 {
   color: var(--color-cinza-escuro);
@@ -1746,10 +1798,6 @@ nav a {
   flex-direction: column;
 }
 
-.bg_texts_fornecedores {
-  width: 100%;
-}
-
 .bg_texts_fornecedores::before {
   content: url(img/fornecedores/bg_fornecedores.png);
   background-size: cover;
@@ -1757,6 +1805,7 @@ nav a {
   height: max-content;
   position: absolute;
   z-index: -10;
+  left: 0;
 }
 
 .area_int_principal_4 {
@@ -1768,7 +1817,6 @@ nav a {
 .area_principal_4 {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   width: 100%;
   max-width: 1126px;
 }
@@ -1805,7 +1853,6 @@ nav a {
 
 .icon_fashion {
   width: 220px;
-  padding-left: 30px;
 }
 
 .area_info_fornecedores {
@@ -1856,6 +1903,7 @@ nav a {
   justify-content: center;
   max-width: max-content;
   gap: 120px;
+  margin: 0 auto;
 }
 
 .area_direita_fornecedores {
@@ -2909,13 +2957,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     align-items: center;
     gap: 10px;
   }
-  .area_texts_fornecedores,
-  .area_texts_nossas_pessoas {
-    max-width: 1000px;
-  }
-  .subtitle_nossas_pessoas h2 {
-    font-size: 23px;
-  }
   .area_titulo_principal_2 img {
     width: 140px;
   }
@@ -2929,7 +2970,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     justify-content: space-evenly;
   }
   .seta_sessao_nossas_pessoas {
-    margin-top: 60px;
+    margin: 60px 0 100px 0;
   }
   /*Usuarios*/
   .int_sociedade {
@@ -3030,14 +3071,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .tyne {
     font-family: var(--font-regular);
   }
-  .area_texts_fornecedores {
-    max-width: 1095px;
-  }
-  .area_principal_4 {
-    justify-content: center;
-    align-items: center;
-    max-width: 1095px;
-  }
   .area_principal_fornecedores {
     max-width: 1400px;
   }
@@ -3120,10 +3153,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .bg_texts_nossas_pessoas {
     max-width: 800px;
   }
-
-  .bg_texts_nossas_pessoas::before {
-    left: 0;
-  }
 }
 @media (max-width: 1660px) {
   .img_side_operacao {
@@ -3140,6 +3169,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     top: 24px;
   }
   .img_side_nossas_pessoas {
+    width: 500px;
+  }
+  .img_side_fornecedores {
     width: 500px;
   }
 }
@@ -3739,10 +3771,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     margin: 0px;
   }
 
-  .text_pilar p {
-    font-size: 18px;
-  }
-
   /*Geração de valor*/
   .container_int_4 {
     margin-bottom: 200px;
@@ -3812,9 +3840,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .area_pilares {
     flex-wrap: wrap;
-  }
-  .saiba_mais_int {
-    max-width: 1000px;
   }
   .img_side_fornecedores {
     width: 450px;
@@ -3888,7 +3913,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .title_ioasys h2 {
     font-size: 1.2em;
   }
-
   /*sociedade*/
   .img_side_sociedade {
     left: -148px;
@@ -3958,10 +3982,13 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .title_global {
     padding-right: 0px;
-    max-width: 260px;
+    max-width: 180px;
   }
-  .saiba_mais_int {
-    max-width: 1220px;
+  .title_global h2 {
+    font-size: 18px;
+  }
+  .text_pilar p {
+    font-size: 12px;
   }
   /*geração de valor*/
   .area_esquerda_geracao img {
@@ -4015,9 +4042,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .area_principal_nossas_pessoas {
     max-width: 1220px;
     gap: 10px;
-  }
-  .area_texts_nossas_pessoas {
-    max-width: 1040px;
   }
   /*usuarios*/
   .area_texts_usuarios {
@@ -4141,12 +4165,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .area_int_nossas_pessoas {
     max-width: 700px;
   }
-  .area_texts_nossas_pessoas {
-    margin-top: 100px;
-  }
-  .saiba_mais_int {
-    justify-content: center;
-  }
   .img_side_fornecedores {
     width: 300px;
   }
@@ -4242,10 +4260,13 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .title_jornada {
     align-items: center;
   }
+  .jornada {
+    /* margin: 0; */
+  }
 
   .title_jornada h2 {
     font-size: 40px;
-    margin: 0;
+    margin-left: -20px;
   }
 
   .title_jornada h3 {
@@ -4253,16 +4274,8 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     margin: 0;
   }
 
-  .area_pilares {
-    /* flex-direction: column; */
-    align-items: center;
-  }
-
   .pilar {
     margin-top: 30px;
-  }
-  .text_pilar p {
-    text-align: center;
   }
   .area_saiba_mais {
     max-width: max-content;
@@ -4421,10 +4434,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     width: 255px;
   }
 
-  .bg_texts_nossas_pessoas::before {
-    content: " ";
-  }
-
   .seta_sessao_nossas_pessoas {
     margin-top: 40px;
   }
@@ -4555,10 +4564,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
 
   .seta_sessao_fornecedores {
     margin-top: 40px;
-  }
-
-  .bg_texts_fornecedores::before {
-    content: " ";
   }
 
   /*Sociedade*/
@@ -4779,7 +4784,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     align-items: center;
   }
   .global {
-    width: 60px;
     padding: 0;
   }
 }
@@ -4794,9 +4798,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .title h2 {
     margin: 0px;
-  }
-  .linha_2 img {
-    display: none;
   }
   .bg_menu {
     top: -50px;
