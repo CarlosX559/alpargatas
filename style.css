@@ -1025,7 +1025,7 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 152px;
+  margin-top: 60px;
 }
 
 .subtitle_geracao {
@@ -1042,12 +1042,13 @@ nav a {
 .subtitle_geracao h3 {
   color: #00993e;
   font-size: 22px;
+  margin-top: 125px;
 }
 
 .area_esquerda_geracao img {
-  height: 850px;
+  height: 856px;
   position: absolute;
-  left: -45px;
+  left: -138px;
   z-index: -1;
   transform: rotate(-181deg);
 }
@@ -3311,6 +3312,20 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     justify-content: space-between;
   }
   /*Mercado*/
+  .texts_mercado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    gap: 10px;
+  }
+  .texts_mercado p {
+    color: #525252;
+    font-family: var(--font-regular);
+    max-width: 400px;
+    font-size: 24px;
+  }
+
   .title_mercado {
     align-items: center;
     gap: 20px;
