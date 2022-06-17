@@ -1987,7 +1987,7 @@ nav a {
   align-items: flex-start;
   max-width: 600px;
   width: 100%;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 20px 100px;
 }
 
 .area_titulo_principal_4 img {
@@ -4332,7 +4332,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 5em;
   }
   .icon_fashion {
-    width: 300px;
+    width: 150px;
+  }
+  .area_titulo_principal_4{
+    margin-left: 20px;
   }
 
   /*Operação*/
