@@ -640,10 +640,14 @@ nav a {
 }
 
 .title_jornada h2 {
-  color: #fff;
-  font-size: 80px;
-  margin: 0px;
-  font-family: "Oblik light";
+	color: #fff;
+	font-size: 70px;
+	margin: 0px;
+	font-family: "Oblik light";
+}
+.title_jornada h2 span {
+	font-size: 1.3em;
+	font-family: "Oblik light";
 }
 
 .title_jornada h3 {
@@ -655,7 +659,7 @@ nav a {
 .jornada {
 	display: flex;
     align-items: center;
-    margin-left: 100px;
+    margin-left: 430px;
 }
 
 .area_texts_jornada {
@@ -784,14 +788,13 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
-  max-width: 1400px;
   margin: 0 auto;
 }
 
 .saiba_mais_int {
   display: flex;
-  width: 80%;
-  max-width: 1590px;
+  width: 100%;
+  max-width: 1445px;
 }
 
 .area_saiba_mais {
@@ -2858,7 +2861,8 @@ footer #contentRelatorio h3 svg {
 }
 
 footer #contentRelatorio h4 {
-  font-family: var(--font-light);
+  font-family: var(--font-regular);
+  font-weight: 100;
   margin: 0;
 }
 footer #contentRelatorio p {
@@ -3291,7 +3295,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     height: 400px;
     z-index: -1;
   }
-
+  .saiba_mais_int{
+	max-width: 1050px;
+  }
   /*Somos alpada */
   .marca {
     max-width: 280px;
@@ -3810,9 +3816,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 5em;
     margin-left: 70px;
   }
-  .title_jornada h3 {
-    margin-left: 250px;
-  }
   .jornada {
     width: unset;
   }
@@ -4001,8 +4004,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     height: 540px;
     transform: rotate(-270deg);
   }
-  /*Alpa*/
-
+  /*Jornada*/
+  .saiba_mais_int{
+	max-width: 970px;
+  }
   /*Geração de valor*/
   .area_direita_baixo_geracao img {
     display: none;
@@ -4206,7 +4211,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .seta_sessao_home {
     margin-top: 40px;
   }
-
+  .saiba_mais_int{
+	width: 80%;
+  }
   /*Somos alpa mobile*/
   .alpa_relatorio {
     width: 100%;
@@ -4261,7 +4268,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     align-items: center;
   }
   .jornada{
-	/* margin: 0; */
+	margin-left: 200px;
   }
 
   .title_jornada h2 {
@@ -4922,6 +4929,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .global{
 	height: 60px;
+  }
+
+  .jornada{
+	margin-left: 100px;
   }
   /*Geraçao de valor*/
   .title_geracao h3 {
