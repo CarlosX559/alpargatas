@@ -3357,6 +3357,31 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     justify-content: space-between;
   }
   /*Mercado*/
+  .animation_slide_left_texts_m {
+    position: relative;
+  }
+  .animation_slide_left_texts_m:hover {
+    transform: translateX(20px);
+    gap: 20px;
+  }
+  .animation_slide_left_texts_m:hover > p {
+    color: #ea5f00;
+  }
+  .animation_slide_left_texts_m:hover > p b {
+    color: #ea5f00;
+  }
+  .animation_slide_left_texts_m:hover #Subtração_32 {
+    fill: #ea5f00;
+  }
+  .animation_slide_left_texts_m {
+    display: flex;
+    align-items: center;
+    transition: all 300ms ease-out;
+    position: relative;
+    width: 100%;
+    max-width: max-content;
+    gap: 10px;
+  }
   .texts_mercado {
     display: flex;
     align-items: center;
@@ -3370,9 +3395,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 400px;
     font-size: 24px;
   }
-  .texts_int_mercado:hover #Subtração_32 {
-    fill: #4271b5;
-  }
+
   .texts_int_mercado {
     display: flex;
     align-items: center;
