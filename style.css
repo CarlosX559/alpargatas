@@ -697,21 +697,21 @@ nav a {
 .title_global {
   display: flex;
   flex-direction: column;
-  max-width: 180px;
+  max-width: 220px;
   width: 100%;
 }
 
 .title_global h2 {
   color: var(--color-cinza);
   margin: 0px;
-  font-size: 18px;
+  font-size: 22px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .text_pilar p {
   color: var(--color-cinza-escuro);
-  font-size: 14px;
+  font-size: 18px;
   margin: 0px;
   font-family: var(--font-light);
 }
@@ -720,7 +720,7 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -3880,7 +3880,13 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .title_global {
     padding-right: 0px;
-    /* max-width: 260px; */
+    max-width: 180px;
+  }
+  .title_global h2{
+	font-size: 18px;
+  }
+  .text_pilar p{
+	font-size: 12px;
   }
   /*geração de valor*/
   .area_esquerda_geracao img {
