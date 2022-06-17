@@ -442,8 +442,19 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
+  position: relative;
 }
-
+.triangle_localizacao{
+	position: absolute;
+	right: 0;
+	top: -300px;
+	width: 300px;
+	transform: scaleX(-1);
+	z-index: -1;
+}
+.triangle_localizacao img{
+	width: 100%;
+}
 .area_int_localizacao {
   display: flex;
   width: 100%;
@@ -582,6 +593,7 @@ nav a {
 
 /*para tela menor*/
 .img_topo_jornada {
+	position: relative;
   width: 100%;
   padding: 30px 0;
   margin: 150px 0px 100px 0px;
@@ -651,7 +663,21 @@ nav a {
   max-width: 680px;
   width: 100%;
 }
-
+.triangle_jornada_left,
+.triangle_jornada_right{
+	position: absolute;
+	width: max-content;
+	height: max-content;
+	bottom: -500px;
+	z-index: -1;
+}
+.triangle_jornada_left{
+	bottom: -1000px;
+	left: 0;
+}
+.triangle_jornada_right{
+	right: 0;
+}
 .subtitle_negocios h2 {
   color: var(--color-cinza);
   font-size: 32px;
@@ -3470,7 +3496,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .container_1 {
     height: auto;
   }
-
+  .linha_2 img {
+    right: -1060px;
+  }
   .title_2 h2 {
     font-size: 1em;
   }
@@ -3793,13 +3821,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     position: absolute;
     bottom: -168px;
     left: 40px;
-    z-index: -1;
-  }
-  .linha_2 img {
-    height: 772px;
-    position: absolute;
-    bottom: -140px;
-    right: -706px;
     z-index: -1;
   }
   /*sociedade*/
@@ -4688,9 +4709,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .title h2 {
     margin: 0px;
-  }
-  .linha_2 img {
-    display: none;
   }
   .bg_menu {
     top: -50px;
