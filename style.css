@@ -181,7 +181,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 620px;
+  max-width: 520px;
 }
 
 .title {
@@ -237,7 +237,7 @@ nav a {
   display: flex;
   flex-direction: column;
   margin-top: 300px;
-  max-width: 570px;
+  max-width: 620px;
   width: 100%;
 }
 
@@ -245,14 +245,16 @@ nav a {
   color: var(--color-cinza);
   font-family: var(--font-light);
   font-size: 1.5em;
+  text-transform: uppercase;
   margin: 0px;
   text-align: end;
 }
 
 .subtitle_relatorio_2 h2 {
-  font-size: 3.2em;
+  font-size: 3em;
   color: var(--color-cinza);
   font-family: var(--font-regular);
+  text-transform: uppercase;
   font-weight: 100;
   margin: 0px;
   text-align: end;
@@ -1022,7 +1024,7 @@ nav a {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 60px;
+  margin-top: 152px;
 }
 
 .subtitle_geracao {
@@ -3139,6 +3141,12 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .area_principal_usuarios {
     max-width: 1375px;
   }
+  .font {
+    display: inline-block;
+    font-family: var(--font-regular);
+    font-weight: 100;
+    font-size: 0.8em;
+  }
   .esquerda_info {
     margin-top: 86px;
   }
@@ -3267,7 +3275,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 1140px;
   }
   .area_total_info_5 {
-    justify-content: flex-start;
+    justify-content: flex-end;
+  }
+  .info_sociedade p {
+    max-width: 270px;
   }
   .int_sociedade {
     justify-content: space-between;
