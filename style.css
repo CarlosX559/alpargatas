@@ -1437,30 +1437,6 @@ nav a {
   transform: rotate(45deg);
 }
 
-.total_int_usuarios {
-  display: flex;
-  justify-content: flex-end;
-}
-.info_usuarios {
-  max-width: 600px;
-}
-.info_usuarios h2 {
-  margin: 0px;
-  padding-right: 0px;
-}
-.info_usuarios p {
-  max-width: 350px;
-}
-.value {
-  font-size: 50px;
-}
-.hava {
-  position: absolute;
-  left: -100px;
-}
-.area_total_info_3 {
-  justify-content: flex-end;
-}
 /*
   .img_topo_usuarios {
       width: 100%;
@@ -1655,7 +1631,6 @@ nav a {
 .esquerda_info {
   display: flex;
   justify-content: flex-end;
-  margin-top: -42px;
   max-width: 1080px;
 }
 
@@ -2969,6 +2944,60 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     margin: 60px 0 100px 0;
   }
   /*Usuarios*/
+  .int_sociedade {
+    margin-top: 40px;
+  }
+
+  /*Usuarios*/
+  .area_principal_usuarios {
+    max-width: 1375px;
+  }
+  .esquerda_info {
+    margin-top: 86px;
+  }
+  .info_usuarios_int {
+    width: 36%;
+  }
+  .parceiros {
+    justify-content: center;
+  }
+  .int_usuarios {
+    padding-left: 20px;
+  }
+  .info_usuarios_int {
+    justify-content: center;
+  }
+  .total_int_usuarios {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .info_usuarios {
+    max-width: 600px;
+  }
+  .info_usuarios h2 {
+    margin: 0px;
+    padding-right: 0px;
+  }
+  .info_usuarios p {
+    max-width: 350px;
+  }
+  .number {
+    font-size: 50px;
+  }
+  .value {
+    font-size: 50px;
+  }
+  .hava {
+    position: absolute;
+    left: -100px;
+  }
+  .area_total_info_3 {
+    justify-content: flex-end;
+    max-width: 1088px;
+  }
+  .seta_sessao_usuarios {
+    margin-bottom: 320px;
+  }
   .title_usuarios {
     width: 56%;
   }
@@ -3020,8 +3049,8 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     justify-content: space-evenly;
   }
   .esquerda_info {
-    margin-top: -33px;
     max-width: 1080px;
+    margin-top: 62px;
   }
   .area_texts_usuarios {
     max-width: 1675px;
@@ -3353,6 +3382,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 280px;
     font-family: var(--font-regular);
   }
+  /*geracao de valor*/
 
   /*mercado*/
   .area_info_int_7 img {
