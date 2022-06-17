@@ -307,7 +307,6 @@ nav a {
 }
 
 .arrow_next_section img:first-child {
-  background: black;
   opacity: 0;
   transition: opacity 300ms ease-out;
 }
