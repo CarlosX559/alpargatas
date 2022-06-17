@@ -613,6 +613,7 @@ nav a {
   left: -32px;
   top: 30px;
   transform: rotate(-90deg);
+  z-index: 1;
 }
 /*
   .img_topo_jornada {
@@ -754,27 +755,27 @@ nav a {
 
 .global {
   padding-right: 10px;
-  height: 40px;
+  height: 60px;
 }
 
 .title_global {
   display: flex;
   flex-direction: column;
-  max-width: 220px;
+  max-width: 280px;
   width: 100%;
 }
 
 .title_global h2 {
   color: var(--color-cinza);
   margin: 0px;
-  font-size: 22px;
+  font-size: 28px;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 .text_pilar p {
   color: var(--color-cinza-escuro);
-  font-size: 18px;
+  font-size: 24px;
   margin: 0px;
   font-family: var(--font-light);
 }
@@ -1202,6 +1203,7 @@ nav a {
   align-items: center;
   height: 100%;
   justify-content: center;
+  margin: 0 auto;
 }
 
 .subtitle_nossas_pessoas h2 {
@@ -1773,11 +1775,12 @@ nav a {
 
 .title_fornecedores {
   width: 100%;
-  max-width: 1030px;
+  max-width: 1250px;
   display: flex;
   align-items: baseline;
   /* justify-content: center; */
   gap: 20px;
+  margin: 0 auto;
 }
 
 .title_fornecedores h2 {
@@ -3104,7 +3107,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   /*Fornecedores*/
   .title_fornecedores {
-    max-width: 1500px;
     justify-content: flex-start;
   }
   /*Sociedade*/
@@ -3429,8 +3431,19 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 280px;
     font-family: var(--font-regular);
   }
-  /*geracao de valor*/
-
+  /*jornada*/
+  .global{
+	height: 40px;
+  }
+  .title_global h2{
+	  font-size: 18px;
+  }
+  .text_pilar p{
+	font-size: 16px;
+  }
+  .title_global{
+	max-width: 200px;
+  }
   /*mercado*/
   .area_info_int_7 img {
     max-width: 660px;
