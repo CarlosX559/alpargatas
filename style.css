@@ -181,7 +181,7 @@ nav a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 520px;
+  max-width: 550px;
 }
 
 .title {
@@ -207,7 +207,7 @@ nav a {
   display: flex;
   align-items: center;
   max-width: max-content;
-  gap: 20px;
+  gap: 8px;
 }
 
 .subtitle_relatorio h2 {
@@ -215,7 +215,7 @@ nav a {
   max-width: max-content;
   font-family: var(--font-light);
   color: #009ed9;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 0px;
   cursor: pointer;
 }
@@ -246,6 +246,7 @@ nav a {
   font-family: var(--font-light);
   font-size: 1.5em;
   text-transform: uppercase;
+  font-weight: 600;
   margin: 0px;
   text-align: end;
 }
@@ -2822,9 +2823,9 @@ nav a {
 .int_mercado {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  justify-content: space-evenly;
-  margin-top: -122px;
+  justify-content: flex-start;
+  margin-top: -80px;
+  gap: 28px;
 }
 
 .line_m.l1 {
@@ -3194,7 +3195,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     margin-bottom: 320px;
   }
   .title_usuarios {
-    width: 56%;
+    width: 47%;
   }
   .title_usuarios h2 {
     font-family: var(--font-regular);
