@@ -2490,13 +2490,13 @@ nav a {
 .area_titulo_principal_6 {
   display: flex;
   align-items: center;
-  max-width: 600px;
+  max-width: 656px;
   width: 100%;
+  gap: 20px;
 }
 
 .area_titulo_principal_6 img {
   width: 100px;
-  padding-right: 20px;
 }
 
 .area_titulo_principal_6 h2 {
@@ -3263,7 +3263,22 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .title_sociedade {
     align-items: center;
   }
-
+  .texts_sociedade_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 735px;
+    gap: 10px;
+  }
+  .texts_sociedade_1 p {
+    color: var(--color-cinza);
+    font-family: var(--font-regular);
+    max-width: 400px;
+    font-size: 24px;
+  }
+  .texts_sociedade_1 p b {
+    color: var(--color-cinza);
+  }
   .area_texts_sociedade {
     max-width: 1310px;
   }
@@ -3410,6 +3425,23 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     z-index: -1;
     transform: rotate(180deg);
   }
+  .area_texts_direita {
+    max-width: 498px;
+  }
+  .title {
+    margin-left: -100px;
+  }
+  .subtitle_relatorio_2 h2 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+  }
+  .subtitle_relatorio h2 {
+    font-size: 0.8em;
+  }
+  .subtitle_relatorio {
+    max-width: 410px;
+  }
+
   /*Fornecedores*/
   .area_texts {
     max-width: 495px;
@@ -3454,16 +3486,6 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 6em;
   }
 
-  .subtitle_relatorio_2 h2 {
-    font-size: 2.5em;
-    text-transform: uppercase;
-  }
-  .subtitle_relatorio h2 {
-    font-size: 1em;
-  }
-  .subtitle_relatorio {
-    max-width: 410px;
-  }
   .ano h2 {
     font-size: 3em;
   }
@@ -4053,14 +4075,21 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     left: -164px;
     z-index: -1;
   }
+  nav {
+    overflow-y: scroll;
+    height: 310px;
+  }
+  nav a ul p {
+    padding-left: 20px;
+  }
   .area_texts_total {
     height: inherit;
   }
   .subtitle_relatorio h2 {
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
   .subtitle_relatorio_2 h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
   }
   .area_texts {
     max-width: 450px;
@@ -4084,10 +4113,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .subtitle_2 h2 {
     font-size: 1em;
-    line-height: 28px;
+    line-height: 26px;
   }
   .area_texts_direita {
-    max-width: 390px;
+    max-width: 325px;
   }
   .number {
     font-size: 50px;
@@ -5316,12 +5345,26 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     justify-content: center;
     width: 100%;
   }
-
+  .texts_mercado {
+    max-width: 370px;
+    gap: 10px;
+    margin: 0px auto;
+  }
+  .texts_mercado p {
+    font-size: 16px;
+  }
   .subtitle_mercado h2 {
     font-size: 1em;
     padding: 0px 20px;
   }
-
+  .texts_sociedade_1 {
+    max-width: 332px;
+    gap: 10px;
+    margin: 0px auto;
+  }
+  .texts_sociedade_1 p {
+    font-size: 16px;
+  }
   .area_titulo_principal_7 h2 {
     font-size: 1em;
     padding: 0px 20px;
