@@ -2510,7 +2510,10 @@ nav a {
   width: 100%;
   margin-top: 20px;
 }
-
+.info_direita_operacao small {
+  font-size: 12px;
+  font-family: var(--font-light);
+}
 .line_o {
   border-top: 1px solid #0093c6;
   padding-top: 20px;
