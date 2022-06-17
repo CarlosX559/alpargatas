@@ -49,7 +49,7 @@ function animation_scroll() {
 
   let anim = $(".anim");
   if (area_1 < area_window) {
-    anim.css("animation", "animation_left 1s ease");
+    anim.css("animation", "animation_text 1s ease");
     anim.css("display", "flex");
   } else {
     anim.css("animation", "");
@@ -102,5 +102,30 @@ function animation_scroll() {
     anim_6.css("animation", "");
     anim_6.css("display", "none");
   }
+  document.querySelectorAll(".animation").forEach((key) => {
+    let position_atual = document
+      .querySelector("#" + key.id)
+      .getBoundingClientRect().top;
+    if (position_atual < area_window) {
+      $("#" + key.id).css("animation", "animation_right 1s ease");
+      $("#" + key.id).css("display", "flex");
+    } else {
+      $("#" + key.id).css("animation", "");
+      $("#" + key.id).css("display", "none");
+    }
+  });
+
+  document.querySelectorAll(".animation_left").forEach((key) => {
+    let position_atual = document
+      .querySelector("#" + key.id)
+      .getBoundingClientRect().top;
+    if (position_atual < area_window) {
+      $("#" + key.id).css("animation", "animation_left 1s ease");
+      $("#" + key.id).css("display", "flex");
+    } else {
+      $("#" + key.id).css("animation", "");
+      $("#" + key.id).css("display", "none");
+    }
+  });
 }
 window.addEventListener("scroll", animation_scroll);
