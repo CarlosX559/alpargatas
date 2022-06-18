@@ -51,12 +51,17 @@ function animation_scroll() {
     let position_atual = document
       .querySelector(".anim")
       .getBoundingClientRect().top;
+
     if (position_atual < area_window) {
       $("#" + key.id).css("animation", "animation_text 1.6s ease");
-      $("#" + key.id).css("display", "flex");
+      setTimeout(() => {
+        $("#" + key.id).css("opacity", "1");
+      }, 1600);
     } else {
       $("#" + key.id).css("animation", "");
-      $("#" + key.id).css("display", "none");
+      setTimeout(() => {
+        $("#" + key.id).css("opacity", "0");
+      }, 10);
     }
   });
   /*if (area_1 < area_window) {
@@ -93,10 +98,14 @@ function animation_scroll() {
       .getBoundingClientRect().top;
     if (position_atual < area_window) {
       $("#" + key.id).css("animation", "animation_text 1.6s ease");
-      $("#" + key.id).css("display", "flex");
+      setTimeout(() => {
+        $("#" + key.id).css("opacity", "1");
+      }, 1600);
     } else {
       $("#" + key.id).css("animation", "");
-      $("#" + key.id).css("display", "none");
+      setTimeout(() => {
+        $("#" + key.id).css("opacity", "0");
+      }, 10);
     }
   });
   /*
