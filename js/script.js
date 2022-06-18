@@ -52,7 +52,7 @@ function animation_scroll() {
       .querySelector(".anim")
       .getBoundingClientRect().top;
     if (position_atual < area_window) {
-      $("#" + key.id).css("animation", "animation_text 1s ease");
+      $("#" + key.id).css("animation", "animation_text 1.6s ease");
       $("#" + key.id).css("display", "flex");
     } else {
       $("#" + key.id).css("animation", "");
@@ -87,6 +87,19 @@ function animation_scroll() {
     anim_2.css("display", "none");
   }*/
 
+  document.querySelectorAll(".pilar").forEach((key) => {
+    let position_atual = document
+      .querySelector(".pilar")
+      .getBoundingClientRect().top;
+    if (position_atual < area_window) {
+      $("#" + key.id).css("animation", "animation_text 1.6s ease");
+      $("#" + key.id).css("display", "flex");
+    } else {
+      $("#" + key.id).css("animation", "");
+      $("#" + key.id).css("display", "none");
+    }
+  });
+  /*
   let anim_4 = $(".pilar");
   if (area_4 < area_window) {
     anim_4.css("animation", "animation_text 1s ease");
@@ -95,7 +108,7 @@ function animation_scroll() {
     anim_4.css("animation", "");
     anim_4.css("display", "none");
   }
-
+*/
   let anim_5 = $(".title_geracao");
   if (area_5 < area_window) {
     anim_5.css("animation", "animation_left 1s ease");

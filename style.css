@@ -425,7 +425,7 @@ nav a {
     transform: translateX(0px);
   }
 }
-/*
+
 #m_1 {
   animation-delay: 400ms !important;
 }
@@ -434,7 +434,8 @@ nav a {
 }
 #m_3 {
   animation-delay: 800ms !important;
-}*/
+}
+
 .area_marcas {
   display: flex;
   width: 100%;
@@ -851,7 +852,18 @@ nav a {
 .area_title {
   display: -webkit-box;
 }
-
+#pilar_1 {
+  animation-delay: 400ms !important;
+}
+#pilar_2 {
+  animation-delay: 600ms !important;
+}
+#pilar_3 {
+  animation-delay: 800ms !important;
+}
+#pilar_4 {
+  animation-delay: 1000ms !important;
+}
 .pilar {
   max-width: max-content;
 }
