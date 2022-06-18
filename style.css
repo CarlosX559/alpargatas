@@ -423,12 +423,12 @@ nav a {
 }
 @keyframes animation_text {
   0% {
-    opacity: 0;
     transform: translateY(100px);
+    opacity: 0;
   }
   100% {
-    opacity: 1;
     transform: translateY(0px);
+    opacity: 1;
   }
 }
 @keyframes animation_left {
@@ -470,6 +470,7 @@ nav a {
 
 .marca {
   display: flex;
+  opacity: 0;
   transition: all 300ms ease-out;
   width: 100%;
   max-width: 370px;
@@ -945,6 +946,7 @@ nav a {
 }
 .pilar {
   max-width: max-content;
+  transition: all 300ms ease-out;
 }
 
 .global {
