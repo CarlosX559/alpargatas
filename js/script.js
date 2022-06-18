@@ -47,14 +47,25 @@ function animation_scroll() {
 
   var area_window = window.innerHeight;
 
-  let anim = $(".anim");
-  if (area_1 < area_window) {
+  document.querySelectorAll(".anim").forEach((key) => {
+    let position_atual = document
+      .querySelector(".anim")
+      .getBoundingClientRect().top;
+    if (position_atual < area_window) {
+      $("#" + key.id).css("animation", "animation_text 1s ease");
+      $("#" + key.id).css("display", "flex");
+    } else {
+      $("#" + key.id).css("animation", "");
+      $("#" + key.id).css("display", "none");
+    }
+  });
+  /*if (area_1 < area_window) {
     anim.css("animation", "animation_text 1s ease");
     anim.css("display", "flex");
   } else {
     anim.css("animation", "");
     anim.css("display", "none");
-  }
+  }*/
 
   let anim_3 = $(".area_direita_alpha");
 
