@@ -28,10 +28,76 @@ function close_menu_a() {
 }
 window.addEventListener("load", close_menu_a);
 
+const animations = document.querySelectorAll("[data-animation]");
+const animationClass = "animate";
+
 function animation_scroll() {
+  const area_window = window.innerHeight * 0.21 * 4;
+
+  animations.forEach((element) => {
+    //console.log(element.offsetTop);
+    let posicaoAtual = element.getBoundingClientRect().top;
+
+    if (area_window > posicaoAtual) {
+      element.classList.add(animationClass);
+    } else {
+      element.classList.remove(animationClass);
+    }
+  });
+
+  //teste
+  /*
+  document.querySelectorAll(".pilar").forEach((key) => {
+    console.log(key.id);
+    let position_atual_1 = document
+      .querySelector("#" + key.id)
+      .getBoundingClientRect().top;
+
+    if (position_atual_1 < window.innerHeight - 120) {
+      $("#" + key.id).css("animation", "animation_pilar 1s ease-out"); //animation entrada
+      $("#" + key.id).css("opacity", "1");
+    } else {
+      $("#" + key.id).css("animation", "animation_pilar_out 1s ease-out"); //Animation saida
+      $("#" + key.id).css("opacity", "0");
+    }
+  });*/
+  /*
+  document.querySelectorAll(".animation").forEach((key) => {
+    let position_atual_2 = document
+      .querySelector("#" + key.id)
+      .getBoundingClientRect().top;
+    if (position_atual_2 < window.innerHeight - 200) {
+      $("#" + key.id).css("animation", "animation_right 300ms ease-out");
+      $("#" + key.id).css("opacity", "1");
+    } else {
+      $("#" + key.id).css("animation", "animation_out_right 300ms ease-out");
+      $("#" + key.id).css("opacity", "0");
+    }
+  });
+
+  document.querySelectorAll(".animation_left").forEach((key) => {
+    let position_atual_3 = document
+      .querySelector("#" + key.id)
+      .getBoundingClientRect().top;
+
+    if (position_atual_3 < window.innerHeight - 200) {
+      $("#" + key.id).css("animation", "animation_left 300ms ease-out");
+      $("#" + key.id).css("opacity", "1");
+    } else {
+      $("#" + key.id).css("animation", "animation_out_left 300ms ease-out");
+      $("#" + key.id).css("opacity", "0");
+    }
+  });*/
+}
+
+if (animations.length) {
+  window.addEventListener("scroll", animation_scroll);
+}
+/*
+teste
+function animation_scrolls() {
   var area_1 = document.querySelector(".marca").getBoundingClientRect().top;
-  //var area_2 =
-  //document.querySelector(".area_esquerda_alpha").getBoundingClientRect().top;
+
   var area_3 = document
     .querySelector(".area_int_localizacao")
     .getBoundingClientRect().top;
@@ -45,33 +111,6 @@ function animation_scroll() {
     .querySelector(".area_subtitle_geracao")
     .getBoundingClientRect().top;
 
-  var area_window = window.innerHeight;
-
-  document.querySelectorAll(".anim").forEach((key) => {
-    let position_atual = document
-      .querySelector(".anim")
-      .getBoundingClientRect().top;
-
-    if (position_atual < area_window) {
-      $("#" + key.id).css("animation", "animation_text 1.6s ease");
-      setTimeout(() => {
-        $("#" + key.id).css("opacity", "1");
-      }, 1600);
-    } else {
-      $("#" + key.id).css("animation", "");
-      setTimeout(() => {
-        $("#" + key.id).css("opacity", "0");
-      }, 10);
-    }
-  });
-  /*if (area_1 < area_window) {
-    anim.css("animation", "animation_text 1s ease");
-    anim.css("display", "flex");
-  } else {
-    anim.css("animation", "");
-    anim.css("display", "none");
-  }*/
-
   let anim_3 = $(".area_direita_alpha");
 
   if (area_3 < area_window) {
@@ -84,18 +123,19 @@ function animation_scroll() {
 
   let anim_2 = $(".area_esquerda_alpha");
 
-  /*if (area_2 < area_window) {
+  if (area_2 < area_window) {
     anim_2.css("animation", "  animation_text_2 1s ease");
     anim_2.css("display", "flex");
   } else {
     anim_2.css("animation", "");
     anim_2.css("display", "none");
-  }*/
+  }
 
   document.querySelectorAll(".pilar").forEach((key) => {
     let position_atual = document
       .querySelector(".pilar")
       .getBoundingClientRect().top;
+
     if (position_atual < area_window) {
       $("#" + key.id).css("animation", "animation_text 1.6s ease");
       setTimeout(() => {
@@ -108,7 +148,7 @@ function animation_scroll() {
       }, 10);
     }
   });
-  /*
+
   let anim_4 = $(".pilar");
   if (area_4 < area_window) {
     anim_4.css("animation", "animation_text 1s ease");
@@ -117,7 +157,7 @@ function animation_scroll() {
     anim_4.css("animation", "");
     anim_4.css("display", "none");
   }
-*/
+
   let anim_5 = $(".title_geracao");
   if (area_5 < area_window) {
     anim_5.css("animation", "animation_left 1s ease");
@@ -135,30 +175,5 @@ function animation_scroll() {
     anim_6.css("animation", "");
     anim_6.css("display", "none");
   }
-  document.querySelectorAll(".animation").forEach((key) => {
-    let position_atual = document
-      .querySelector("#" + key.id)
-      .getBoundingClientRect().top;
-    if (position_atual < area_window) {
-      $("#" + key.id).css("animation", "animation_right 1s ease");
-      $("#" + key.id).css("display", "flex");
-    } else {
-      $("#" + key.id).css("animation", "");
-      $("#" + key.id).css("display", "none");
-    }
-  });
-
-  document.querySelectorAll(".animation_left").forEach((key) => {
-    let position_atual = document
-      .querySelector("#" + key.id)
-      .getBoundingClientRect().top;
-    if (position_atual < area_window) {
-      $("#" + key.id).css("animation", "animation_left 1s ease");
-      $("#" + key.id).css("display", "flex");
-    } else {
-      $("#" + key.id).css("animation", "");
-      $("#" + key.id).css("display", "none");
-    }
-  });
-}
-window.addEventListener("scroll", animation_scroll);
+}*/
+//window.addEventListener("scroll", animation_scrolls);
