@@ -308,6 +308,33 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.arrow_next_section img:first-child {
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+.arrow_next_section:hover {
+  transform: scale(1.5);
+}
+.arrow_next_section:hover img:first-child {
+  opacity: 1;
+}
+.arrow_next_section {
+  width: 50px;
+  height: 25px;
+  position: relative;
+  transform-origin: top;
+  transition: transform 300ms ease-out;
+}
+
+.arrow_next_section img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .arrow_next_section img:first-child {
