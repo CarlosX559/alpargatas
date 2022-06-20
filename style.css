@@ -281,10 +281,36 @@ nav a {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .arrow_next_section img:first-child {
-  background: black;
+  opacity: 0;
+  transition: opacity 300ms ease-out;
+}
+
+.arrow_next_section:hover {
+  transform: scale(1.5);
+}
+.arrow_next_section:hover img:first-child {
+  opacity: 1;
+}
+.arrow_next_section {
+  width: 50px;
+  height: 25px;
+  position: relative;
+  transform-origin: top;
+  transition: transform 300ms ease-out;
+}
+
+.arrow_next_section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.arrow_next_section img:first-child {
   opacity: 0;
   transition: opacity 300ms ease-out;
 }
@@ -542,6 +568,22 @@ nav a {
   justify-content: center;
   position: relative;
 }
+.triangle_operacao,
+.triangle_localizacao {
+  position: absolute;
+  right: 0;
+  top: -300px;
+  width: 300px;
+  transform: scaleX(-1);
+  z-index: -1;
+}
+.triangle_operacao img,
+.triangle_localizacao img {
+  width: 100%;
+}
+.triangle_operacao {
+  top: 500px;
+}
 .triangle_localizacao {
   position: absolute;
   right: 0;
@@ -793,6 +835,14 @@ nav a {
 .title_jornada h2 span {
   font-size: 1.3em;
   font-family: "Oblik light";
+  color: #fff;
+  font-size: 70px;
+  margin: 0px;
+  font-family: "Oblik light";
+}
+.title_jornada h2 span {
+  font-size: 1.3em;
+  font-family: "Oblik light";
 }
 
 .title_jornada h3 {
@@ -802,6 +852,9 @@ nav a {
 }
 
 .jornada {
+  display: flex;
+  align-items: center;
+  margin-left: 430px;
   display: flex;
   align-items: center;
   margin-left: 430px;
@@ -843,9 +896,35 @@ nav a {
   right: 0;
   z-index: -1;
 }
+.triangle_pessoas_top {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  bottom: -500px;
+  right: 0;
+  z-index: -1;
+}
 
 #operacao,
 #sociedade,
+#usuarios {
+  position: relative;
+}
+.triangle_sociedade_top,
+.triangle_operacao_top,
+.triangle_usuarios_top {
+  position: absolute;
+  width: max-content;
+  height: max-content;
+  top: -500px;
+  right: 0;
+  z-index: -1;
+}
+.triangle_operacao_top {
+  top: -300px;
+  left: 50%;
+  opacity: 0.8;
+}
 #usuarios {
   position: relative;
 }
@@ -2003,7 +2082,7 @@ nav a {
   align-items: flex-start;
   max-width: 600px;
   width: 100%;
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0px 20px 100px;
 }
 
 .area_titulo_principal_4 img {
@@ -3786,6 +3865,17 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .title_global {
     max-width: 200px;
   }
+  /*geracao de valor*/
+  .area_esquerda_geracao img {
+    height: 630px;
+  }
+  .area_direita_geracao img {
+    height: 480px;
+  }
+  .area_direita_baixo_geracao img {
+    margin-top: 200px;
+  }
+
   /*mercado*/
   .title_mercado h2 {
     font-size: 4em;
@@ -4350,7 +4440,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 5em;
   }
   .icon_fashion {
-    width: 300px;
+    width: 150px;
+  }
+  .area_titulo_principal_4 {
+    margin-left: 20px;
   }
 
   /*Operação*/
