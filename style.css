@@ -58,6 +58,8 @@ header {
   padding-left: 30px;
   justify-content: flex-start;
   gap: 30px;
+  border-top: 1px solid #43c1e8;
+  padding-top: 20px;
 }
 .lang a {
   color: rgb(119, 120, 123);
