@@ -52,7 +52,17 @@ body {
 header {
   width: max-content;
 }
-
+.lang {
+  display: flex;
+  max-width: 100%;
+  padding-left: 30px;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.lang a {
+  color: rgb(119, 120, 123);
+  font-family: var(--font-light);
+}
 .bg_menu {
   position: fixed;
   z-index: 999;
