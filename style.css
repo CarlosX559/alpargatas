@@ -239,7 +239,11 @@ nav a {
   max-width: max-content;
   gap: 8px;
 }
-
+.subtitle_relatorio a {
+  text-decoration: none;
+  font-family: var(--font-light);
+  color: #009ed9;
+}
 .subtitle_relatorio h2 {
   width: 100%;
   max-width: max-content;
