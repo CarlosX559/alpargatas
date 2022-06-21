@@ -1,15 +1,18 @@
 function menu() {
-  $(".menu_int")
-    .css("display", "flex")
-    .css("left", "0")
-    .css("animation", "menu 1s ease");
+  let menuOpen = document.querySelector(".menu_int");
+  menuOpen.style.display = "flex";
+  menuOpen.style.left = "0";
+  menuOpen.style.animation = "menu 1s ease";
 }
 function menu_close() {
-  $(".menu_int").css("left", "-400").css("animation", "menu_close 1s ease");
+  let menuClose = document.querySelector(".menu_int");
+
+  menuClose.style.left = "-400";
+  menuClose.style.animation = "menu_close 1s ease";
 
   setTimeout(() => {
-    if ($(".menu_int").css("left", "-400")) {
-      $(".menu_int").css("display", "none");
+    if ((menuClose.style.left = "-400")) {
+      menuClose.style.display = "none";
     }
   }, 600);
 }
