@@ -5223,6 +5223,14 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     padding: 0px 0px 0px 22px;
     width: 80%;
   }
+  .lang_cima {
+    display: flex;
+  }
+  .brasil,
+  .eua {
+    display: flex !important;
+    padding: 0px 10px;
+  }
   .area_cima img {
     display: none;
   }
