@@ -4578,6 +4578,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .subtitle_relatorio {
     width: 100%;
     max-width: initial;
+    justify-content: center;
   }
 
   .area_total_marcas {
@@ -4671,7 +4672,20 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .container_int_4 {
     align-items: center;
   }
+
   /*geracao*/
+  .title_geracao h2 {
+    font-size: 80px;
+  }
+  .title_geracao h3 {
+    font-size: 60px;
+  }
+  .seta_sessao_geracao {
+    margin-top: 0px;
+  }
+  .img_topo_governanca {
+    margin: 120px 0px 60px;
+  }
   .area_direita_geracao img {
     height: 420px;
   }
@@ -5585,15 +5599,26 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .container_int_4 {
     margin-bottom: 30px;
   }
+
   /*Governança*/
   .subtitle_governanca h2 {
     font-size: 0.9em;
+  }
+  .info_governanca {
+    padding-right: 20px;
   }
   .area_titulo_principal_2 h3 {
     font-size: 1em;
   }
   .desc_pes {
     font-size: 30px;
+  }
+  /*Nossas pessoas*/
+  .subtitle_nossas_pessoas h2 {
+    font-size: 1em;
+  }
+  .area_info_nossas_pessoas {
+    padding-right: 20px;
   }
   /*Usuarios*/
   .subtitle_usuarios h2 {
@@ -5643,7 +5668,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     font-size: 20px;
   }
   .area_info_int_7 img {
-    max-width: 410px;
+    max-width: max-content;
   }
   .info_direita_mercado p {
     font-size: 18px;
