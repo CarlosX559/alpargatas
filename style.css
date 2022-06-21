@@ -66,20 +66,22 @@ header {
   font-family: var(--font-light);
   text-decoration: none;
 }
+.brasil,
+.eua {
+  width: 32px !important;
+  height: 32px !important;
+  top: 0px !important;
+  right: 0px !important;
+  position: relative !important;
+}
 .lang_cima {
   top: 0px;
-  max-width: 100%;
   right: 20px;
   position: absolute;
   padding-top: 20px;
   z-index: 1;
 }
-.lang_cima a {
-  color: #fff;
-  font-family: var(--font-light);
-  text-decoration: none;
-  padding: 0px 10px;
-}
+
 .bg_menu {
   position: fixed;
   z-index: 999;
