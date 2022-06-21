@@ -4541,7 +4541,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .area_texts_total {
     flex-direction: column;
   }
-
+  .lang_cima a {
+    color: var(--color-cinza-escuro);
+  }
   .area_int_nossas_pessoas {
     max-width: 700px;
   }
