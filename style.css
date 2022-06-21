@@ -64,6 +64,20 @@ header {
 .lang a {
   color: rgb(119, 120, 123);
   font-family: var(--font-light);
+  text-decoration: none;
+}
+.lang_cima {
+  top: 0px;
+  max-width: 100%;
+  right: 20px;
+  position: absolute;
+  padding-top: 20px;
+}
+.lang_cima a {
+  color: #fff;
+  font-family: var(--font-light);
+  text-decoration: none;
+  padding: 20px 10px;
 }
 .bg_menu {
   position: fixed;
@@ -308,13 +322,6 @@ nav a {
 .arrow_next_section:hover img:first-child {
   opacity: 1;
 }
-.arrow_next_section {
-  width: 50px;
-  height: 25px;
-  position: relative;
-  transform-origin: top;
-  transition: transform 300ms ease-out;
-}
 
 .arrow_next_section img {
   position: absolute;
@@ -335,26 +342,7 @@ nav a {
 .arrow_next_section:hover img:first-child {
   opacity: 1;
 }
-.arrow_next_section {
-  width: 50px;
-  height: 25px;
-  position: relative;
-  transform-origin: top;
-  transition: transform 300ms ease-out;
-}
 
-.arrow_next_section img {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.arrow_next_section {
-  width: 50px;
-  height: 25px;
-  position: relative;
-  transform-origin: top;
-  transition: transform 300ms ease-out;
-}
 .seta_sessao_home {
   display: flex;
   justify-content: center;
@@ -1206,11 +1194,11 @@ nav a {
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-top: 160px;
 }
 
 .seta_sessao_geracao img {
   cursor: pointer;
-  margin-top: 200px;
 }
 
 #geracao_de_valor {
@@ -4274,6 +4262,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   .title_ioasys h2 {
     font-size: 1.2em;
   }
+  /*Jornada*/
+  .title_jornada h2 span {
+    font-size: 1em;
+  }
   /*sociedade*/
   .img_side_sociedade {
     left: -148px;
@@ -4295,7 +4287,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     left: -148px;
     width: 355px;
   }
-
+  .title_governanca {
+    justify-content: flex-end;
+    max-width: 945px;
+  }
   .title_governanca h2 {
     font-size: 80px;
   }
@@ -4319,6 +4314,18 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     position: absolute;
     left: -147px;
   }
+  /*Usuarios*/
+  .title_usuarios {
+    margin-left: -30px;
+  }
+  /*Sociedade*/
+  .area_total_sociedade {
+    max-width: 1180px;
+  }
+
+  .area_total_operacao {
+    max-width: 750px;
+  }
   /*Mercado*/
   .area_principal_mercado {
     max-width: 1300px;
@@ -4328,7 +4335,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .area_total_mercado {
     justify-content: flex-end;
-    max-width: 1060px;
+    max-width: 820px;
   }
   .area_int_principal_7 {
     justify-content: flex-end;
