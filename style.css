@@ -1504,7 +1504,7 @@ nav a {
   transform: scaleX(0);
   transition: transform 300ms ease-out;
 }
-/**/
+
 .animation_slide_left:after {
   content: "";
   background: url("");
@@ -5558,6 +5558,10 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
 }
 @media (max-width: 425px) {
+  .animation_slide_left:hover {
+    transform: translateX(20px);
+    gap: 30px;
+  }
   /*home*/
   .subtitle h2,
   .subtitle_2 h2,
@@ -5603,6 +5607,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   /*Governança*/
   .subtitle_governanca h2 {
     font-size: 0.9em;
+  }
+  .title_governanca {
+    justify-content: center;
   }
   .info_governanca {
     padding-right: 20px;
