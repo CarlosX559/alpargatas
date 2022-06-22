@@ -16,15 +16,11 @@ h2 {
   font-weight: 400;
 }
 html {
-  overflow-x: hidden !important;
-  overflow-x: clip !important;
   scroll-behavior: smooth;
 }
 body {
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden !important;
-  overflow-x: clip !important;
 }
 
 @font-face {
@@ -3223,7 +3219,7 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
   }
   .area_info_int {
     max-width: 1210px;
-    align-items: flex-end;
+    align-items: center;
   }
   .info_governanca {
     padding-right: 40px;

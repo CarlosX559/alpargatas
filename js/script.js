@@ -30,7 +30,6 @@ function animation_scroll() {
   const area_window = window.innerHeight * 0.21 * 3.8;
 
   animations.forEach((element) => {
-    //console.log(element.offsetTop);
     let posicaoAtual = element.getBoundingClientRect().top;
 
     if (area_window > posicaoAtual) {
