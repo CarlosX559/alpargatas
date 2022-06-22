@@ -16,11 +16,13 @@ h2 {
   font-weight: 400;
 }
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 body {
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -526,6 +528,7 @@ nav a {
 [data-animation="right"] {
   transform: translate3d(260px, 0, 0);
 }
+
 [data-animation].animate {
   opacity: 1;
   transform: translate3d(0px, 0px, 0px);
@@ -3720,6 +3723,9 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     max-width: 1230px;
     margin-left: 0px;
   }
+  .img_topo_governanca {
+    margin: 90px 0px 80px 0px;
+  }
   .title_governanca h2 {
     font-size: 4em;
   }
@@ -5684,5 +5690,27 @@ footer #wrapperRelatorio:hover #contentRelatorio h3 svg {
     padding: 0px;
     font-size: 1.5em;
     width: 90%;
+  }
+
+  .triangle_operacao_top {
+    left: 29%;
+  }
+  .bg_texts_fornecedores::before {
+    display: none;
+  }
+  .bg_texts_nossas_pessoas::before {
+    display: none;
+  }
+  .triangle_jornada_left {
+    display: none;
+  }
+  [data-animation="right-mobile"] {
+    transform: translate3d(10px, 0, 0);
+  }
+  [data-animation="right"] {
+    transform: translate3d(35px, 0, 0);
+  }
+  [data-animation="left"] {
+    transform: translate3d(-35px, 0, 0);
   }
 }
